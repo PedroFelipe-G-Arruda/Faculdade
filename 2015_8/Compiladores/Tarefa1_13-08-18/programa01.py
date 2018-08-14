@@ -1,4 +1,4 @@
-file = open('arq01.txt','w')
+file = open('arquivo1.txt','w')
 numero = int(input('Digite o numero de nomes:'))
 
 for i in range(numero):
