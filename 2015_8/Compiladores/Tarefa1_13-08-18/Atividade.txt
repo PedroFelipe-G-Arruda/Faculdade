@@ -1,0 +1,19 @@
+1) Ler nomes completos de pessoas, pelo teclado, e armazená-los em um arquivo (arquivo1).
+
+2) Ler o conteúdo do arquivo1, ordená-lo alfabeticamente e grave em outro arquivo (arquivo2).
+
+3) Exibir a quantidade de linhas, palavras e caracteres de um arquivo indicado pelo usuário.
+
+4) Considere que exista um arquivo chamado voo.txt que armazena 10 voos entre várias cidades.
+Cada voo contém as seguintes informações:
+
+<empresa aérea> <número do voo> <origem> <destino> <valor da passagem>
+
+Empresa aérea é um código de 2 letras, o número do voo tem 4 algarismos, origem e destino são códigos com 3 letras e o
+valor da passagem é um número real. Faça um programa para informar ao interessado na compra de uma passagem se existem
+voos entre as cidades fornecidas pelo teclado. A saída do seu programa, quando não existir o voo desejado será
+“NÃO EXISTEM VOOS”. Caso existam, imprimir a empresa, o número do voo e o valor da passagem. Pode haver mais de um voo 
+entre as cidades desejadas.
+
+Questão Desafio: Faça um que abra um arquivo HTML e elimine todas as “tags” do texto, ou seja, o programa deve gerar 
+um novo arquivo em disco que elimine todas as tags Html que são caracterizadas por comandos entre “<” e “>”. 
