@@ -8,7 +8,6 @@ flag = 0
 #tem que fazer a formatação
 
 for i in file:
-	#if origem and destino in i:
 		voo = i.split(",")
 		if (origem == voo[2]) and (destino == voo[3]):
 			print(i)
