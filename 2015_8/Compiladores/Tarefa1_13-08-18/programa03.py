@@ -16,6 +16,4 @@ palavra = contador
 letras = car_total - (palavra - 1) - (linha - 1)
 print('O arquivo {} tem: {} linha(s), {} palavra(s), {} letras e {} caracteres total'.format(arquivo, linha, palavra, letras, car_total))
 
-ashfbas = input(".")
-
 file.close
