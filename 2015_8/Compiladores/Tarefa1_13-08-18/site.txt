@@ -1,0 +1,47 @@
+
+
+
+
+
+Título da Página (Estrutura básica de uma página com HTML 5)
+
+
+
+
+
+
+
+Home
+Contato
+
+
+
+
+
+
+
+O título do artigo é aqui
+Publicado em 09 de Março de 2015 por Author - 30 comentários
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+
+
+O título do artigo é aqui
+Publicado em 09 de Março de 2015 por Author - 15 comentários
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+
+
+Entre em contato
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+
+Copyright 2015 Código Fonte©
+
+
+
