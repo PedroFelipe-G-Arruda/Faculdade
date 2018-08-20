@@ -1,7 +1,7 @@
 file = open("voo.txt","r")
 
-origem = input("Digite a sua cidade de origem:")
-destino = input("Digiteo a cidade destino:") 
+origem = str(input("Digite a sua cidade de origem:")).upper().strip()
+destino = str(input("Digiteo a cidade destino:")).upper().strip()
 
 flag = 0
 
@@ -13,8 +13,5 @@ for i in file:
 			print(i)
 			flag = 1
 
-
 if (flag == 0):
 	print("“NÃO EXISTEM VOOS")
-
-i = input('.') 
