@@ -1,79 +1,74 @@
-def R(head):
+def r(head):
     return head + 1
 
 
-def L(head):
+def l(head):
     return head - 1
 
 
 def q0(head):
     if fita[head] == 'a':
         fita[head] = 'A'
-        R(head)
-        q1(head)
+        q1(r(head))
 
-    if cell == 'B':
-        fita[head] = 'B'
-        R(head)
-        q3(cell, head)
+    elif fita[head] == 'B':
+        q3(r(head))
 
-    if cell == ' ':
-        fita[head] = ' '
-        R(head)
+    elif fita[head] == ' ':
         q4()
 
+    else:
+        qr()
 
-def q1(cell, head):
-    if cell == 'a':
-        fita[head] = 'a'
-        R(head)
-        q1(cell, head)
 
-    if cell == 'b':
+def q1(head):
+    if fita[head] == 'a':
+        q1(r(head))
+
+    elif fita[head] == 'b':
         fita[head] = 'B'
-        L(head)
-        q2(cell, head)
+        q2(l(head))
 
-    if cell == 'B':
-        fita[head] = 'B'
-        R(head)
-        q1(cell, head)
+    elif fita[head] == 'B':
+        q1(r(head))
 
-
-def q2(cell, head):
-    if cell == 'a':
-        fita[head] = 'a'
-        R(head)
-        q2(cell, head)
-
-    if cell == 'A':
-        fita[head] = 'A'
-        R(head)
-        q0(cell, head)
-
-    if cell == 'B':
-        fita[head] = 'B'
-        L(head)
-        q2(cell, head)
+    else:
+        qr()
 
 
-def q3(cell, head):
-    if cell == 'B':
-        fita[head] = 'B'
-        R(head)
-        q3(cell, head)
+def q2(head):
+    if fita[head] == 'a':
+        q2(l(head))
 
-    if cell == ' ':
-        fita[head] = ' '
-        L(head)
+    elif fita[head] == 'A':
+        q0(r(head))
+
+    elif fita[head] == 'B':
+        q2(l(head))
+
+    else:
+        qr()
+
+
+def q3(head):
+    if fita[head] == 'B':
+        q3(r(head))
+
+    elif fita[head] == ' ':
         q4()
+
+    else:
+        qr()
 
 
 def q4():
     print(fita)
 
 
-fita = 'aabb'
+def qr():
+    print(f'{"Erro":-^40}')
 
+
+fita = ['a','a','b', 'b', ' ']
 
 q0(0)
