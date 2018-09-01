@@ -1,0 +1,39 @@
+#Options
+GenerateScanner = true
+GenerateParser = true
+Language = Java
+ScannerName = Lexico
+ParserName = Sintatico
+SemanticName = Semantico
+ScannerCaseSensitive = true
+ScannerTable = Full
+Input = String
+Parser = LL
+#RegularDefinitions
+D:[0-9]
+WS:[\ \n\t]
+L:[A-Za-z]
+S:[\+\-]
+ASPAS:[\"]
+
+#Tokens
+:{WS}*
+inteiro: {D}+
+real : {S}? {D},{D}+
+ler: "ler"
+escrever: "escrever"
+variavel : {L}({L}|{D})*
+frase: {ASPAS}.*{ASPAS}
+#NonTerminals
+<COMANDO>
+<TUDO>
+<STRING>
+<NUMERO>
+#Grammar
+<COMANDO> ::= ler variavel;
+<COMANDO> ::= escrever <TUDO>;
+<TUDO> ::= <NUMERO>;
+<TUDO> ::= <STRING>;
+<STRING> ::= frase;
+<NUMERO> ::= inteiro;
+<NUMERO> ::= real;

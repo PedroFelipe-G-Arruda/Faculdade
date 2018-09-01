@@ -183,3 +183,4 @@ def qr():
 fita = list(str(input('Digite o numero binario:')))
 fita.append(' ')
 q0(0)
+
