@@ -1,0 +1,45 @@
+#Options
+GenerateScanner = true
+GenerateParser = true
+Language = Java
+ScannerName = Lexico
+ParserName = Sintatico
+SemanticName = Semantico
+ScannerCaseSensitive = true
+ScannerTable = Full
+Input = String
+Parser = LL
+#RegularDefinitions
+WS: [\ \t\n]
+
+#Tokens
+:{WS}*
+
+"("
+")"
+"{"
+"}"
+"+"
+"-"
+"*"
+"/"
+";"
+"="
+
+
+#NonTerminals
+<COMANDO>
+<LISTACOMANDO>
+<AUXILIAR>
+<VARIAVEL>
+#Grammar
+<COMANDO> ::= output"("<variavel>")";
+<COMANDO> ::= <VARIAVEL> "=" input"("frase")"
+
+<LISTACOMANDO> ::= "{"<COMANDO>"}" | <COMANDO>
+
+<AUXILIAR> ::= <vARIALVEL>|id;
+
+<VARIAVEL> ::= inteiro;
+<VARIAVEL> ::= real;
+<VARIAVEL> ::= string;
