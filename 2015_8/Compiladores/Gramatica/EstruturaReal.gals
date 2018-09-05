@@ -11,6 +11,10 @@ Input = String
 Parser = LL
 #RegularDefinitions
 WS: [\ \t\n]
+D:[0-9]
+L:[A-Za-z]
+S:[\+\-]
+ASPAS:[\"]
 
 #Tokens
 :{WS}*
@@ -26,20 +30,31 @@ WS: [\ \t\n]
 ";"
 "="
 
+inteiro: {D}+
+real: {S}?{D},{D}+
 
+frase: {ASPAS}.*{ASPAS}
+
+output: "output"
+input: "input"
+
+vairavel: {L}({L}|{D})*
 #NonTerminals
 <COMANDO>
 <LISTACOMANDO>
 <AUXILIAR>
-<VARIAVEL>
+<NUMERO>
+<STRING>
 #Grammar
-<COMANDO> ::= output"("<variavel>")";
-<COMANDO> ::= <VARIAVEL> "=" input"("frase")"
+<COMANDO> ::= output"("frase|vairavel")";
+<COMANDO> ::= input"("vairavel")";
+//<COMANDO> ::= <VARIAVEL> "=" input"("frase")";
 
-<LISTACOMANDO> ::= "{"<COMANDO>"}" | <COMANDO>
+<LISTACOMANDO> ::= "{"<COMANDO>"}" | <COMANDO>;
 
-<AUXILIAR> ::= <vARIALVEL>|id;
+<AUXILIAR> ::= <NUMERO>|<STRING>;
 
-<VARIAVEL> ::= inteiro;
-<VARIAVEL> ::= real;
-<VARIAVEL> ::= string;
+<NUMERO> ::= inteiro;
+<NUMERO> ::= real;
+
+<STRING> ::= frase;
