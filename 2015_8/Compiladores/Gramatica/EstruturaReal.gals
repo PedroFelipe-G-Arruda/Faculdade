@@ -10,51 +10,57 @@ ScannerTable = Full
 Input = String
 Parser = LL
 #RegularDefinitions
-WS: [\ \t\n]
+WS:[\ \n \t]
+//DIGITOS
 D:[0-9]
+//LETRAS
 L:[A-Za-z]
-S:[\+\-]
-ASPAS:[\"]
 
 #Tokens
 :{WS}*
 
-"("
-")"
-"{"
-"}"
-"+"
-"-"
-"*"
-"/"
-";"
-"="
+//COMANDOS
+inicio: "begin"
+fim: "end"
+escrever: "output"
+ler: "input"
 
-inteiro: {D}+
-real: {S}?{D},{D}+
+//LOGICA
+final_linha:";"
+abre_parenteses:\(
+fecha_parenteses:\)
 
-frase: {ASPAS}.*{ASPAS}
 
-output: "output"
-input: "input"
-
-vairavel: {L}({L}|{D})*
+//TIPO
+tipo: "int"
+variavel: {L}({L}|{D})*
+frase: \".*\"
 #NonTerminals
+<INICIO_FIM>
+<VARIAVEL>
+<CODIGO>
 <COMANDO>
-<LISTACOMANDO>
-<AUXILIAR>
-<NUMERO>
-<STRING>
+<ARGUMENTO>
+
 #Grammar
-<COMANDO> ::= output"("frase|vairavel")";
-<COMANDO> ::= input"("vairavel")";
-//<COMANDO> ::= <VARIAVEL> "=" input"("frase")";
+//inicio e fim do programa
+<INICIO_FIM> ::= inicio <CODIGO> fim;
 
-<LISTACOMANDO> ::= "{"<COMANDO>"}" | <COMANDO>;
 
-<AUXILIAR> ::= <NUMERO>|<STRING>;
+//ESTRUTURA DO CODIGO
+<CODIGO> ::=  <COMANDO> <CODIGO>;
+<CODIGO> ::= î;
 
-<NUMERO> ::= inteiro;
-<NUMERO> ::= real;
 
-<STRING> ::= frase;
+//COMANDOS
+<COMANDO> ::= escrever abre_parenteses <ARGUMENTO> fecha_parenteses final_linha;
+<COMANDO> ::= ler abre_parenteses variavel fecha_parenteses final_linha;
+<COMANDO> ::= condicao_se <LOGICA> ponto_interrogacao <CODIGO> 
+<COMANDO> ::= <VARIAVEL>;
+
+
+//variaveis para declaração
+<VARIAVEL> ::= tipo variavel final_linha;
+
+<ARGUMENTO> ::= frase;
+<ARGUMENTO> ::= variavel;
