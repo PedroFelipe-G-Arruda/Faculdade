@@ -7,7 +7,7 @@ Entrada de dados --> input
 Saida de dados --> output
 
 
-Estrutura condicional --> if(condiçaõ)? se verdadeiro @ se falso?
+Estrutura condicional --> if(condição)? se verdadeiro @ se falso?
 
 
 Estrutura de repetição --> do: code done(condição)
