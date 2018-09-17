@@ -45,12 +45,13 @@ matematica_multiplicacao:"*"
 matematica_divisao:"/"
 matematica_igual:"="
 
+
 final_linha:";"
 dois_pontos:":"
 ponto_interrogacao:"?"
 abre_parenteses:\(
 fecha_parenteses:\)
-
+virgula:","
 
 //Tokens de Tipo
 tipo: "int"
@@ -106,7 +107,7 @@ numero: \-? {D}*
 <SENAO> ::= senao <CODIGO> ponto_interrogacao final_linha;
 <SENAO> ::= ponto_interrogacao final_linha;
 
-<LOOP> ::= abre_parenteses <ARGUMENTO_NUMERICO> final_linha <OP_MATEMATICA> <ARGUMENTO_NUMERICO> fecha_parenteses dois_pontos <CODIGO> fim_repeticao final_linha;
+<LOOP> ::= abre_parenteses <ARGUMENTO_NUMERICO> virgula <OP_MATEMATICA> <ARGUMENTO_NUMERICO> fecha_parenteses dois_pontos <CODIGO> fim_repeticao final_linha;
 <LOOP> ::= dois_pontos <CODIGO> fim_repeticao final_linha;
 
 //Verifica Expressao
@@ -125,10 +126,10 @@ numero: \-? {D}*
 <ATRIBUIR_VALOR> ::=î;
 
 //Argumentos
-<ARGUMENTO> ::= <ARGUMENTO_TEXTO> | <ARGUMENTO_NUMERICO>;
-<ARGUMENTO_TEXTO> ::= texto;
+<ARGUMENTO> ::= <ARGUMENTO_TEXTO> | <ARGUMENTO_NUMERICO> | î;
+<ARGUMENTO_TEXTO> ::= texto <ARGUMENTO>;
 <ARGUMENTO_NUMERICO> ::= numero;
-<ARGUMENTO_NUMERICO> ::= variavel;
+<ARGUMENTO_NUMERICO> ::= variavel <ARGUMENTO>;
 
 //Logica e Matematica
 <OP_LOGICA> ::= logica_maior_que;

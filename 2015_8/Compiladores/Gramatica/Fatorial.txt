@@ -1,19 +1,16 @@
 begin
-	int n;
-	int fatorial;
 
-	output("Insira o valor para calcular seu fatoria:");
+	int n;
+	int f = 1;
+
+	output("Digite um numero para saber o fatorial dele:");
 	input(n);
 
-	fatorial = 1;
-	
-	if(farotial <= 1)?
-		output("Fatorial calculado:");
-		output(farotial);
-	@
-		do:
-			fatorail = fatorail * n;
-			n = n - 1;
-		done(n > 1);
-	?;
+	loop n >= 1:
+		f = f * n;
+		n = n - 1;
+	lend;
+
+	output("O fatorial é: " f );
+
 end

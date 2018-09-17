@@ -8,12 +8,8 @@ Saida de dados --> output
 
 
 Estrutura condicional --> if(condição)? se verdadeiro @ se falso?
-
-
-Estrutura de repetição --> do: code done(condição)
-
-
-Estrutura de repetição 2 --> for condição final (valor inicial, valor incremento): code fend
+;
+Estrutura de repetição 2 --> loop condição; (valor inicial, valor incremento): code lend;
 Fim de frase --> ;
 
 
@@ -30,20 +26,24 @@ Operadores lógicos -->  >=, <=, >, <, ==, !=
 Declaração de variáveis --> int var 1  (tipo  nome)
 
 
-
+----------------------------------
 estrutura 
 saida de dados:
 output("texto");
-output("Olá mundo!")
 
+output("Olá mundo!");
+----------------------------------
 entrada de dados:
 input(variavel);
+
 input(a);
 
 declaração de variaveis:
 tipo nome;
+
 int a;
 
+----------------------------------
 condição se:
 if(condição)?
 	codigo
@@ -57,20 +57,30 @@ if(a > b)?
 	output(b);
 ?;
 
-condição de repetição(faça enquanto):
-do:
+----------------------------------
+
+condição de repetição(loop):
+loop condição: 
 	codigo
-done(condição);
+lend;
 
-do:
-	a = a + 1;
-done(a < 10);
+ou 
 
-condição de repetição(para):
-for condição final (valor inicial, valor incremento): 
-	code 
-fend
+loop condição (valor inicial,valor incremento):
+	codigo
+lend;
 
-for x >= 1 (0,-1): 
+
+
+x = 10;
+loop x >= 1:
+	outup(x);
+	x = x - 1;
+lend;
+
+ou
+
+loop x >= 1 (10,-1): 
 	a = a * x;
-fend
+lend;
+----------------------------------
