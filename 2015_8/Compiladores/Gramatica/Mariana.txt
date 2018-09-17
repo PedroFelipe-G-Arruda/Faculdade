@@ -9,7 +9,7 @@ Saida de dados --> output
 
 Estrutura condicional --> if(condição)? se verdadeiro @ se falso?
 ;
-Estrutura de repetição 2 --> loop condição; (valor inicial, valor incremento): code lend;
+Estrutura de repetição 2 --> loop condição; code lend | loop condição; (valor inicial, valor incremento): code lend;
 Fim de frase --> ;
 
 
