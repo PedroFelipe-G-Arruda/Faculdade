@@ -1,0 +1,77 @@
+﻿Tipo de variavel --> Numerico
+
+
+Entrada de dados --> input
+Saida de dados --> output
+
+Estrutura condicional --> if(condição)? se verdadeiro @ se falso?
+;
+Estrutura de repetição 2 --> loop condição; code lend | loop condição; (valor inicial, valor incremento): code lend;
+Fim de frase --> ;
+
+
+Inicio de programa --> begin
+Fim de programa --> end
+Atribuição de valores/variavel --> =
+
+
+Operadores lógicos -->  >=, <=, >, <, ==, !=
+
+
+Declaração de variáveis --> int var 1  (tipo  nome)
+
+
+----------------------------------
+estrutura 
+saida de dados:
+output("texto");
+
+output("Olá mundo!");
+----------------------------------
+entrada de dados:
+input(variavel);
+
+input(a);
+----------------------------------
+declaração de variaveis:
+tipo nome;
+
+int a;
+----------------------------------
+condição se:
+if(condição)?
+	codigo
+@
+	codigo
+?;
+
+if(a > b)?
+	output(a);
+@
+	output(b);
+?;
+----------------------------------
+condição de repetição(loop):
+loop condição: 
+	codigo
+lend;
+
+ou 
+
+loop condição (valor inicial,valor incremento):
+	codigo
+lend;
+
+
+x = 10;
+loop x >= 1:
+	outup(x);
+	x = x - 1;
+lend;
+
+ou
+
+loop x >= 1 (10,-1): 
+	a = a * x;
+lend;
+----------------------------------
