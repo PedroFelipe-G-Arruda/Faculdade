@@ -13,12 +13,20 @@ if not param:
     sys.exit()
 
 nparam = len(param)
-if param[nparam - 2] == "-lt":
-    print("lista de tokens")
+if nparam == 2:
+    if param[0] == "-lt":
+        print("lista de tokens")
+    else:
+        print("\n{:-^40}\n".format("ERRO"))
+        print(f"Argumento {param[0]} nao reconhecido\n")
+        print("-> Passar argumento corretamente <-\n")
+        sys.exit()
 
+    teste = param[2].split(".")
+    print(teste)
 
-print(param[nparam - 1])
-print(nparam)
+    print(param[nparam - 1])
+    print(nparam)
 
 
 #with open()
