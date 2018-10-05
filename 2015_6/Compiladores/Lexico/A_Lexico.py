@@ -1,5 +1,5 @@
 import sys
-
+lt = False
 
 def transicao(estado, letra):
     for line in tabela:
@@ -25,6 +25,7 @@ nparam = len(param)
 if nparam == 2:
     if param[0] == "-lt":
         print("lista de tokens")
+        lt = True
         codigoFonte = param[1]
     else:
         print("\n{:-^40}\n".format("ERRO"))
@@ -85,30 +86,33 @@ for linha in codigo:
     nlinha +=1  # Guada o numero da linha que esta
     ncoluna = 0 # Zera a coluna sempre que começa uma nova linha
     for i in linha: # Anda caractere a caractere da linha
-        print("Letra: {}".format(i))
-        print("Estado atenrior: {}".format(estado_anterior))
-        estado_anterior = estado_atual
-        estado_atual = transicao(estado_atual, i)
-        ncoluna += 1    # Guarda o numero da coluna
-        print("Estado atual: {}\n".format(estado_atual))
-        buffer = buffer + i #buffer que guarda os tokens em teste
-
-        if estado_atual in estados_finais:  # Verifica se o estado atual é um estado final
-            print("buffer:{}".format(buffer))
-            print("linha:{}".format(nlinha))
-            print("coluna:{}\n".format(ncoluna))
-
-            teste = transicao(estado_atual, linha[ncoluna])
-            print("teste:{} --  ncoluna + 1:{}".format(teste,linha[ncoluna]))
-            if teste == "error":
-                print("lexema:{} - tokens:{}\n".format(buffer,estados_finais[estado_atual]))
-                estado_atual = "q0"
-
-
-        if estado_atual == "error":
-            print(linha)
+        if i != "\n":
             print("Letra: {}".format(i))
             print("Estado atenrior: {}".format(estado_anterior))
+            estado_anterior = estado_atual
+            estado_atual = transicao(estado_atual, i)
+            ncoluna += 1    # Guarda o numero da coluna
             print("Estado atual: {}\n".format(estado_atual))
-            print("Erro")
-            sys.exit()
+            buffer = buffer + i #buffer que guarda os tokens em teste
+
+            if estado_atual in estados_finais:  # Verifica se o estado atual é um estado final
+                print("buffer:{}".format(buffer))
+                print("linha:{}".format(nlinha))
+                print("coluna:{}\n".format(ncoluna))
+
+                teste = transicao(estado_atual, linha[ncoluna])
+                #print("teste:{} -  ncoluna + 1:{}".format(teste,linha[ncoluna]))
+                if teste == "error":
+                    if lt == True:
+                        print("lexema:{} - tokens:{}\n".format(buffer,estados_finais[estado_atual]))
+                    estado_atual = "q0"
+
+
+            if estado_atual == "error":
+                print(linha)
+                print(linha)
+                print("Letra: {}".format(i))
+                print("Estado atenrior: {}".format(estado_anterior))
+                print("Estado atual: {}\n".format(estado_atual))
+                print("Erro")
+                sys.exit()
