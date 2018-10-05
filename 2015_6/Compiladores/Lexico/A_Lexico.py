@@ -44,7 +44,7 @@ with open(codigoFonte, 'r') as file:
     codigo = file.readlines()
     #print(codigo)
 
-estado_finais = {
+estados_finais = {
     'q5':'inicio',
     'q8':'fim',
     'q14':'escrever',
@@ -72,43 +72,43 @@ estado_finais = {
     'q47':'logica_maior',
     'q48':'logica_maior_que',
     'q49':'lociga_menor',
-    'q50':'logica_menor_que'
+    'q50':'logica_menor_que',
     'q52':'logica_diferente'
-
-
 }
 
 nlinha = 0
 
+# Verifica linha por linha do codigo fonte para verificar os tokens
 for linha in codigo:
+    buffer = ""     # Beffur para os tokens em teste
     estado_atual = estado_anterior = "q0"
-    nlinha +=1
-    ncoluna = 0
-    for i in linha:
-       # print("Estado atual: {}".format(estado_atual))
+    nlinha +=1  # Guada o numero da linha que esta
+    ncoluna = 0 # Zera a coluna sempre que começa uma nova linha
+    for i in linha: # Anda caractere a caractere da linha
         print("Letra: {}".format(i))
         print("Estado atenrior: {}".format(estado_anterior))
         estado_anterior = estado_atual
         estado_atual = transicao(estado_atual, i)
-        ncoluna += 1
-        print("Estado atual: {}".format(estado_atual))
+        ncoluna += 1    # Guarda o numero da coluna
+        print("Estado atual: {}\n".format(estado_atual))
+        buffer = buffer + i #buffer que guarda os tokens em teste
 
-        if estado_atual + '\n' in estados_finais:
+        if estado_atual in estados_finais:  # Verifica se o estado atual é um estado final
+            print("buffer:{}".format(buffer))
+            print("linha:{}".format(nlinha))
+            print("coluna:{}\n".format(ncoluna))
+
+            teste = transicao(estado_atual, linha[ncoluna])
+            print("teste:{} --  ncoluna + 1:{}".format(teste,linha[ncoluna]))
+            if teste == "error":
+                print("lexema:{} - tokens:{}\n".format(buffer,estados_finais[estado_atual]))
+                estado_atual = "q0"
+
+
+        if estado_atual == "error":
             print(linha)
-        '''
-        for l in estados_finais:
-            #print(l)
-            if estado_atual in l:
-                print(l)
-        '''
-    '''
-    print("\n\n")
-    print(estado_anterior)
-    print(estado_atual)
-    if  estado_atual == "error":
-        print(linha)
-    else:
-        print(estado_anterior)
-        print("Erro")
-        sys.exit()
-'''
+            print("Letra: {}".format(i))
+            print("Estado atenrior: {}".format(estado_anterior))
+            print("Estado atual: {}\n".format(estado_atual))
+            print("Erro")
+            sys.exit()

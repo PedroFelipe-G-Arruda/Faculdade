@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e598666a-ce8e-4630-9b2e-4302c7eacade" name="Default Changelist" comment="Add files via upload">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Lexica_M.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Lexica_M.jff" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Lexica_M.jff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Lexica_M.jff.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Lexica_M.jff.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Lexica_M.jff.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Lexica_M.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Lexica_M.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Novo Documento de Texto.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/estadosFinais.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/tabelaTokens.txt" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/tabelaTokens.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/test.m" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/test.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,10 +24,10 @@
           <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="9" />
+          <entry key="project.open.time.3" value="10" />
           <entry key="project.open.time.4" value="6" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -42,14 +44,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2956" />
+          <entry key="py" value="3988" />
           <entry key="txt" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="105" />
-          <entry key="Python" value="2956" />
+          <entry key="Python" value="3988" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -60,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="75" column="28" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+            <state relative-caret-position="471">
+              <caret line="100" column="57" lean-forward="true" selection-start-line="100" selection-start-column="57" selection-end-line="100" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -70,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Automatos/AutomatosF.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="520">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -320,7 +322,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49826086" weight="0.32948583" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49826086" visible="true" weight="0.32948583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -350,17 +352,17 @@
     <entry file="file://$PROJECT_DIR$/2015_8/Compiladores/Automatos/A1.txt" />
     <entry file="file://$PROJECT_DIR$/2015_8/Compiladores/Tarefa1_13-08-18/BinaryP_TM.py" />
     <entry file="file://$PROJECT_DIR$/2015_8/Compiladores/Automatos/A2.txt" />
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="75" column="28" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Automatos/AutomatosF.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="100" column="57" lean-forward="true" selection-start-line="100" selection-start-column="57" selection-end-line="100" selection-end-column="57" />
         </state>
       </provider>
     </entry>
