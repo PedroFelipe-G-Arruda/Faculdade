@@ -1,12 +1,15 @@
 import sys
-lt = False
+lt = False  #lista de tokens
+texto = False   # Verifica se e string
+acabou = False
 
-def transicao(estado, letra):
-    for line in tabela:
-        if estado + '|' + letra in line:
-            print(line)
-            return line.split('|')[2].rstrip()
-    return "error"
+
+def transicao(estado, letra):   # Verifica se a tem um proximo estado
+    for line in tabela:     # Le linha por linha da tabela de tokens
+        if estado + '|' + letra in line:    # Verifica se tem estado e letra na linha
+           # print(line)
+            return line.split('|')[2].rstrip()  # Retorna o proximo estado
+    return "error"  # Se verificou toda a tabela e nao acho nada retorna erro
 
 
 # sao passados dois argumentos no maximo
@@ -14,12 +17,12 @@ def transicao(estado, letra):
 # pega os argumentos e coloca na lista parametros (param)
 param = sys.argv[1:]
 
-# verifica se a lista (param) esta vazia
-if not param:
+
+if not param:   # verifica se a lista (param) esta vazia
     print("\n{:-^40}\n".format("ERRO"))
     print("Programa sem ARGUMENTO\n")
     print("-> Passar argumentos juntos do programa <-\n")
-    sys.exit()
+    sys.exit()  # fecha o programa
 
 nparam = len(param)
 if nparam == 2:
@@ -43,8 +46,9 @@ with open('tabelaTokens.txt', 'r') as file:
 
 with open(codigoFonte, 'r') as file:
     codigo = file.readlines()
-    #print(codigo)
+    print(codigo)
 
+# Dicionario com os estados finais e os tokens
 estados_finais = {
     'q5':'inicio',
     'q8':'fim',
@@ -77,42 +81,79 @@ estados_finais = {
     'q52':'logica_diferente'
 }
 
-nlinha = 0
-
+nlinha = 0  # Inicializa nlinha(bumero de linhas) com 0
 # Verifica linha por linha do codigo fonte para verificar os tokens
-for linha in codigo:
+for linha in codigo:    # Verifica todas as linhas do codigo fonte
+    estado_atual  = estado_anterior = "q0"  # Inicializa os estados atual e anterior com q0 que é o estado inicial
     buffer = ""     # Beffur para os tokens em teste
-    estado_atual = estado_anterior = "q0"
     nlinha +=1  # Guada o numero da linha que esta
     ncoluna = 0 # Zera a coluna sempre que começa uma nova linha
     for i in linha: # Anda caractere a caractere da linha
-        if i != "\n":
-            print("Letra: {}".format(i))
-            print("Estado atenrior: {}".format(estado_anterior))
+        ncoluna += 1    # Guarda o numero da coluna
+        print("ncoluna: {}".format(ncoluna))
+
+        # Verifica se o texto  esta entre aspas
+        if i == '"' and texto == False: # Se inicio de string
+            texto = True    # E string
+        else:
+            if i == '"' and texto == True:  # Se final de string
+                texto = False   # Nao e string
+
+        if texto == True:   # Se for texto
             estado_anterior = estado_atual
             estado_atual = transicao(estado_atual, i)
-            ncoluna += 1    # Guarda o numero da coluna
-            print("Estado atual: {}\n".format(estado_atual))
-            buffer = buffer + i #buffer que guarda os tokens em teste
-
+            buffer = buffer + i  # buffer que guarda os tokens em teste
             if estado_atual in estados_finais:  # Verifica se o estado atual é um estado final
-                print("buffer:{}".format(buffer))
-                print("linha:{}".format(nlinha))
-                print("coluna:{}\n".format(ncoluna))
-
-                teste = transicao(estado_atual, linha[ncoluna])
-                #print("teste:{} -  ncoluna + 1:{}".format(teste,linha[ncoluna]))
-                if teste == "error":
-                    if lt == True:
-                        print("lexema:{} - tokens:{}\n".format(buffer,estados_finais[estado_atual]))
-                    estado_atual = "q0"
-
+                if ncoluna < len(linha):
+                    teste = transicao(estado_atual, linha[ncoluna])
+                    if teste == "error":
+                        if lt == True:
+                            print("lexema: [{}] - tokens: [{}]\n".format(buffer, estados_finais[estado_atual]))
+                        estado_atual = "q0"
+                        buffer = ""
 
             if estado_atual == "error":
-                print(linha)
-                print(linha)
-                print("Letra: {}".format(i))
-                print("Estado atenrior: {}".format(estado_anterior))
-                print("Estado atual: {}\n".format(estado_atual))
-                print("Erro")
+                print("\n{:-^40}\n".format("ERRO LEXICO"))
+                print("Erro lexico na linha [{}] e coluna [{}]".format(nlinha, ncoluna))
                 sys.exit()
+        else:   # Se nao for texto
+            if i != "\n" and i != " ":  # Verifica se nao e quebra de linha ou espaco
+                print("Letra: {}".format(i))
+                estado_anterior = estado_atual
+                print("Estado atenrior: {}".format(estado_anterior))
+                estado_atual = transicao(estado_atual, i)
+                print(estado_atual)
+                buffer = buffer + i  # buffer que guarda os tokens em teste
+                if estado_atual in estados_finais:  # Verifica se o estado atual é um estado final
+                    if ncoluna < len(linha):
+                        teste = transicao(estado_atual, linha[ncoluna])
+                        print(teste)
+                        if teste == "error":
+                            if lt == True:
+                                print("lexema: [{}] - tokens: [{}]\n".format(buffer, estados_finais[estado_atual]))
+                            estado_atual = "q0"
+                            buffer = ""
+                    else:
+                        if lt == True:
+                            print("lexema: [{}] - tokens: [{}]\n".format(buffer, estados_finais[estado_atual]))
+                        buffer = ""
+
+                if estado_atual == "error":
+                    print("\n{:-^40}\n".format("ERRO LEXICO"))
+                    print("Erro lexico na linha [{}] e coluna [{}]".format(nlinha, ncoluna))
+                    sys.exit()
+
+        print(len(linha))
+        print("buffer: {}".format(buffer))
+        if buffer and ncoluna == len(linha):
+            print("\n{:-^40}\n".format("ERRO LEXICO"))
+            print("Erro lexico na linha [{}] e coluna [{}]".format(nlinha, ncoluna))
+            sys.exit()
+
+if estado_atual == "error":
+    print("\n{:-^40}\n".format("ERRO LEXICO"))
+    print("Erro lexico na linha [{}] e coluna [{}] -> [{}] <-".format(nlinha,ncoluna,i))
+    sys.exit()
+
+else:
+    print("Codigo Verificado com sucesso")
