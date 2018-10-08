@@ -57,7 +57,7 @@ virgula:","
 tipo: "int"
 variavel: {L}({L}|{D})*
 texto: \".*\"
-numero: \-? {D}*
+numero: {D}*
 #NonTerminals
 //COMANDOS
 <INICIO_FIM>
