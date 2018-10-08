@@ -102,6 +102,7 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
                     teste = transicao(estado_atual, linha[ncoluna])
                     if teste == "error":
                         lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))
+                        print(lista_tokens)
                         estado_atual = "q0"
                         buffer = ""
 
@@ -121,6 +122,7 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
                             buffer = ""
                     else:
                         lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))
+                        print(lista_tokens)
                         buffer = ""
 
                 if estado_atual == "error":
@@ -133,7 +135,6 @@ if estado_atual == "error":
     erro("ERRO LEXICO", "Erro lexico na linha [{}] e coluna [{}]".format(nlinha, ncoluna))
 else:
     print("Codigo Verificado com sucesso")
-
 if lt == True:
     print("\n")
     print("{}\t\t\t\t{}\t\t\t{}\t\t{}\n".format("Lexema", "Token", "Linha","Coluna"))
