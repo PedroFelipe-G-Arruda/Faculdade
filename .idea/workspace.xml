@@ -5,7 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/Faculdade.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Faculdade.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Gramatica/Gramatica_M.gals" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Gramatica/Gramatica_M.gals" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico_otimizado.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico_otimizado.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,13 +18,13 @@
     <session id="1877777587">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="30" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="40" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="20" />
-          <entry key="project.open.time.4" value="7" />
+          <entry key="project.open.time.3" value="27" />
+          <entry key="project.open.time.4" value="9" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -40,14 +41,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="7132" />
+          <entry key="py" value="7200" />
           <entry key="txt" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="105" />
-          <entry key="Python" value="7132" />
+          <entry key="Python" value="7200" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -58,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="98" column="42" selection-end-line="153" selection-end-column="21" />
+            <state relative-caret-position="276">
+              <caret line="91" column="46" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -67,12 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico_otimizado.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1749">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <marker date="1538968088165" expanded="true" signature="715:716" ph="..." />
-                <marker date="1538968088165" expanded="true" signature="836:838" ph="..." />
-              </folding>
+            <state relative-caret-position="786">
+              <caret line="142" column="18" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -80,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Automatos/AutomatosF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
+            <state relative-caret-position="442">
               <caret line="26" column="31" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="31" />
             </state>
           </provider>
@@ -96,6 +93,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -105,8 +103,8 @@
         <option value="$PROJECT_DIR$/2015_8/Compiladores/Tarefa1_13-08-18/BinaryP_TM.py" />
         <option value="$PROJECT_DIR$/2015_8/Compiladores/Automatos/AutomatosF.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Analizador_Lexico.py" />
-        <option value="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico_otimizado.py" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" />
       </list>
     </option>
   </component>
@@ -120,47 +118,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Faculdade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Faculdade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
-              <item name="2015_6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Faculdade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
-              <item name="2015_6" type="462c0819:PsiDirectoryNode" />
-              <item name="Compiladores" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Faculdade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
-              <item name="2015_6" type="462c0819:PsiDirectoryNode" />
-              <item name="Compiladores" type="462c0819:PsiDirectoryNode" />
-              <item name="Automatos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Faculdade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
-              <item name="2015_6" type="462c0819:PsiDirectoryNode" />
-              <item name="Compiladores" type="462c0819:PsiDirectoryNode" />
-              <item name="Lexico" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -188,7 +151,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Analizador_Lexico">
+  <component name="RunManager" selected="Python.test">
     <configuration name="Analizador_Lexico" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Faculdade" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -196,13 +159,13 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\pedro\OneDrive\Faculdade\Faculdade\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2015_6/Compiladores/Lexico" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\pedro\OneDrive\Faculdade\Faculdade\2015_6\Compiladores\Lexico\A_Lexico.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" />
+      <option name="PARAMETERS" value="test.m" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -252,13 +215,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Faculdade" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2015_6/Compiladores/Lexico" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2015_6/Compiladores/Lexico/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.AutomatosF" />
       <item itemvalue="Python.BinaryP_TM" />
       <item itemvalue="Python.Analizador_Lexico" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.Analizador_Lexico" />
         <item itemvalue="Python.BinaryP_TM" />
         <item itemvalue="Python.AutomatosF" />
@@ -328,11 +314,19 @@
     <option name="localTasksCounter" value="8" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23076923" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23076923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -341,7 +335,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49786323" weight="0.32948583" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50173914" side_tool="true" weight="0.32948583" />
@@ -386,28 +380,24 @@
     <entry file="file://$PROJECT_DIR$/2015_8/Compiladores/Automatos/A1.txt" />
     <entry file="file://$PROJECT_DIR$/2015_8/Compiladores/Tarefa1_13-08-18/BinaryP_TM.py" />
     <entry file="file://$PROJECT_DIR$/2015_8/Compiladores/Automatos/A2.txt" />
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py">
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Automatos/AutomatosF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="98" column="42" selection-end-line="153" selection-end-column="21" />
+        <state relative-caret-position="442">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Automatos/AutomatosF.py">
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="276">
+          <caret line="91" column="46" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico_otimizado.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1749">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <marker date="1538968088165" expanded="true" signature="715:716" ph="..." />
-            <marker date="1538968088165" expanded="true" signature="836:838" ph="..." />
-          </folding>
+        <state relative-caret-position="786">
+          <caret line="142" column="18" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
         </state>
       </provider>
     </entry>

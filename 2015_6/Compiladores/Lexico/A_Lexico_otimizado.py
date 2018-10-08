@@ -75,7 +75,7 @@ estados_finais = {
     'q52':'logica_diferente'
 }
 
-lista_tokens = []
+lista_tokens = []   #Lista armazenas os Lexemas e os seus tokens
 nlinha = 0  # Inicializa nlinha(bumero de linhas) com 0
 # Verifica linha por linha do codigo fonte para verificar os tokens
 for linha in codigo:    # Verifica todas as linhas do codigo fonte
@@ -91,7 +91,8 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
         else:
             if i == '"' and texto == True:  # Se final de string
                 texto = False   # Nao e string
-
+        if estado_atual == "q0":
+            coluna = ncoluna
         if texto == True:   # Se for texto
             estado_anterior = estado_atual
             estado_atual = transicao(estado_atual, i)
@@ -100,7 +101,7 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
                 if ncoluna < len(linha):
                     teste = transicao(estado_atual, linha[ncoluna])
                     if teste == "error":
-                        lista_tokens.append(buffer + "|" + estados_finais[estado_atual])
+                        lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))
                         estado_atual = "q0"
                         buffer = ""
 
@@ -119,7 +120,7 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
                             estado_atual = "q0"
                             buffer = ""
                     else:
-                        lista_tokens.append(buffer + "|" + estados_finais[estado_atual])
+                        lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))
                         buffer = ""
 
                 if estado_atual == "error":
@@ -135,8 +136,9 @@ else:
 
 if lt == True:
     print("\n")
-    print("{}\t\t\t\t{}\n".format("Lexema", "Token"))
-    print("-"*60)
+    print("{}\t\t\t\t{}\t\t\t{}\t\t{}\n".format("Lexema", "Token", "Linha","Coluna"))
+    print("-"*100)
     for i in lista_tokens:
-        print("{}\t\t\t\t{}".format(i.split("|")[0],i.split("|")[1]))
-        print("-"*60)
+        print("{}".format(i.split("|")))
+        print("-"*100)
+    sys.exit()

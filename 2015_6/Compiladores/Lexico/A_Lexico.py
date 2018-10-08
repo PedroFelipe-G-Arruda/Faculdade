@@ -5,7 +5,6 @@ texto = False   # Verifica se e string
 def transicao(estado, letra):   # Verifica se a tem um proximo estado
     for line in tabela:     # Le linha por linha da tabela de tokens
         if estado + '|' + letra in line:    # Verifica se tem estado e letra na linha
-           # print(line)
             return line.split('|')[2].rstrip()  # Retorna o proximo estado
     return "error"  # Se verificou toda a tabela e nao acho nada retorna erro
 
