@@ -5,7 +5,6 @@ texto = False   # Verifica se e string
 def transicao(estado, letra):   # Verifica se a tem um proximo estado
     for line in tabela:     # Le linha por linha da tabela de tokens
         if estado + '|' + letra in line:    # Verifica se tem estado e letra na linha
-           # print(line)
             return line.split('|')[2].rstrip()  # Retorna o proximo estado
     return "error"  # Se verificou toda a tabela e nao acho nada retorna erro
 
@@ -74,8 +73,7 @@ estados_finais = {
     'q50':'logica_menor_que',
     'q52':'logica_diferente'
 }
-
-lista_tokens = []   #Lista armazenas os Lexemas e os seus tokens
+lista_tokens = ['Lexema|Token|Linha|Coluna']   #Lista armazenas os Lexemas e os seus tokens
 nlinha = 0  # Inicializa nlinha(bumero de linhas) com 0
 # Verifica linha por linha do codigo fonte para verificar os tokens
 for linha in codigo:    # Verifica todas as linhas do codigo fonte
@@ -83,33 +81,21 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
     buffer = ""     # Beffur para os tokens em teste
     nlinha +=1  # Guada o numero da linha que esta
     ncoluna = 0 # Zera a coluna sempre que começa uma nova linha
+
     for i in linha: # Anda caractere a caractere da linha
         ncoluna += 1    # Guarda o numero da coluna
-        # Verifica se o texto  esta entre aspas
-        if i == '"' and texto == False: # Se inicio de string
-            texto = True    # E string
-        else:
-            if i == '"' and texto == True:  # Se final de string
-                texto = False   # Nao e string
-        if estado_atual == "q0":
-            coluna = ncoluna
-        if texto == True:   # Se for texto
-            estado_anterior = estado_atual
-            estado_atual = transicao(estado_atual, i)
-            buffer = buffer + i  # buffer que guarda os tokens em teste
-            if estado_atual in estados_finais:  # Verifica se o estado atual é um estado final
-                if ncoluna < len(linha):
-                    teste = transicao(estado_atual, linha[ncoluna])
-                    if teste == "error":
-                        lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))
-                        print(lista_tokens)
-                        estado_atual = "q0"
-                        buffer = ""
+        if i != "\t":
+            # Verifica se o texto  esta entre aspas
+            if i == '"' and texto == False: # Se inicio de string
+                texto = True    # E string
+            else:
+                if i == '"' and texto == True:  # Se final de string
+                    texto = False   # Nao e string
 
-            if estado_atual == "error":
-                erro("ERRO LEXICO", "Erro lexico na linha [{}] e coluna [{}]".format(nlinha, ncoluna))
-        else:   # Se nao for texto
-            if i != "\n" and i != " ":  # Verifica se nao e quebra de linha ou espaco
+            if estado_atual == "q0":
+                coluna = ncoluna
+
+            if texto == True:   # Se for texto
                 estado_anterior = estado_atual
                 estado_atual = transicao(estado_atual, i)
                 buffer = buffer + i  # buffer que guarda os tokens em teste
@@ -117,16 +103,30 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
                     if ncoluna < len(linha):
                         teste = transicao(estado_atual, linha[ncoluna])
                         if teste == "error":
-                            lista_tokens.append(buffer + "|" + estados_finais[estado_atual])
+                            lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))
                             estado_atual = "q0"
                             buffer = ""
-                    else:
-                        lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))
-                        print(lista_tokens)
-                        buffer = ""
 
                 if estado_atual == "error":
                     erro("ERRO LEXICO", "Erro lexico na linha [{}] e coluna [{}]".format(nlinha, ncoluna))
+            else:   # Se nao for texto
+                if i != "\n" and i != " ":  # Verifica se nao e quebra de linha ou espaco
+                    estado_anterior = estado_atual
+                    estado_atual = transicao(estado_atual, i)
+                    buffer = buffer + i  # buffer que guarda os tokens em teste
+                    if estado_atual in estados_finais:  # Verifica se o estado atual é um estado final
+                        if ncoluna < len(linha):
+                            teste = transicao(estado_atual, linha[ncoluna])
+                            if teste == "error":
+                                lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))
+                                estado_atual = "q0"
+                                buffer = ""
+                        else:
+                            lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))
+                            buffer = ""
+
+                    if estado_atual == "error":
+                        erro("ERRO LEXICO", "Erro lexico na linha [{}] e coluna [{}]".format(nlinha, ncoluna))
 
     if buffer and ncoluna == len(linha):
         erro("ERRO LEXICO", "Erro lexico na linha [{}] e coluna [{}]".format(nlinha, ncoluna))
@@ -137,9 +137,7 @@ else:
     print("Codigo Verificado com sucesso")
 if lt == True:
     print("\n")
-    print("{}\t\t\t\t{}\t\t\t{}\t\t{}\n".format("Lexema", "Token", "Linha","Coluna"))
-    print("-"*100)
     for i in lista_tokens:
-        print("{}".format(i.split("|")))
-        print("-"*100)
+        print(f'{i.split("|")[0]:^30}\t\t\t\t{i.split("|")[1]:^30}\t\t\t\t{i.split("|")[2]:^8}\t\t{i.split("|")[3]:^8}')
+        print("-"*120)
     sys.exit()
