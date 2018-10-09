@@ -72,7 +72,7 @@ numero: {D}*
 //Declaração e Atribuição
 <DECLARACAO>
 <ATRIBUIR_VALOR>
-<ARIBUICAO>
+<ATRIBUICAO>
 
 //Argumentos
 <ARGUMENTO>
@@ -102,7 +102,7 @@ numero: {D}*
 <COMANDO> ::= condicao_se <EXPRESSAO> ponto_interrogacao <CODIGO> <SENAO>;
 <COMANDO> ::= condicao_repeticao <LOGICA> <LOOP>;
 <COMANDO> ::= <DECLARACAO> final_linha;
-<COMANDO> ::= <ARIBUICAO> final_linha;
+<COMANDO> ::= <ATRIBUICAO> final_linha;
 
 <SENAO> ::= senao <CODIGO> ponto_interrogacao final_linha;
 <SENAO> ::= ponto_interrogacao final_linha;
@@ -120,8 +120,8 @@ numero: {D}*
 <EXPRESSAO_MATEMATICA> ::= î;
 
 //Declaração e Atribuição
-<DECLARACAO> ::= tipo <ARIBUICAO>;
-<ARIBUICAO> ::= variavel <ATRIBUIR_VALOR>;
+<DECLARACAO> ::= tipo <ATRIBUICAO>;
+<ATRIBUICAO> ::= variavel <ATRIBUIR_VALOR>;
 <ATRIBUIR_VALOR> ::=  matematica_igual <CALCULO>;
 <ATRIBUIR_VALOR> ::=î;
 
