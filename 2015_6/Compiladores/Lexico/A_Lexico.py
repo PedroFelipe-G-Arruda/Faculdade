@@ -79,7 +79,8 @@ estados_finais = {
     'q48':'logica_maior_que',
     'q49':'lociga_menor',
     'q50':'logica_menor_que',
-    'q52':'logica_diferente'
+    'q52':'logica_diferente',
+    'q54':'atribuicao'
 }
 if sys.version <= "3.6.6":
     erro("ERRO","A versao do python nao é compativel com o programa, usar a versao 3.6.6 ou posterior ")
@@ -143,16 +144,33 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
                             lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))    # Guarda na lista de tokens o lexima com o seu token sua linha e coluna
                             estado_atual = "q0"
                             buffer = ""
-                    print("buffer:{} i:{} estado atual:{}".format(buffer,i,estado_atual))
+
                     if estado_atual == "error":
-                        erro("1","{} Caracter não esperado linha: {} e coluna: {}".format(i,nlinha,ncoluna),False)
-                        estado_atual = estado_anterior
-                        buffer = buffer.replace(i,"")
-                        #lista_erros.append(i + "|" + str(nlinha) + "|" + str(coluna))
-                        #erro("ERRO LEXICO", "Erro lexico na linha [{}] e coluna [{}]".format(nlinha, ncoluna))
+                        print(i)
+                        print(linha[ncoluna - 2])
+                        if ncoluna < len(linha):
+                            print(f"estado anterior: {estado_anterior} letra: {linha[ncoluna - 2]}")
+                            if transicao(estado_anterior,linha[ncoluna - 2]) == "error":
+                                char = buffer.replace(i,"")
+                                print(char)
+                            if testeVariavel(char) == True:
+                                lista_tokens.append(char + "|" + estados_finais['q46'] + "|" + str(nlinha) + "|" + str(coluna))  # Guarda na lista de tokens o lexima com o seu token sua linha e coluna
+                                print(f"ncoluna: {ncoluna -1} letra: {linha[ncoluna-1]} teste: {transicao('q0', linha[ncoluna-1])}")
+                                if transicao("q0", linha[ncoluna - 1]) != "error":
+                                    print('ok')
+                                    buffer = linha[ncoluna - 1]
+                                    print(buffer)
+                                    estado_atual = "q0"
+                            else:
+                                erro("1", "{} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, ncoluna),False)
+                                print("buffer:{} i:{} estado atual:{}".format(buffer, i, estado_atual))
+                                estado_atual = estado_anterior
+                                buffer = buffer.replace(i, "")
+
 
                 if buffer and ncoluna == len(linha):
                     if testeVariavel(buffer) == False:
+                        print(i)
                         erro("2", "{} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, coluna), False)
                     else:
                         lista_tokens.append(buffer + "|" + estados_finais['q46'] + "|" + str(nlinha) + "|" + str(coluna))  # Guarda na lista de tokens o lexima com o seu token sua linha e coluna
@@ -160,9 +178,9 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
                         buffer = ""
 
 if estado_atual == "error":
+    print(i)
     erro("3","{} Caracter não esperado linha: {} e coluna: {}".format(i,nlinha,coluna),False)
-    #lista_erros.append(i + "|" + str(nlinha) + "|" + str(coluna))
-    #erro("ERRO LEXICO", "Erro lexico na linha [{}] e coluna [{}]".format(nlinha, ncoluna))
+
 else:
     print("Codigo Verificado com sucesso")
 

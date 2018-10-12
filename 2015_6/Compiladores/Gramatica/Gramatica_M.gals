@@ -10,11 +10,15 @@ ScannerTable = Full
 Input = Stream
 Parser = LL
 #RegularDefinitions
-WS:[\ \n \t]
+WS:[\ \n\t]
 //DIGITOS
 D:[0-9]
 //LETRAS
 L:[A-Za-z]
+//SINAIS
+S:[\-\+]
+//SIMBOLOS
+SIMB:[\ : \. \? \\]
 
 #Tokens
 :{WS}*
@@ -29,6 +33,8 @@ senao: "@"
 
 condicao_repeticao: "loop"
 fim_repeticao: "lend"
+
+atribuicao: "<-"
 
 
 //Tokens de Logica e Matematica
@@ -56,7 +62,7 @@ virgula:","
 //Tokens de Tipo
 tipo: "int"
 variavel: {L}({L}|{D})*
-texto: \".*\"
+texto: \"({L}|{D}|{WS}|{S}|{SIMB})*\"
 numero: {D}*
 #NonTerminals
 //COMANDOS
@@ -122,7 +128,7 @@ numero: {D}*
 //Declaração e Atribuição
 <DECLARACAO> ::= tipo <ATRIBUICAO>;
 <ATRIBUICAO> ::= variavel <ATRIBUIR_VALOR>;
-<ATRIBUIR_VALOR> ::=  matematica_igual <CALCULO>;
+<ATRIBUIR_VALOR> ::=  atribuicao <CALCULO>;
 <ATRIBUIR_VALOR> ::=î;
 
 //Argumentos
