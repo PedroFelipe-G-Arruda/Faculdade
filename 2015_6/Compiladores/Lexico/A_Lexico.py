@@ -102,6 +102,7 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
         estado_anterior = estado_atual
         ncoluna += 1  # Guarda o numero da coluna
         if i != "\t":
+
             # Verifica se o texto  esta entre aspas
             if i == '"' and texto == False: # Se inicio de string
                 texto = True    # E string
@@ -113,13 +114,11 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
 
             if estado_atual == "q0":    # Vefica se o estado autal e q0 se for é inicio de palavra
                 coluna = ncoluna    # coluna recebe o numero da culana que esta porque e a coluna de inicio de uma nova palavra
-
             if texto == True:   # Se for texto
-                estado_atual = transicao(estado_atual, i)   # estado atual chama a transicao e recebe o proximo estado
+                estado_atual = transicao(estado_atual, i)  # estado atual chama a transicao e recebe o proximo estado
                 buffer = buffer + i  # buffer que guarda os tokens em teste
                 if estado_atual in estados_finais:  # Verifica se o estado atual é um estado final
                     if ncoluna < len(linha):    # Verifica se a linha ja esta no fim
-                     #   teste = transicao(estado_atual, linha[ncoluna])     # teste para saber se a palavra continua
                         if transicao(estado_atual, linha[ncoluna]) == "error":    # Se der erro a palavra nao continua
                             lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))    # Guarda na lista de tokens o lexima com o seu token sua linha e coluna
                             estado_atual = "q0"     # E estado atual recebe q0
@@ -134,42 +133,40 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
 
             else:   # Se nao for texto
                 if i != " ":  # Verifica se nao e quebra de linha ou espaco
-                    estado_atual = transicao(estado_atual,i)
-                    print(estado_atual)
-                    print(i)
-                    if estado_atual != "error":
-                        buffer = buffer + i  # buffer que guarda os tokens em teste
-                    else:
-                        print("ok 1")
-                        print(testeVariavel(buffer) == True)
-                        if testeVariavel(buffer) == True:
-                            print("variavel")
-                            lista_tokens.append(buffer + "|" + estados_finais['q46'] + "|" + str(nlinha) + "|" + str(coluna))
+                    estado_atual = transicao(estado_atual,i)  # estado atual chama a transicao e recebe o proximo estado
+                    buffer = buffer + i  # buffer que guarda os tokens em teste
+                    if ncoluna < len(linha) and ncoluna == 1:
+                        if transicao(estado_atual, linha[ncoluna]) == "error":
+                            erro("1", "{} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, ncoluna),False)
+                            estado_atual = "q0"
+                            buffer = buffer.replace(i, "")
+
+
+
+                    if estado_atual in estados_finais:  # Verifica se o estado atual é um estado final
+                        if ncoluna < len(linha):
+                            if transicao(estado_atual, linha[ncoluna]) == "error":
+                                lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))    # Guarda na lista de tokens o lexima com o seu token sua linha e coluna
+                                estado_atual = "q0"
+                                buffer = ""
+                        else:
+                            lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))    # Guarda na lista de tokens o lexima com o seu token sua linha e coluna
                             estado_atual = "q0"
                             buffer = ""
-                            ncoluna = ncoluna - 1
 
+                    if estado_atual == "error":
+                        if testeVariavel(buffer) == False:
+                            if transicao(estado_atual, linha[ncoluna]) == "error":
+                                erro("1","{} Caracter não esperado linha: {} e coluna: {}".format(i,nlinha,ncoluna),False)
+                                estado_atual = estado_anterior
+                                buffer = buffer.replace(i,"")
                         else:
-                            if estado_anterior in estados_finais:
-                                print('e final')
-                                lista_tokens.append(buffer + "|" + estados_finais[estado_anterior] + "|" + str(nlinha) + "|" + str(coluna))
-                                estado_atual = "q0"
-                                buffer = ""
-                                ncoluna = ncoluna - 1
-                            else:
-                                print("ok 2")
-                                erro("1", "{} Caracter não esperado linha: {} e coluna: {}".format(linha[coluna - 1], nlinha, coluna),False)
-                                estado_atual = "q0"
-                                buffer = ""
-                                ncoluna = ncoluna -1
-
-                        print(f"letra: {linha[ncoluna]} - coluna:{ncoluna}  estado :{estado_atual}")
-
-
+                            lista_tokens.append(buffer + "|" + estados_finais['q46'] + "|" + str(nlinha) + "|" + str(coluna))  # Guarda na lista de tokens o lexima com o seu token sua linha e coluna
+                            estado_atual = "q0"
+                            buffer = ""
 
                 if buffer and ncoluna == len(linha):
                     if testeVariavel(buffer) == False:
-                        print(i)
                         erro("2", "{} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, coluna), False)
                     else:
                         lista_tokens.append(buffer + "|" + estados_finais['q46'] + "|" + str(nlinha) + "|" + str(coluna))  # Guarda na lista de tokens o lexima com o seu token sua linha e coluna
@@ -177,7 +174,6 @@ for linha in codigo:    # Verifica todas as linhas do codigo fonte
                         buffer = ""
 
 if estado_atual == "error":
-    print(i)
     erro("3","{} Caracter não esperado linha: {} e coluna: {}".format(i,nlinha,coluna),False)
 
 else:
@@ -188,5 +184,4 @@ if lt == True:  # Verifica se o usuraio quer que imprima a lista de tokens
     for i in lista_tokens:  # Anda toda a lista de tokens
         print(f'{i.split("|")[0]:^30}\t\t\t\t{i.split("|")[1]:^30}\t\t\t\t{i.split("|")[2]:^8}\t\t{i.split("|")[3]:^8}')    # Imprime a lista de tokens
         print("-"*120)  #   Faz risco
-
 sys.exit()

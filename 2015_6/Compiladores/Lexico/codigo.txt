@@ -1,0 +1,31 @@
+                if i != " ":  # Verifica se nao e quebra de linha ou espaco
+                    estado_atual = transicao(estado_atual,i)
+                    print(estado_atual)
+                    print(i)
+                    if estado_atual != "error":
+                        buffer = buffer + i  # buffer que guarda os tokens em teste
+                    else:
+                        print("ok 1")
+                        print(testeVariavel(buffer) == True)
+                        if testeVariavel(buffer) == True:
+                            print("variavel")
+                            lista_tokens.append(buffer + "|" + estados_finais['q46'] + "|" + str(nlinha) + "|" + str(coluna))
+                            estado_atual = "q0"
+                            buffer = ""
+                            ncoluna = ncoluna - 1
+
+                        else:
+                            if estado_anterior in estados_finais:
+                                print('e final')
+                                lista_tokens.append(buffer + "|" + estados_finais[estado_anterior] + "|" + str(nlinha) + "|" + str(coluna))
+                                estado_atual = "q0"
+                                buffer = ""
+                                ncoluna = ncoluna - 1
+                            else:
+                                print("ok 2")
+                                erro("1", "{} Caracter não esperado linha: {} e coluna: {}".format(linha[coluna - 1], nlinha, coluna),False)
+                                estado_atual = "q0"
+                                buffer = ""
+                                ncoluna = ncoluna -1
+
+                        print(f"letra: {linha[ncoluna]} - coluna:{ncoluna}  estado :{estado_atual}")
