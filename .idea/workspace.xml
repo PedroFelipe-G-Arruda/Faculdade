@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e598666a-ce8e-4630-9b2e-4302c7eacade" name="Default Changelist" comment="Add files via upload">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/test.m" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/test.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,37 +14,37 @@
     <session id="1877777587">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="58" />
+          <entry key="project.closed" value="59" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="41" />
+          <entry key="project.open.time.3" value="43" />
           <entry key="project.open.time.4" value="10" />
           <entry key="project.open.time.5" value="5" />
-          <entry key="project.opened" value="59" />
+          <entry key="project.opened" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="16" />
+          <entry key="py" value="19" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="16" />
+          <entry key="Python" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="13701" />
+          <entry key="py" value="14101" />
           <entry key="txt" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="105" />
-          <entry key="Python" value="13701" />
+          <entry key="Python" value="14101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -55,31 +53,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico_otimizado.py">
+        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/lexico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="147" column="24" lean-forward="true" selection-start-line="147" selection-start-column="24" selection-end-line="149" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="134" column="79" lean-forward="true" selection-start-line="134" selection-start-column="79" selection-end-line="134" selection-end-column="79" />
+            <state relative-caret-position="744">
+              <caret line="157" column="27" selection-start-line="157" selection-start-column="27" selection-end-line="157" selection-end-column="27" />
               <folding>
-                <marker date="1539457392549" expanded="true" signature="535:536" ph="..." />
+                <marker date="1539465284001" expanded="true" signature="1178:1179" ph="..." />
+                <marker date="1539465284001" expanded="true" signature="1178:1241" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Automatos/AutomatosF.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="40" />
+            <state relative-caret-position="442">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,6 +106,9 @@
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Analizador_Lexico.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico_otimizado.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/A_Lexico.py" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/lexico.py" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" />
       </list>
     </option>
   </component>
@@ -149,7 +145,7 @@
               <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
               <item name="2015_6" type="462c0819:PsiDirectoryNode" />
               <item name="Compiladores" type="462c0819:PsiDirectoryNode" />
-              <item name="Lexico" type="462c0819:PsiDirectoryNode" />
+              <item name="Compilador" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -187,7 +183,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.A_Lexico">
+  <component name="RunManager" selected="Python.Compilador">
     <configuration name="A_Lexico" type="PythonConfigurationType" factoryName="Python">
       <module name="Faculdade" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -230,12 +226,58 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Compilador" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Faculdade" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2015_6/Compiladores/Compilador" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" />
+      <option name="PARAMETERS" value="-lt test.m" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lexico" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Faculdade" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2015_6/Compiladores/Compilador" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/lexico.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.A_Lexico" />
       <item itemvalue="Python.A_Lexico_otimizado" />
+      <item itemvalue="Python.lexico" />
+      <item itemvalue="Python.Compilador" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Compilador" />
+        <item itemvalue="Python.lexico" />
         <item itemvalue="Python.A_Lexico_otimizado" />
       </list>
     </recent_temporary>
@@ -328,8 +370,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.113804005" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11011591" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -342,7 +385,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49786323" weight="0.32948583" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50173914" side_tool="true" weight="0.32948583" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32952183" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -384,6 +427,13 @@
     <entry file="file://$PROJECT_DIR$/2015_8/Compiladores/Tarefa1_13-08-18/BinaryP_TM.py" />
     <entry file="file://$PROJECT_DIR$/2015_8/Compiladores/Automatos/A2.txt" />
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/Test.py" />
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico_otimizado.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2499">
+          <caret line="147" column="24" selection-start-line="147" selection-start-column="24" selection-end-line="149" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Automatos/AutomatosF.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -391,19 +441,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico_otimizado.py">
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="147" column="24" lean-forward="true" selection-start-line="147" selection-start-column="24" selection-end-line="149" selection-end-column="53" />
+        <state relative-caret-position="677">
+          <caret line="134" column="79" selection-start-line="134" selection-start-column="79" selection-end-line="134" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py">
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/A_Lexico.py" />
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/lexico.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="134" column="79" lean-forward="true" selection-start-line="134" selection-start-column="79" selection-end-line="134" selection-end-column="79" />
+        <state relative-caret-position="744">
+          <caret line="157" column="27" selection-start-line="157" selection-start-column="27" selection-end-line="157" selection-end-column="27" />
           <folding>
-            <marker date="1539457392549" expanded="true" signature="535:536" ph="..." />
+            <marker date="1539465284001" expanded="true" signature="1178:1179" ph="..." />
+            <marker date="1539465284001" expanded="true" signature="1178:1241" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
