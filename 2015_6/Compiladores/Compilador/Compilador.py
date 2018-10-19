@@ -7,17 +7,20 @@ if sys.version <= "3.6.6":
 param = sys.argv[1:]
 if not param:   # verifica se a lista (param) esta vazia
     print("ERRO","Programa sem ARGUMENTO")  # Chama a funcao erro e passa o erro
+    sys.exit()
+tudo = lt = ars = ls = False
 
-nparam = len(param) # Verifica o numero de argumentos
-lt = False
-if nparam == 2: # se dois o primeiro tem que se -lt e o segundo o codigo fonte
-    if param[0] == "-lt":   # Verica se realmente o primeto argumento e -kt
-        lt = True   # Se for o segundo é o codigo fonte
-        codigoFonte = param[1]  # O codigo fonte recebe o segundo argumento
-    else:   # Se o primero nao for -lt esta errado
-        print("ERRO DE ARGUMENTO","Argumento {} nao reconhecido\n".format(param[0]),) # chama funcao erro
-else:   # Se nao tiver pois argumento entao o usuario so passou o codigo fonte
-    codigoFonte = param[0]  # Codigo fonte recebe o primeir e unico argumento
+if "-tudo"in param:
+    tudo = True
+if "-lt" in param:
+    lt = True
+if "-as" in param:
+    ars = True
+if "-ls" in param:
+    ls = True
+if '.m' in param[len(param)-1]:
+    codigoFonte = param[len(param)-1]
+
 
 lista_tokens = analizador(codigoFonte)
 
