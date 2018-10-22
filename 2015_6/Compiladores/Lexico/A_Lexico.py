@@ -8,12 +8,12 @@ def transicao(estado, letra):  # Verifica se a tem um proximo estado
     return "error"  # Se verificou toda a tabela e nao acho nada retorna erro
 
 
-def testeVariavel(buffer):
-    for i in buffer:
-        if transicao("q46", i) == "error":
-            return False
+def testeVariavel(buffer):  # Testa se tudo que esta no buffer e variavel
+    for i in buffer:    # Percorre o buffer
+        if transicao("q46", i) == "error":  # Verifica um a um se e variavel
+            return False   # Retorna False(Falso) se algum nao fizer parte da variavel
     else:
-        return True
+        return True # Retorna True(Verdadeiro) se todos fazer parte da variavel
 
 
 def erro(cabecalho, texto, sair):  # Funcao de erro recebe o cabecalho e o texto para ser impresso
@@ -122,7 +122,6 @@ for linha in codigo:  # Verifica todas as linhas do codigo fonte
                     estado_atual = estado_anterior
                     buffer = buffer.replace(i, "")
 
-                print(buffer)
                 if buffer and ncoluna == len(linha):
                     if testeVariavel(buffer) == False:
                         erro("2", "{} Caracter não esperado linha: {} e coluna: {}".format(buffer, nlinha,
@@ -179,13 +178,13 @@ for linha in codigo:  # Verifica todas as linhas do codigo fonte
                         estado_atual = "q0"
                         buffer = ""
 
-if estado_atual == "error":
+if estado_atual == "error": # Faz a ultima verifição de erro
     erro("3", "{} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, coluna), False)
 
-else:
+else:   # Se não tiver erro escreve frase
     print("Codigo Verificado com sucesso")
 
-listaTokens = []
+listaTokens = []    # Lista para receber os tokens
 if lt == True:  # Verifica se o usuraio quer que imprima a lista de tokens
     print("\n")
     for i in lista_tokens:  # Anda toda a lista de tokens
@@ -193,7 +192,6 @@ if lt == True:  # Verifica se o usuraio quer que imprima a lista de tokens
         print("-" * 120)  # Faz risco
         listaTokens.append(i+"\n")
 
-with open("lista de tokens.txt","w") as file:
+with open("lista de tokens.txt","w") as file:   # Abre arquivo para receber a listaTokens
     file.writelines(listaTokens)
-
-sys.exit()
+sys.exit()  #fecha o programa
