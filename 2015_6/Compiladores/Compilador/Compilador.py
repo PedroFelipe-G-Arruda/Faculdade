@@ -1,31 +1,37 @@
 import sys
+import argparse
+sys.path.insert(0, 'C:\\Users\\pedro\\OneDrive\\Faculdade\\Faculdade\\2015_6\\Compiladores\\Compilador\\src')
 from lexico import analizador
+from sintatico import analizador as sintatico
+
+
+
+def erro(cabecalho, texto):  # Funcao de erro recebe o cabecalho e o texto para ser impresso
+    print("\n{:-^40}".format(cabecalho))  # Imprime o cabecalho
+    print(texto)  # Imprime o texto
 
 if sys.version <= "3.6.6":
-    print("ERRO", "A versao do python nao é compativel com o programa, usar a versao 3.6.6 ou posterior ")
+    erro("ERRO", "A versao do python nao é compativel com o programa, usar a versao 3.6.6 ou posterior ")
 
-param = sys.argv[1:]
-if not param:   # verifica se a lista (param) esta vazia
+param = argparse.ArgumentParser()
+param.add_argument("-tudo",help="Exibe todas as listagens do compilador",action="store_true")
+param.add_argument("-lt",help="Exibe  a listagem dos Tokens",action="store_true")
+param.add_argument("-ls",help="Exibe o LOG do analisador sintático",action="store_true")
+param.add_argument("codigo",type=str,help="Codigo fonte")
+args = param.parse_args()
+if not args:   # verifica se a lista (param) esta vazia
     print("ERRO","Programa sem ARGUMENTO")  # Chama a funcao erro e passa o erro
     sys.exit()
-tudo = lt = ars = ls = False
 
-if "-tudo"in param:
-    tudo = True
-if "-lt" in param:
-    lt = True
-if "-as" in param:
-    ars = True
-if "-ls" in param:
-    ls = True
-if '.m' in param[len(param)-1]:
-    codigoFonte = param[len(param)-1]
+if  not '.m' in args.codigo:
+    erro("ERRO","Extensão de arquivo errado")
+    sys.exit()
+lista_tokens = analizador(args.codigo)
 
-
-lista_tokens = analizador(codigoFonte)
-
-if lt == True:  # Verifica se o usuraio quer que imprima a lista de tokens
+if args.lt:  # Verifica se o usuraio quer que imprima a lista de tokens
     print("\n")
     for i in lista_tokens:  # Anda toda a lista de tokens
-        print(f'{i.split("|")[0]:^30}\t\t\t\t{i.split("|")[1]:^30}\t\t\t\t{i.split("|")[2]:^8}\t\t{i.split("|")[3]:^8}')  # Imprime a lista de tokens
-        print("-" * 120)  # Faz risco
+        print(f'{i.split("|")[0]:^15.15}\t\t\t\t{i.split("|")[1]:^16.16}\t\t\t\t{i.split("|")[2]:^5}\t\t{i.split("|")[3]:^5}')  # Imprime a lista de tokens
+        print("-" * 105)  # Faz risco
+
+sintatico(lista_tokens)

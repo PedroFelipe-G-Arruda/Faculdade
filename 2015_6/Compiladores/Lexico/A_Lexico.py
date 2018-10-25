@@ -179,7 +179,7 @@ for linha in codigo:  # Verifica todas as linhas do codigo fonte
                         buffer = ""
 
 if estado_atual == "error": # Faz a ultima verifição de erro
-    erro("3", "{} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, coluna), False)
+    erro("Erro lexico", "{} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, coluna), False)
 
 else:   # Se não tiver erro escreve frase
     print("Codigo Verificado com sucesso")
@@ -192,6 +192,4 @@ if lt == True:  # Verifica se o usuraio quer que imprima a lista de tokens
         print("-" * 120)  # Faz risco
         listaTokens.append(i+"\n")
 
-with open("lista de tokens.txt","w") as file:   # Abre arquivo para receber a listaTokens
-    file.writelines(listaTokens)
 sys.exit()  #fecha o programa
