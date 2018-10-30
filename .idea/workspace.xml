@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e598666a-ce8e-4630-9b2e-4302c7eacade" name="Default Changelist" comment="Add files via upload">
-      <change afterPath="$PROJECT_DIR$/2015_6/Compiladores/Sintático/passos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/lexico.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/tabelaTokens.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/test.m" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/test.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico_otimizado.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/lista de tokens.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Sintático/A_Sintatico.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Sintático/A_Sintatico.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Sintático/pilha.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Sintático/pilha.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,40 +15,40 @@
     <session id="1877777587">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="84" />
+          <entry key="project.closed" value="86" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="56" />
           <entry key="project.open.time.4" value="19" />
-          <entry key="project.open.time.5" value="6" />
-          <entry key="project.opened" value="85" />
+          <entry key="project.open.time.5" value="8" />
+          <entry key="project.opened" value="87" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="m" value="2" />
-          <entry key="py" value="32" />
+          <entry key="py" value="34" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="32" />
+          <entry key="Python" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
           <entry key="m" value="5" />
-          <entry key="py" value="21231" />
+          <entry key="py" value="21300" />
           <entry key="txt" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="120" />
-          <entry key="Python" value="21231" />
+          <entry key="Python" value="21300" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -81,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Sintático/A_Sintatico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="35" />
+            <state relative-caret-position="272">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="36" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -94,10 +84,19 @@
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+              <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/argparse.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27897">
+              <caret line="1645" column="46" selection-start-line="1645" selection-start-column="46" selection-end-line="1645" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -117,10 +116,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="289">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/estadosFinais.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -146,6 +150,8 @@
       <find>print</find>
       <find>fila</find>
       <find>pilha1</find>
+      <find>add_ar</find>
+      <find>-h</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,17 +175,17 @@
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/passos.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Sintático/passos.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Sintático/pilha.py" />
-        <option value="$PROJECT_DIR$/2015_6/Compiladores/Sintático/A_Sintatico.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/lexico.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/__init__.py" />
-        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/A_Sintatico.py" />
-        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/test.m" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Sintático/A_Sintatico.py" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
@@ -189,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,6 +240,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -501,20 +507,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21367522" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.105374075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49826086" weight="0.31479537" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49826086" weight="0.3118503" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39501038" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49786323" weight="0.32948583" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32952183" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50173914" side_tool="true" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32952183" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32848233" />
@@ -522,6 +528,26 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.105374075" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49826086" weight="0.3118503" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39501038" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49786323" weight="0.32948583" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50173914" side_tool="true" weight="0.32948583" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32952183" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32848233" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -592,11 +618,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Sintático/A_Sintatico.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="272">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="36" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/argparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27897">
+          <caret line="1645" column="46" selection-start-line="1645" selection-start-column="46" selection-end-line="1645" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -612,10 +645,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="289">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/estadosFinais.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -627,7 +663,7 @@
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

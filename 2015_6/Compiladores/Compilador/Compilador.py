@@ -1,7 +1,7 @@
 import sys
 import argparse
 sys.path.insert(0, 'C:\\Users\\pedro\\OneDrive\\Faculdade\\Faculdade\\2015_6\\Compiladores\\Compilador\\src')
-from lexico import analizador
+from lexico import analizador as lexico
 from sintatico import analizador as sintatico
 
 
@@ -23,10 +23,10 @@ if not args:   # verifica se a lista (param) esta vazia
     print("ERRO","Programa sem ARGUMENTO")  # Chama a funcao erro e passa o erro
     sys.exit()
 
-if  not '.m' in args.codigo:
+if not '.m' in args.codigo:
     erro("ERRO","Extensão de arquivo errado")
     sys.exit()
-lista_tokens = analizador(args.codigo)
+lista_tokens = lexico(args.codigo)
 
 if args.lt:  # Verifica se o usuraio quer que imprima a lista de tokens
     print("\n")
