@@ -136,15 +136,12 @@ for linha in codigo:  # Verifica todas as linhas do codigo fonte
 
             else:  # Se nao for texto
                 if i != " ":  # Verifica se nao e quebra de linha ou espaco
-                    estado_atual = transicao(estado_atual,
-                                             i)  # estado atual chama a transicao e recebe o proximo estado
+                    estado_atual = transicao(estado_atual,i)  # estado atual chama a transicao e recebe o proximo estado
                     buffer = buffer + i  # buffer que guarda os tokens em teste
                     if ncoluna < len(linha):
                         if transicao(estado_atual, linha[ncoluna]) == "error":
                             if estado_atual in estados_finais:  # Verifica se o estado atual é um estado final
-                                lista_tokens.append(
-                                    buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(
-                                        coluna))  # Guarda na lista de tokens o lexima com o seu token sua linha e coluna
+                                lista_tokens.append(buffer + "|" + estados_finais[estado_atual] + "|" + str(nlinha) + "|" + str(coluna))  # Guarda na lista de tokens o lexima com o seu token sua linha e coluna
                                 estado_atual = "q0"
                                 buffer = ""
                             elif testeVariavel(buffer) == True:

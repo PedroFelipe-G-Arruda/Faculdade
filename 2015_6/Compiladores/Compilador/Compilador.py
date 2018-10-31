@@ -1,10 +1,12 @@
 import sys
 import argparse
-sys.path.insert(0, 'C:\\Users\\pedro\\OneDrive\\Faculdade\\Faculdade\\2015_6\\Compiladores\\Compilador\\src')
+sys.path.insert(0, 'src')
 from lexico import analizador as lexico
 from sintatico import analizador as sintatico
 
-
+def imprime(msg):
+    print(msg)
+    print("-" * 80)  # Faz risco
 
 def erro(cabecalho, texto):  # Funcao de erro recebe o cabecalho e o texto para ser impresso
     print("\n{:-^40}".format(cabecalho))  # Imprime o cabecalho
@@ -26,12 +28,20 @@ if not args:   # verifica se a lista (param) esta vazia
 if not '.m' in args.codigo:
     erro("ERRO","Extensão de arquivo errado")
     sys.exit()
-lista_tokens = lexico(args.codigo)
+lista = lexico(args.codigo)
+if lista[1]:
+    print('\n')
+    for i in lista[1]:
+        print(i)
 
-if args.lt:  # Verifica se o usuraio quer que imprima a lista de tokens
+if args.lt or args.tudo:  # Verifica se o usuraio quer que imprima a lista de tokens
+    print('\n')
+    for tokens in lista[0]:  # Anda toda a lista de tokens
+        imprime(f'{tokens.split("|")[0]:^15.15}\t\t\t\t{tokens.split("|")[1]:^16.16}\t\t\t\t{tokens.split("|")[2]:^5}\t\t{tokens.split("|")[3]:^5}')  # Imprime a lista de tokens
+
+lista = sintatico(lista[0])
+
+if args.ls or args.tudo:  # Verifica se o usuraio quer que imprima a lista de tokens
     print("\n")
-    for i in lista_tokens:  # Anda toda a lista de tokens
-        print(f'{i.split("|")[0]:^15.15}\t\t\t\t{i.split("|")[1]:^16.16}\t\t\t\t{i.split("|")[2]:^5}\t\t{i.split("|")[3]:^5}')  # Imprime a lista de tokens
-        print("-" * 105)  # Faz risco
-
-sintatico(lista_tokens)
+    for i in lista:  # Anda toda a lista de tokens
+        imprime(i)  # Imprime a lista de tokens

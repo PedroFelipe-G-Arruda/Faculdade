@@ -10,14 +10,14 @@ class Stack:
         return True
 
     def pop(self):
-        if len(self.stack) <= 0:
-            return "Stack Empty!"
         return self.stack.pop()
 
     def size(self):
         return len(self.stack)
 
     def isEmpty(self):
-        if not self.stack:
-            return True
-        return False
+        return self.stack == []
+
+    def top(self):
+        if self.stack:
+            return self.stack[-1]

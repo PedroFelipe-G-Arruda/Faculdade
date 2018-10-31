@@ -34,4 +34,7 @@ def tokem (chave):
         'q54': 'atribuicao'
     }
 
-    return estados_finais[chave]
+    if chave in estados_finais:
+        return estados_finais[chave]
+    else:
+        return False

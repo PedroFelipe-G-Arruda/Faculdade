@@ -2,7 +2,7 @@ from estadosFinais import tokem
 
 def transicao(estado, letra):  # Verifica se a tem um proximo estado
     # carrega da tabela de tokens para a memoria
-    with open('tabelas\\tabelaTokens.txt', 'r') as file:
+    with open('tabelas/tabelaTokens.txt', 'r') as file:
         tabela = file.readlines()
 
     for line in tabela:  # Le linha por linha da tabela de tokens
@@ -15,13 +15,8 @@ def testeVariavel(buffer):
     for i in buffer:
         if transicao("q46", i) == "error":
             return False
-    else:
-        return True
-
-
-def erro(cabecalho, texto):  # Funcao de erro recebe o cabecalho e o texto para ser impresso
-    print("\n{:-^40}".format(cabecalho))  # Imprime o cabecalho
-    print(texto)  # Imprime o texto
+        else:
+            return True
 
 
 def analizador(codigoFonte):
@@ -29,7 +24,7 @@ def analizador(codigoFonte):
     with open(codigoFonte, 'r') as file:
         codigo = file.readlines()
 
-    lista_erros = ['Caractere|Linha|Coluna']  # Lista de erros
+    lista_erros = []  # Lista de erros
     lista_tokens = ['Lexema|Token|Linha|Coluna']  # Lista armazenas os Lexemas e os seus tokens
     nlinha = 0  # Inicializa nlinha(bumero de linhas) com 0
     # Verifica linha por linha do codigo fonte para verificar os tokens
@@ -65,14 +60,13 @@ def analizador(codigoFonte):
                     buffer = buffer + i  # buffer que guarda os tokens em teste
                     if estado_atual == "error":
                         colunaErro = + 1
-                        erro("TEXTO", "{} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, ncoluna))
+                        lista_erros.append(i + "|" + nlinha + "|" + ncoluna)
                         estado_atual = estado_anterior
                         buffer = buffer.replace(i, "")
 
                     if buffer and ncoluna == len(linha):
                         if testeVariavel(buffer) == False:
-                            erro("2", "{} Caracter não esperado linha: {} e coluna: {}".format(buffer, nlinha,
-                                                                                               ncoluna - colunaErro - 1))
+                            lista_erros.append(buffer +"|" + nlinha + "|" + (ncoluna - colunaErro - 1))
                         else:
                             lista_tokens.append(buffer + "|" + tokem('q46') + "|" + str(nlinha) + "|" + str(coluna))  # Guarda na lista de tokens o lexima com o seu token sua linha e coluna
                             estado_atual = "q0"
@@ -93,8 +87,7 @@ def analizador(codigoFonte):
                                     buffer = ""
                                     ncoluna = coluna - 1
                                 else:
-                                    erro("1",
-                                         "{} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, ncoluna))
+                                    lista_erros.append("ERRO {} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, coluna))
                                     estado_atual = "q0"
                                     buffer = ""
                         else:
@@ -104,18 +97,19 @@ def analizador(codigoFonte):
                                 buffer = ""
 
                             if estado_atual == "error" and testeVariavel(buffer) == False:
-                                erro("1", "{} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, ncoluna))
+                                lista_erros.append("ERRO {} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, coluna))
 
                     if buffer and ncoluna == len(linha):
                         if testeVariavel(buffer) == False:
-                            erro("2", "{} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, coluna))
+                            lista_erros.append("ERRO {} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, coluna))
                         else:
                             lista_tokens.append(buffer + "|" + tokem('q46') + "|" + str(nlinha) + "|" + str(coluna))  # Guarda na lista de tokens o lexima com o seu token sua linha e coluna
                             estado_atual = "q0"
                             buffer = ""
 
     if estado_atual == "error":
-        erro("3", "{} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, coluna))
+        lista_erros.append("ERRO {} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, coluna))
 
-    else:
-        return lista_tokens
+    lista = [lista_tokens,lista_erros]
+    print("\nAnalize lexica finalizada")
+    return lista
