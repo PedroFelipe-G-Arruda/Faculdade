@@ -1,8 +1,9 @@
 import sys
 import argparse
 sys.path.insert(0, 'src')
-from lexico import analizador as lexico
-from sintatico import analizador as sintatico
+from lexico import analisador as lexico
+from sintatico import analisador as sintatico
+from semantico import analisador as semantico
 
 def imprime(msg):
     print(msg)
@@ -39,9 +40,10 @@ if args.lt or args.tudo:  # Verifica se o usuraio quer que imprima a lista de to
     for tokens in lista[0]:  # Anda toda a lista de tokens
         imprime(f'{tokens.split("|")[0]:^15.15}\t\t\t\t{tokens.split("|")[1]:^16.16}\t\t\t\t{tokens.split("|")[2]:^5}\t\t{tokens.split("|")[3]:^5}')  # Imprime a lista de tokens
 
-lista = sintatico(lista[0])
-
+lista[1] = sintatico(lista[0])
 if args.ls or args.tudo:  # Verifica se o usuraio quer que imprima a lista de tokens
     print("\n")
-    for i in lista:  # Anda toda a lista de tokens
+    for i in lista[1]:  # Anda toda a lista de tokens
         imprime(i)  # Imprime a lista de tokens
+
+semantico(lista[0])

@@ -12,7 +12,7 @@ def transicao(estado, letra):  # Verifica se a tem um proximo estado
     return "error"  # Se verificou toda a tabela e nao acho nada retorna erro
 
 
-def analizador(listaTokens):
+def analisador(listaTokens):
     fila = []
     for i in listaTokens:
         fila.append(i.split("|")[1])

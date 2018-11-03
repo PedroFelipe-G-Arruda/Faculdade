@@ -19,7 +19,7 @@ def testeVariavel(buffer):
             return True
 
 
-def analizador(codigoFonte):
+def analisador(codigoFonte):
     # carrega o codigo fonte para a memoria
     with open(codigoFonte, 'r') as file:
         codigo = file.readlines()
