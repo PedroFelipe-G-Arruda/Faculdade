@@ -111,5 +111,5 @@ def analisador(codigoFonte):
         lista_erros.append("ERRO {} Caracter não esperado linha: {} e coluna: {}".format(i, nlinha, coluna))
 
     lista = [lista_tokens,lista_erros]
-    print("\nAnalize lexica finalizada")
+    print("\nAnalize Lexica Concluida!")
     return lista
