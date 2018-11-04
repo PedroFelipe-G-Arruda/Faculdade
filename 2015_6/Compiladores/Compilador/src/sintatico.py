@@ -43,5 +43,5 @@ def analisador(listaTokens):
             cont += 1
             pilha1.pop()
 
-    print("\nAnalize sintaticos finalizada") if not fila and pilha1.isEmpty() else print("\nErro pilha ou fila nao estao vazias")
+    print("\nAnalize Sintatica Concluida!") if not fila and pilha1.isEmpty() else print("\nErro pilha ou fila nao estao vazias")
     return (lista_LOG)
