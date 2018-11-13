@@ -1,0 +1,35 @@
+create table Cliente(
+	idCliente int PRIMARY KEY,
+	nomeCleinte varchar(50),
+	ufCliente varchar(2),
+	sexoCliente varchar(10)
+);
+
+create table Vendedor(
+	idVendedor int PRIMARY KEY,
+	nomeVendedor varchar(50),
+	sexoVendedor varchar(10)
+);
+
+create table Pedido(
+	idPedido int PRIMARY KEY,
+	idCliente int references Cliente(idCliente),
+	idVendedor int references Vendedor(idVendedor),
+	DATAPedido varchar(10)
+);
+
+create table Produto(
+	idProduto int PRIMARY KEY,
+	descricao varchar(50),
+	unidade int,
+	preco money,
+	fabricante varchar(50),
+	tipo varchar(20)
+);
+
+create table ItemPedido(
+	idPedido int references Pedido(idPedido),
+	idProduto int references Produto(idProduto),
+	QTDProduto int
+)
+

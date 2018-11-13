@@ -1,9 +1,7 @@
 class Stack:
 
-    def __init__(self,inico):
+    def __init__(self):
         self.stack = []
-        self.stack.append("$")
-        self.stack.append(inico)
 
     def push(self, data):
         self.stack.append(data)

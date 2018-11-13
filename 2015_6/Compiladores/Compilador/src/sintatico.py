@@ -20,7 +20,9 @@ def analisador(listaTokens):    #Funcao principal
     del fila[0]     # Deleta o primeiro item da fila
     del listaTokens[0]  # Deleta o primeiro item da fila
     fila.append("$")    # Adiciona $ no final da fila
-    pilha1 = pilha.Stack("<INICIO_FIM>")    # Cria a pilha e coloca o nao terminal
+    pilha1 = pilha.Stack()  # Cria a pilha
+    pilha1.push("$")    # Adiciona $ no final da pilha
+    pilha1.push("<INICIO_FIM>") # Adiciona o nao terminal inica a pilha
     cont = 0    # Inicializa o contador igual a 0
     lista_LOG = []  # Inicializa lista de LOG
 
