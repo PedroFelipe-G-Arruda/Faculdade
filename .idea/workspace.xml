@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e598666a-ce8e-4630-9b2e-4302c7eacade" name="Default Changelist" comment="Add files via upload">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/pilha.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/pilha.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/sintatico.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/sintatico.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/test.m" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/test.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Microprocessador/Controle Remoto/receptor_IR/receptor_IR.ino" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Microprocessador/Controle Remoto/receptor_IR/receptor_IR.ino" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,15 +18,15 @@
     <session id="1877777587">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="104" />
+          <entry key="project.closed" value="105" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="56" />
-          <entry key="project.open.time.4" value="25" />
+          <entry key="project.open.time.4" value="26" />
           <entry key="project.open.time.5" value="15" />
           <entry key="project.open.time.6" value="5" />
-          <entry key="project.opened" value="106" />
+          <entry key="project.opened" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -74,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
+            <state relative-caret-position="795">
               <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -89,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="748">
               <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
             </state>
           </provider>
@@ -107,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/sintatico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-88">
+            <state relative-caret-position="187">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
@@ -134,7 +130,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/estadosFinais.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
@@ -201,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
@@ -210,53 +206,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Faculdade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Faculdade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
-              <item name="2015_6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Faculdade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
-              <item name="2015_6" type="462c0819:PsiDirectoryNode" />
-              <item name="Compiladores" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Faculdade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
-              <item name="2015_6" type="462c0819:PsiDirectoryNode" />
-              <item name="Compiladores" type="462c0819:PsiDirectoryNode" />
-              <item name="Compilador" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Faculdade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
-              <item name="2015_6" type="462c0819:PsiDirectoryNode" />
-              <item name="Compiladores" type="462c0819:PsiDirectoryNode" />
-              <item name="Compilador" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Faculdade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
-              <item name="2015_6" type="462c0819:PsiDirectoryNode" />
-              <item name="Compiladores" type="462c0819:PsiDirectoryNode" />
-              <item name="Sintático" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
@@ -522,7 +472,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.21367522" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -662,6 +612,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/test.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/pilha.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/sintatico.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/passos.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -676,51 +657,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/estadosFinais.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/pilha.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/sintatico.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/test.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
+        <state relative-caret-position="795">
           <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/estadosFinais.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
         </state>
       </provider>
     </entry>
