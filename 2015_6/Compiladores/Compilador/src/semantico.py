@@ -46,5 +46,4 @@ def analisador(listaTokens):
     print("\nAnalize Semantica Concluida!")
     listadic = sorted(dicVariavel.items(), key=lambda k: k[0])
     lista = [listaTokens,lista_LOG, listadic]
-    print(listadic)
     return lista

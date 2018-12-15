@@ -1,0 +1,52 @@
+﻿Clientes
+
+Pedro Felipe -
+Mariana-
+Yuri -
+Luis-
+Gabriela -
+Nicolas -
+Yara-
+Beatriz-
+Rebeca-
+Claudio-
+Alexandre
+João Pedro
+Paulo
+Douglas
+Vitor
+Jessica
+Amanda
+Julia
+Isadora
+Bianca
+----------------------------
+Jogos
+
+MONSTER HUNTER: WORLD
+ARK: Survival Evolved
+Tomb Raider
+Rise of the Tomb Raider
+Shadow of the Tomb Raider
+Rocket League
+Donut County
+------------------------------
+Status
+
+1-Aberto
+2-Pendente
+3-Processando
+4-Completo
+5-Fechado 
+6-Cancelado
+---------------------------------
+Forma de pagamento
+
+1-Boleto
+2-Cartao de Credito
+--------------------------------
+Funções
+
+novoPedido -- Novo Pedido
+addPedido -- Adiciona Produto ao Pedido
+pagamento -- Forma de Pagamento

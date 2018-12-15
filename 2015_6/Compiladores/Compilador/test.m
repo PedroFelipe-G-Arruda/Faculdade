@@ -10,6 +10,28 @@ begin
 		f <- f * n;
 		n <- n - 1;
 		soma <- 4/x;
+		output("LOOP");
+		
+
+		loop n >= 1:
+			f <- f * n;
+			n <- n - 1;
+			soma <- 4/x;
+		output("LOOP");
+		
+		lend;
+		if(x > 0)?
+			output("Maior");
+		@
+			output("Menor");
+			loop n >= 1:
+				x <- x + 1;
+				n <- n - 1;
+				
+			lend;
+		?;
+		
 	lend;
+	
 	output("O fatorial e" f);
 end

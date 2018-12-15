@@ -4,6 +4,7 @@ sys.path.insert(0, 'src')
 from lexico import analisador as lexico
 from sintatico import analisador as sintatico
 from semantico import analisador as semantico
+from intermediaro import intermediaro
 
 def imprime(msg):
     print(msg)
@@ -32,6 +33,8 @@ if not args:   # verifica se a lista (param) esta vazia
 if not '.m' in args.codigo:
     erro("ERRO","Extensão de arquivo errado")
     sys.exit()
+
+print('Analize Lexica Iniciada')
 lista = lexico(args.codigo)
 
 if lista[1]:
@@ -39,11 +42,13 @@ if lista[1]:
     for i in lista[1]:
         print(i)
 
+print(lista[0])
 if args.lt or args.tudo:  # Verifica se o usuraio quer que imprima a lista de tokens
     print('\nLista de Tokens\n')
     for tokens in lista[0]:  # Anda toda a lista de tokens
         imprime(f'{tokens.split("|")[0]:^15.15}\t\t\t\t{tokens.split("|")[1]:^16.16}\t\t\t\t{tokens.split("|")[2]:^5}\t\t{tokens.split("|")[3]:^5}')  # Imprime a lista de tokens
 
+print('Analize Sintatica Iniciada')
 lista[1] = sintatico(lista[0])
 if args.ls or args.tudo:  # Verifica se o usuraio quer que imprima o LOG do analisador sintatico
     print("\nLOG do analisador sintatico\n")
@@ -60,3 +65,10 @@ if args.ts or args.tudo:  # Verifica se o usuraio quer que imprima a tabela de s
     print("\nTabela de simbolos\n")
     for linha in lista[2]:  # Anda toda a lista
         imprime(f"{linha[0]} : {linha[1]}")  # Imprime a lista
+
+ss = []
+print('gerador')
+lista = intermediaro(lista[0], 0, 0, ss)
+
+for linha in lista:  # Anda toda a lista
+    imprime(linha)  # Imprime a lista

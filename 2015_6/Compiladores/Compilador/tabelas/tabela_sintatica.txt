@@ -59,11 +59,11 @@
 <EXPRESSAO_MATEMATICA>|matematica_igual|18
 <EXPRESSAO_MATEMATICA>|final_linha|19
 <EXPRESSAO_MATEMATICA>|fecha_parenteses|19
-<OP_LOGICA>|logica_maior_que|30
-<OP_LOGICA>|logica_menor_que|31
 <OP_LOGICA>|logica_igual|32
 <OP_LOGICA>|logica_maior|33
 <OP_LOGICA>|logica_menor|34
+<OP_LOGICA>|logica_maior_que|30
+<OP_LOGICA>|logica_menor_que|31
 <OP_LOGICA>|logica_diferente|35
 <OP_MATEMATICA>|matematica_soma|36
 <OP_MATEMATICA>|matematica_subtracao|37

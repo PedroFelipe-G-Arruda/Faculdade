@@ -22,7 +22,7 @@ def tokem (chave):
         'q38': 'matematica_igual',
         'q39': 'logica_igual',
         'q40': 'senao',
-        'q41': 'ponto interrogacao',
+        'q41': 'ponto_interrogacao',
         'q44': 'texto',
         'q45': 'numero',
         'q46': 'variavel',

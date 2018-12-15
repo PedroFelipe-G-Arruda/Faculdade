@@ -1,0 +1,375 @@
+﻿--Sequencias - Sequences
+
+CREATE SEQUENCE IF NOT EXISTS idCliente_seq
+    INCREMENT 1
+    MINVALUE 1
+    MAXVALUE 200
+    START 1
+    CACHE 1;
+
+CREATE SEQUENCE IF NOT EXISTS idJogo_seq
+    INCREMENT 1
+    MINVALUE 1
+    MAXVALUE 1000
+    START 1
+    CACHE 1;
+
+CREATE SEQUENCE IF NOT EXISTS idPedido_seq
+    INCREMENT 1
+    MINVALUE 1
+    MAXVALUE 10000
+    START 1
+    CACHE 1;
+
+CREATE SEQUENCE IF NOT EXISTS idStatus_seq
+    INCREMENT 1
+    MINVALUE 1
+    MAXVALUE 10000
+    START 1
+    CACHE 1;
+
+-- Create table
+
+create table statusPedido(
+	idStatus int PRIMARY KEY,
+	status varchar(30),
+	descricao varchar (80)
+);
+
+create table Pagamento(
+	idPagamento int PRIMARY KEY,
+	descricao varchar(50)
+);
+
+create table Cliente(
+	idCliente int  DEFAULT nextval('idCliente_seq') PRIMARY KEY,
+	nomeCliente varchar(50),
+	ufCliente varchar(2),
+	cidadeCliente varchar(30),
+	sexoCliente varchar(10)
+);
+
+create table Pedido(
+	idPedido int DEFAULT nextval('idPedido_seq') PRIMARY KEY,
+	idCliente int references Cliente(idCliente),
+	idStatus int  references statusPedido(idStatus),
+	idPagamento int references Pagamento(idPagamento),
+	dataPedido date,
+	total money
+);
+
+create table Jogo(
+	idJogo int DEFAULT nextval('idJogo_seq') PRIMARY KEY,
+	nomeJogo varchar(50),
+	descricao varchar(50),
+	genero varchar(50),
+	preco money,
+	fabricante varchar(50),
+	dataLancamento date
+);
+
+create table ItemPedido(
+	idPedido int references Pedido(idPedido),
+	idJogo int references Jogo(idJogo)
+);
+
+
+
+--Pessoas
+
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Pedro Felipe','MT','Cuiabá','masculino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Mariana','MT','Cuiabá','feminino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Yuri','MT','Cuiabá','masculino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Luis','SP','São Paulo','masculino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Gabriela','PR','Curitiba','feminino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Nicolas','MS','Campo Grande','masculino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Yara','MG','Belo Horizonte','feminino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Beatriz','RS','Porto Alegre','feminino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Rebeca','PR','Curitiba','feminino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Claudio','MT','Cuiabá','masculino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Alexandre','SP','São Paulo','masculino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('João Pedro','PR','Curitiba','masculino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Paulo','MS','Campo Grande','masculino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Douglas','MG','Belo Horizonte','masculino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Vitor','RS','Porto Alegre','masculino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Jessica','SP','São Paulo','feminino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Amanda','PR','Curitiba','feminino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Julia','MS','Campo Grande','feminino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Isadora','MG','Belo Horizonte','feminino');
+INSERT INTO Cliente (nomeCliente, UFCliente, cidadeCliente, sexoCliente) VALUES ('Bianca','RS','Porto Alegre','feminino');
+
+
+--Jogos
+
+INSERT INTO Jogo (nomeJogo,  descricao, genero, preco, fabricante,datalancamento)
+VALUES ('MONSTER HUNTER: WORLD', 'Voce trabalha com controle de pragas', 'Ação, Caça, Mundo Aberto', '120', 'CAPCOM Co., Ltd.', '9/09/2018');
+
+INSERT INTO Jogo (nomeJogo,  descricao, genero, preco, fabricante,datalancamento)
+VALUES ('ARK: Survival Evolved', 'Minecraft de dinossauro', 'Criaçao, Violencia, Sobrevivencia', '93', 'Studio Wildcard, Instinct Games', '27/09/2017');
+
+INSERT INTO Jogo (nomeJogo,  descricao, genero, preco, fabricante,datalancamento)
+VALUES ('Tomb Raider', 'Tomb Raider explora a origem de Lara Croft', 'Ação, Aventura', '50', 'Crystal Dynamics', '5/03/2013');
+
+INSERT INTO Jogo (nomeJogo,  descricao, genero, preco, fabricante,datalancamento)
+VALUES ('Rise of the Tomb Raider', 'Tomb Raider explora a história', 'Ação, Aventura', '70', 'Crystal Dynamics', '9/02/2016');
+
+INSERT INTO Jogo (nomeJogo,  descricao, genero, preco, fabricante,datalancamento)
+VALUES ('Shadow of the Tomb Raider', 'Tomb Raider explora a  história da origem', 'Ação, Aventura', '150', 'Crystal Dynamics', '14/07/2018');
+
+INSERT INTO Jogo (nomeJogo,  descricao, genero, preco, fabricante,datalancamento)
+VALUES ('Rocket League', 'Futebol com carros', 'Carros, Bolas', '20', 'Psyonix, Inc.', '7/07/2015');
+
+INSERT INTO Jogo (nomeJogo,  descricao, genero, preco, fabricante,datalancamento)
+VALUES ('Donut County', 'Buraco que está sempre crescendo','Buracos, Aventura, Casual', '22', 'Ben Esposito', '28/07/2018');
+
+--Status
+INSERT INTO statusPedido(idStatus,status,descricao) VALUES ('1', 'Aberto', 'Aguardo a escolha do tipo de pagamento.');
+INSERT INTO statusPedido(idStatus,status,descricao) VALUES ('2', 'Pendente', 'Pagamento pendente no aguardo da liberação do pagamento.');
+INSERT INTO statusPedido(idStatus,status,descricao) VALUES ('3', 'Processando', 'Pagamento concluído enviando o produto ao usuário.');
+INSERT INTO statusPedido(idStatus,status,descricao) VALUES ('4', 'Completo', 'Compra concluída faturamento efetuado.');
+INSERT INTO statusPedido(idStatus,status,descricao) VALUES ('5', 'Fechado', 'Compra cancelada por falta de pagamento ou envio.');
+INSERT INTO statusPedido(idStatus,status,descricao) VALUES ('6', 'Cancelado', 'Compra cancelada pelo usuário.');
+
+
+--Pagameto
+INSERT INTO Pagamento(idPagamento, descricao) VALUES ('1','Boleto');
+INSERT INTO Pagamento(idPagamento, descricao) VALUES ('2','Cartao de Credito');
+
+
+--Funções
+-- Novo Pedido
+CREATE FUNCTION novoPedido(nome_jogo text, nome_cliente text)
+RETURNS text AS $$
+DECLARE
+	id_jogo int;
+	id_cliente int;
+	id_pedido int;
+	preco_jogo money;
+	
+	
+BEGIN
+	id_cliente := '0';	
+
+	id_jogo := (SELECT idJogo FROM Jogo WHERE nomeJogo = nome_jogo);
+	preco_jogo := (SELECT preco FROM Jogo WHERE nomeJogo = nome_jogo);
+	id_cliente := (SELECT idCliente FROM Cliente WHERE nomeCliente = nome_cliente);
+	
+	INSERT INTO Pedido(idCliente,idStatus,datapedido,total)
+	VALUES (id_cliente, '1', now(), preco_jogo);
+	
+	id_pedido := (SELECT idPedido FROM Pedido WHERE idCliente = id_cliente AND idStatus = '1');
+	
+	INSERT INTO Itempedido
+	VALUES (id_pedido,id_jogo);		
+			
+	RETURN 'Novo pedido aberto com sucesso';
+END;
+$$ LANGUAGE plpgsql;
+
+-- Adiciona Produto ao Pedido
+CREATE FUNCTION addPedido(id_pedido int, nome_jogo text)
+RETURNS text AS $$
+DECLARE
+	id_jogo int;
+
+	preco_jogo money;
+	
+BEGIN
+	id_jogo := (SELECT idJogo FROM Jogo WHERE nomeJogo = nome_jogo);
+	preco_jogo := (SELECT preco FROM Jogo WHERE nomeJogo = nome_jogo);
+	
+	UPDATE Pedido SET total = total + preco_jogo WHERE idPedido = id_pedido;
+	
+	INSERT INTO Itempedido
+	VALUES (id_pedido,id_jogo);		
+			
+	RETURN 'Novo jogo adicionado no pedido';
+END;
+$$ LANGUAGE plpgsql;
+
+-- Forma de Pagamento
+CREATE FUNCTION pagamento(id_pedido int, forma_pagamento int)
+RETURNS text AS $$
+BEGIN
+	
+	UPDATE Pedido SET idPagamento = forma_pagamento, idStatus = '2' WHERE idPedido = id_pedido;
+
+	RETURN 'Forma de pagamento registrada';
+END;
+$$ LANGUAGE plpgsql;
+
+-- Atualiza o Status
+CREATE FUNCTION status(id_pedido int, id_status int)
+RETURNS text AS $$
+BEGIN
+	
+	UPDATE Pedido SET idStatus = id_status WHERE idPedido = id_pedido;
+
+	RETURN 'O status foi atualizado';
+END;
+$$ LANGUAGE plpgsql;
+-----------------------------------------------------
+
+
+-- Pedidos 
+SELECT * FROM Pedido
+
+SELECT novoPedido('Tomb Raider','Pedro Felipe');		
+SELECT addPedido('1','Rise of the Tomb Raider');
+SELECT addPedido('1','Shadow of the Tomb Raider');
+SELECT pagamento ('1','2');
+--
+SELECT novoPedido('Tomb Raider','Luis');		
+SELECT addPedido('2','MONSTER HUNTER: WORLD');
+SELECT addPedido('2','Rocket League');
+SELECT addPedido('2','Donut County');
+SELECT pagamento ('2','1');
+--
+SELECT novoPedido('ARK: Survival Evolved','Mariana');		
+SELECT addPedido('3','MONSTER HUNTER: WORLD');
+SELECT addPedido('3','Rocket League');
+SELECT addPedido('3','Donut County');
+SELECT pagamento ('3','1');
+
+SELECT novoPedido('ARK: Survival Evolved','Beatriz');	
+SELECT pagamento ('4','1');
+
+SELECT novoPedido('ARK: Survival Evolved','Rebeca');		
+SELECT addPedido('5','MONSTER HUNTER: WORLD');
+SELECT addPedido('5','Rocket League');
+SELECT addPedido('5','Donut County');
+SELECT addPedido('5','Tomb Raider');
+SELECT pagamento ('5','2');
+
+SELECT novoPedido('ARK: Survival Evolved','Pedro Felipe');		
+SELECT addPedido('6','MONSTER HUNTER: WORLD');
+SELECT addPedido('6','Rocket League');
+SELECT addPedido('6','Donut County');
+SELECT addPedido('6','Tomb Raider');
+SELECT pagamento ('6','1');
+
+SELECT novoPedido('MONSTER HUNTER: WORLD','Gabriela );
+SELECT pagamento ('7','1');
+
+SELECT novoPedido('MONSTER HUNTER: WORLD','Nicolas');
+SELECT addPedido('8','Rocket League');
+SELECT pagamento ('8','2');
+
+SELECT novoPedido('MONSTER HUNTER: WORLD','Yuri');		
+SELECT addPedido('9','ARK: Survival Evolved');
+SELECT addPedido('9','Rocket League');
+SELECT addPedido('9','Donut County');
+SELECT addPedido('9','Tomb Raider');
+SELECT addPedido('9','Rise of the Tomb Raider');
+SELECT addPedido('9','Shadow of the Tomb Raider');
+SELECT pagamento ('9','2');
+
+SELECT novoPedido('MONSTER HUNTER: WORLD','Claudio');		
+SELECT addPedido('10','ARK: Survival Evolved');
+SELECT addPedido('10','Tomb Raider');
+SELECT pagamento ('10','1');
+
+SELECT novoPedido('Rocket League','Yara');
+SELECT pagamento ('11','2');
+
+--join
+--Cliente -> Jogo
+
+SELECT Cliente.nomecliente, Jogo.nomejogo from Cliente
+INNER JOIN Pedido ON Cliente.idcliente = Pedido.idcliente
+INNER JOIN Itempedido ON Pedido.idpedido = Itempedido.idpedido
+INNER JOIN Jogo ON Itempedido.idjogo = Jogo.idjogo;
+
+--forma de pagamento
+SELECT Cliente.nomecliente, Pagamento.descricao from Cliente
+INNER JOIN Pedido ON Cliente.idcliente = Pedido.idcliente
+INNER JOIN Pagamento ON Pedido.idpagamento = Pagamento.idpagamento
+
+--forma de pagamento com o numero do pedido
+SELECT Cliente.nomecliente, Pedido.idpedido, Pagamento.descricao from Cliente
+INNER JOIN Pedido ON Cliente.idcliente = Pedido.idcliente
+INNER JOIN Pagamento ON Pedido.idpagamento = Pagamento.idpagamento
+
+--conta o numero de clientes que pagaram com cartao
+SELECT 
+COUNT(Cliente.nomecliente)
+FROM Cliente
+INNER JOIN Pedido ON Cliente.idcliente = Pedido.idcliente
+INNER JOIN Pagamento ON Pedido.idpagamento = Pagamento.idpagamento
+WHERE Pagamento.descricao = 'Cartao de Credito';
+
+--Quem comprou o jogo especifico
+SELECT Cliente.nomecliente from Cliente
+INNER JOIN Pedido ON Cliente.idcliente = Pedido.idcliente
+INNER JOIN Itempedido ON Pedido.idpedido = Itempedido.idpedido
+INNER JOIN Jogo ON Itempedido.idjogo = Jogo.idjogo
+WHERE Jogo.nomejogo = 'Tomb Raider'
+
+--Preço total de gasto de um cliente especifico
+SELECT SUM(Pedido.total) FROM Cliente
+INNER JOIN Pedido ON Cliente.idcliente = Pedido.idcliente
+WHERE Cliente.nomecliente = 'Pedro Felipe';
+
+--Preço total por cliente
+SELECT Cliente.nomecliente AS Cliente, SUM(Pedido.total) AS total FROM Cliente
+INNER JOIN Pedido ON Cliente.idcliente = Pedido.idcliente
+GROUP BY Cliente.nomecliente
+ORDER BY Cliente.nomecliente
+
+--Preço total por estado
+SELECT Cliente.ufcliente AS Estado, SUM(Pedido.total) AS total FROM Cliente
+INNER JOIN Pedido ON Cliente.idcliente = Pedido.idcliente
+GROUP BY Cliente.ufcliente
+ORDER BY Cliente.ufcliente
+
+--Status por cliente
+SELECT Cliente.nomecliente, statusPedido.status from Cliente
+INNER JOIN Pedido ON Cliente.idcliente = Pedido.idcliente
+INNER JOIN statusPedido ON Pedido.idstatus = statusPedido.idstatus
+ORDER BY Cliente.nomecliente
+
+--Numero de clientes por jogo
+SELECT Jogo.nomejogo AS Jogo, COUNT(*) AS Clientes FROM Jogo
+INNER JOIN itemPedido ON Jogo.idjogo = itemPedido.idjogo
+INNER JOIN Pedido ON itemPedido.idpedido = Pedido.idpedido
+INNER JOIN Cliente ON Pedido.idcliente = Cliente.idcliente
+GROUP BY Jogo.nomejogo
+ORDER BY Jogo.nomejogo
+
+--forma de pagamento por cliente
+SELECT Pagamento.descricao AS Forma_Pagamento, COUNT(*) AS N_Clientes FROM Pagamento
+INNER JOIN Pedido ON Pagamento.idpagamento = Pedido.idpagamento
+INNER JOIN Cliente ON Pedido.idcliente = Cliente.idcliente
+GROUP BY Pagamento.descricao
+ORDER BY Pagamento.descricao
+
+--jogo por estado
+SELECT Cliente.ufcliente AS Estados, COUNT(*) AS Jogos FROM Cliente
+INNER JOIN Pedido ON Cliente.idcliente = Pedido.idcliente
+INNER JOIN Itempedido ON Pedido.idpedido = Itempedido.idpedido
+INNER JOIN Jogo ON Itempedido.idjogo = Jogo.idjogo
+GROUP BY Cliente.ufcliente
+ORDER BY Cliente.ufcliente
+--
+--
+--
+CREATE MATERIALIZED VIEW pedidos_por_estado (UF, totalClientes)
+AS SELECT Cliente.ufcliente, COUNT(*) FROM Cliente
+INNER JOIN Pedido ON Cliente.idcliente = Pedido.idcliente
+GROUP BY Cliente.ufcliente
+ORDER BY Cliente.ufcliente;
+
+SELECT * FROM clientes_por_estado;
+REFRESH MATERIALIZED VIEW clientes_por_estado;
+--
+CREATE MATERIALIZED VIEW  gasto_por_estado (UF, totalClientes)
+AS SELECT Cliente.ufcliente, SUM(Pedido.total) FROM Cliente
+INNER JOIN Pedido ON Cliente.idcliente = Pedido.idcliente
+GROUP BY Cliente.ufcliente
+ORDER BY Cliente.ufcliente;
+
+SELECT * FROM gasto_por_estado
+REFRESH MATERIALIZED VIEW gasto_por_estado;
+
+--Deleta dados
+TRUNCATE nome_tabela CASCADE;
