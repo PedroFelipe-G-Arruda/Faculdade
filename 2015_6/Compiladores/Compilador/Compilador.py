@@ -4,7 +4,7 @@ sys.path.insert(0, 'src')
 from lexico import analisador as lexico
 from sintatico import analisador as sintatico
 from semantico import analisador as semantico
-from intermediaro import intermediaro
+from geradorCode import intermediaro
 
 def imprime(msg):
     print(msg)
@@ -68,7 +68,7 @@ if args.ts or args.tudo:  # Verifica se o usuraio quer que imprima a tabela de s
 
 ss = []
 print('gerador')
-lista = intermediaro(lista[0], 0, 0, ss)
+lista = intermediaro(lista[0], 0, 0, ss,args.codigo)
 
-for linha in lista:  # Anda toda a lista
-    imprime(linha)  # Imprime a lista
+#for linha in lista:  # Anda toda a lista
+ #   imprime(linha)  # Imprime a lista
