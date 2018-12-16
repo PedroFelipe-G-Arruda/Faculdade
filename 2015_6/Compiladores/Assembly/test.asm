@@ -13,15 +13,18 @@ SECTION .text
 
 _main:
 
+   mov dword[integer1], 9
+   inc dword[integer1]
+
    push ebx ; save registers
    push ecx
    push message1
    call _printf
 
-   add esp, 4 ; remove parameters
-   push integer1 ; address of integer1 (second parameter)
-   push formatin ; arguments are right to left (first parameter)
-   call _scanf
+   ;add esp, 4 ; remove parameters
+   ;push integer1 ; address of integer1 (second parameter)
+   ;push formatin ; arguments are right to left (first parameter)
+   ;call _scanf
 
    add esp, 8 ; remove parameters
    push message2
@@ -34,14 +37,15 @@ _main:
 
    add esp, 8 ; remove parameters
 
-   mov ebx, dword [integer1]
-   mov ecx, dword [integer2]
-   add ebx, ecx ; add the values          ; the addition
-   push ebx
+   mov eax, 150
+   mov edx, 0
+   div  dword [integer2]
+   ;add eax, ecx ; add the values          ; the addition
+   push eax
    push formatout
    call _printf                            ; call printf to display the sum
    add esp, 8                             ; remove parameters
-   pop ecx
+   pop eax
    pop ebx ; restore registers in reverse order
    mov eax, 0 ; no error
    ret

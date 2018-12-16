@@ -18,7 +18,6 @@ def analisador(listaTokens):
 
     dicVariavel = {}  # Dicionario com as variaveis e seus valores
     lista_LOG = []
-    listadic = []
     # Verificação de declaração de variaveis
     cont = 0  # contador
     for i in listaTokens:  # i percorre a lista de tokens

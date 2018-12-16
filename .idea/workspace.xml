@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e598666a-ce8e-4630-9b2e-4302c7eacade" name="Default Changelist" comment="Add files via upload">
+      <change afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/logic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/.vs/Assembly/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/.vs/Assembly/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/.vs/ProjectSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/.vs/ProjectSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/.vs/slnx.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/HelloWorld.asm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/HelloWorld.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/intermediaro.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/geradorCode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/test.m" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/test.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/test.asm" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/test.asm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/test.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/test.obj" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/test.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.asm" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.asm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.exe" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.obj" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/geradorCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/geradorCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Fatorial.m" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Lexico/Fatorial.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,34 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/sintatico.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="323">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -59,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/geradorCode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+            <state relative-caret-position="-153">
+              <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -69,33 +48,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/fib.asm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/fib.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/logic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.asm">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/test.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/test2.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="187">
+              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -110,10 +102,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py">
+        <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/estadosFinais.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="408">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -137,6 +129,7 @@
       <find>listaErros</find>
       <find>ponto</find>
       <find>buffer</find>
+      <find>dwordx</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,7 +160,6 @@
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/pilha.py" />
-        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/intermidiario.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/infixtoposfix.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/passos.py" />
@@ -177,15 +169,20 @@
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/test2.m" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/test.m" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/intermediaro.py" />
-        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.asm" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/trasf.py" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/logic.py" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/geradorCode.py" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/fib.m" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="1139" />
+    <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
@@ -193,6 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,7 +236,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,11 +251,12 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pedro\OneDrive\Faculdade\Faculdade\2015_6\Compiladores\Sintático" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pedro\OneDrive\Faculdade\Faculdade\2015_6\Compiladores\Lexico" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pedro\OneDrive\Faculdade\Faculdade\2015_6\Compiladores\Compilador" />
+      <recent name="C:\Users\pedro\OneDrive\Faculdade\Faculdade\2015_6\Compiladores\Sintático" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -350,7 +348,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" />
-      <option name="PARAMETERS" value="-lt Ola.m" />
+      <option name="PARAMETERS" value="-lt fib.m" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -505,15 +503,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1139" height="1087" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18982743" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18967333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49826086" visible="true" weight="0.28301886" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49826086" visible="true" weight="0.28037384" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39356178" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -527,26 +525,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10432034" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49826086" visible="true" weight="0.28037384" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39356178" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49786323" weight="0.32948583" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32952183" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50173914" side_tool="true" weight="0.32948583" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32952183" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32848233" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="." />
@@ -643,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/estadosFinais.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/tabelas/tabela_sintatica.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -657,25 +628,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/passos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/test2.m.txt" />
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/pilha.py">
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/test2.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="204">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m">
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m.asm" />
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/test.asm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        <state relative-caret-position="1054">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -686,10 +664,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/test2.m">
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/passos.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="493">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/sintatico.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/pilha.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -700,59 +699,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py">
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/estadosFinais.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="408">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py">
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/logic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="170">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/sintatico.py">
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.asm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="522">
+          <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="70" column="51" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        <state relative-caret-position="187">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/geradorCode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+        <state relative-caret-position="-153">
+          <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.asm">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/fib.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/fib.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
