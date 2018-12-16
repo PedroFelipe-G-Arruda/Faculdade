@@ -8,7 +8,7 @@ begin
 	input(n);
 	loop n >= 1:
 		f <- f * n;
-		n <- n - 1;
+		n <- n - (1 + 3);
 		soma <- 4/x;
 		output("LOOP");
 		
