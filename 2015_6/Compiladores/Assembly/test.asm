@@ -15,6 +15,7 @@ _main:
 
    mov dword[integer1], 9
    inc dword[integer1]
+   
 
    push ebx ; save registers
    push ecx

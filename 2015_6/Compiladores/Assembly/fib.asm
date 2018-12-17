@@ -48,8 +48,6 @@ _print:
     push ecx
     mov ecx,var
     dec ecx
-   
-    
     jnz _print
 
     pop ebx

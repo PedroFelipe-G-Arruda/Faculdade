@@ -42,7 +42,7 @@ def analisador(listaTokens):
                 print(f"Variavel: {i.split('|')[0]} nao declarada")   # Adiciona o erro na lista de erro
                 sys.exit()
         cont += 1
-    print("\nAnalize Semantica Concluida!")
+    print("Analise Semantica Concluida!")
     listadic = sorted(dicVariavel.items(), key=lambda k: k[0])
     lista = [listaTokens,lista_LOG, listadic]
     return lista

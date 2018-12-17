@@ -1,3 +1,4 @@
+import sys
 import pilha
 from passos import step
 
@@ -43,6 +44,9 @@ def analisador(listaTokens):    #Funcao principal
             del fila[0]     # Deleta o primeiro item da fila
             cont += 1   # Contador + 1
             pilha1.pop()    # Tira o topo da pilha
-
-    print("\nAnalize Sintatica Concluida!") if not fila and pilha1.isEmpty() else print("\nErro pilha ou fila nao estao vazias")
+    if not fila and pilha1.isEmpty():
+        print("Analise Sintatica Concluida!")
+    else:
+        print("Erro pilha ou fila nao estao vazias")
+        sys.exit()
     return (lista_LOG)
