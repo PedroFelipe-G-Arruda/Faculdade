@@ -50,8 +50,7 @@ def intermediaro(tokens, inicio, loop, preCodigo, nome): # código intermediario
             return i+1,None
         i += 1
     codigo = gerador(preCodigo)
-    print(preCodigo)
-    with open(nome.split('.')[0]+'.asm', 'w') as file:
+    with open(nome, 'w') as file:
         file.write('\n'.join(codigo))
     return codigo
 
@@ -96,7 +95,7 @@ def gerador (preCode):
     main = ['\t','_main:']
 
     for linha in preCode:
-        print(linha)
+        #print(linha)
         if 'INTEIRO' in linha:
             data.append(f'\t{linha.split("INTEIRO")[1].strip()}: dd 0')
             v.append(linha.split("INTEIRO")[1].strip())
@@ -107,28 +106,28 @@ def gerador (preCode):
                 v.append(linha.split()[0].strip())
 
             if '+' in linha:
-                print(f'\n+\n')
+               # print(f'\n+\n')
                 main.append(f'mov eax, {"dword["+linha.split()[-3].strip()+"]" if not linha.split()[-3].strip().isdecimal() else linha.split()[-3].strip()}')
                 main.append(f'mov ecx, {"dword["+linha.split()[-2].strip()+"]" if not linha.split()[-2].strip().isdecimal() else linha.split()[-2].strip()}')
                 main.append(f'add eax, ecx')
                 main.append(f'mov dword[{linha.split()[0].strip()}], eax')
 
             elif '-' in linha:
-                print(f'\n-\n')
+              #  print(f'\n-\n')
                 main.append(f'mov eax, {"dword[" + linha.split()[-3].strip() + "]" if not linha.split()[-3].strip().isdecimal() else linha.split()[-3].strip()}')
                 main.append(f'mov ecx, {"dword[" + linha.split()[-2].strip() + "]" if not linha.split()[-2].strip().isdecimal() else linha.split()[-2].strip()}')
                 main.append(f'sub eax, ecx')
                 main.append(f'mov dword[{linha.split()[0].strip()}], eax')
 
             elif '*' in linha:
-                print(f'\n*\n')
+               # print(f'\n*\n')
                 main.append(f'mov eax, {"dword[" + linha.split()[-3].strip() + "]" if not linha.split()[-3].strip().isdecimal() else linha.split()[-3].strip()}')
                 main.append(f'mov ecx, {"dword[" + linha.split()[-2].strip() + "]" if not linha.split()[-2].strip().isdecimal() else linha.split()[-2].strip()}')
                 main.append(f'mul ecx')
                 main.append(f'mov dword[{linha.split()[0].strip()}], eax')
 
             elif '/' in linha:
-                print(f'\n/\n')
+              #  print(f'\n/\n')
                 main.append(f'mov eax, {"dword[" + linha.split()[-3].strip() + "]" if not linha.split()[-3].strip().isdecimal() else linha.split()[-3].strip()}')
                 main.append(f'mov ecx, {"dword[" + linha.split()[-2].strip() + "]" if not linha.split()[-2].strip().isdecimal() else linha.split()[-2].strip()}')
                 main.append(f'mov edx, 0')
@@ -186,7 +185,7 @@ def gerador (preCode):
             main.append(f'jmp {linha.split()[1].strip()}')
 
         elif '_L' in linha.split()[0]:
-            print(f'linha:{linha}')
+           # print(f'linha:{linha}')
             if 'if' in linha:
                 main.append('')
                 main.append(f'{linha.split()[0]}')
