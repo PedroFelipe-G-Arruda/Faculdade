@@ -1,0 +1,83 @@
+[PROJECT]
+Target=Semaforo.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Semaforo.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Semaforo]
+Type=4
+[mru-list]
+1=Semaforo.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=5
+D1=12-02-2019
+D1_L=4
+D1_L1=[39006]Project Opened.
+D1_L2=[39034]Started Editing.
+D1_L3=[39384]Stopped Editing.
+TotalEdit=73
+TotalDebug=0
+D1_E=1
+D1_D=0
+D1_L4=[41018]Project Closed.
+D2=13-02-2019
+D2_L=6
+D2_L1=[81862]Project Opened.
+D2_L2=[82256]Started Editing.
+D2_L3=[82674]Stopped Editing.
+D2_L4=[83096]Started Editing.
+D2_L5=[83634]Stopped Editing.
+D2_E=11
+D2_D=0
+D2_L6=[83634]Project Closed.
+D3=15-02-2019
+D3_L=10
+D3_L1=[30232]Project Opened.
+D3_L2=[30275]Started Editing.
+D3_L3=[31452]Stopped Editing.
+D3_E=51
+D3_D=0
+D3_L4=[31453]Project Closed.
+D3_L5=[81995]Project Opened.
+D3_L6=[82015]Started Editing.
+D3_L7=[83417]Stopped Editing.
+D3_L8=[83545]Started Editing.
+D3_L9=[84565]Stopped Editing.
+D3_L10=[84941]Project Closed.
+D4=16-02-2019
+D4_L=8
+D4_L1=[48467]Project Opened.
+D4_L2=[55021]Started Editing.
+D4_L3=[55416]Stopped Editing.
+D4_E=10
+D4_D=0
+D4_L4=[56434]Project Closed.
+D4_L5=[83856]Project Opened.
+D4_L6=[84745]Started Editing.
+D4_L7=[85467]Stopped Editing.
+D4_L8=[85554]Project Closed.
+D5=21-02-2019
+D5_L=2
+D5_L1=[76378]Project Opened.
+D5_L2=[79823]Project Closed.
+
+[Opened Files]
+1=Semaforo.c
+t1=1
+Count=1
+[Semaforo.c]
+Type=4
+
+[defines]
+buildcount=29
+[Units]
+Count=1
+1=Semaforo (main)

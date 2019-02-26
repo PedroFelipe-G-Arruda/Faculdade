@@ -1,0 +1,30 @@
+//#include <Semaforo.h>
+
+#include <16F877A.h>
+#device ADC=10
+
+#FUSES NOLVP                    //No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O
+
+#use delay(crystal=20000000)
+
+#define PIN_B0 verde_carro
+
+void main()
+{
+
+   while(TRUE)
+   {
+      // inico
+      output_high(PIN_B0);
+      output_low(PIN_B1);
+      output_low(PIN_B2);
+      output_low(PIN_B3);
+      output_high(PIN_B4);
+   
+      if(PIN_B5){
+      
+      
+      //TODO: User Code
+   }
+
+}

@@ -1,0 +1,88 @@
+[PROJECT]
+Target=Potenciometro2Displays7.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Potenciometro2Displays7.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Potenciometro2Displays7]
+Type=4
+[mru-list]
+1=Potenciometro2Displays7.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=4
+D1=21-02-2019
+D1_L=8
+D1_L1=[79823]Project Opened.
+D1_L2=[79896]Project Closed.
+D1_L3=[79977]Project Opened.
+D1_L4=[79986]Started Editing.
+D1_L5=[80660]Stopped Editing.
+D1_L6=[80844]Started Editing.
+D1_L7=[81235]Stopped Editing.
+TotalEdit=63
+TotalDebug=0
+D1_E=8
+D1_D=0
+D1_L8=[81349]Project Closed.
+D2=22-02-2019
+D2_L=7
+D2_L1=[26580]Project Opened.
+D2_L2=[26653]Started Editing.
+D2_L3=[26971]Stopped Editing.
+D2_E=1
+D2_D=0
+D2_L4=[30454]Project Closed.
+D2_L5=[36546]Project Opened.
+D2_L6=[42687]Started Editing.
+D2_L7=[43546]Stopped Editing.
+D3=24-02-2019
+D3_L=10
+D3_L1=[66409]Project Opened.
+D3_L2=[67001]Started Editing.
+D3_L3=[67315]Stopped Editing.
+D3_L4=[67523]Started Editing.
+D3_L5=[68211]Stopped Editing.
+D3_L6=[68851]Started Editing.
+D3_L7=[69469]Stopped Editing.
+D3_L8=[70143]Started Editing.
+D3_L9=[72103]Stopped Editing.
+D3_E=45
+D3_D=0
+D3_L10=[72103]Project Closed.
+D4=25-02-2019
+D4_L=10
+D4_L1=[30432]Project Opened.
+D4_L2=[30626]Started Editing.
+D4_L3=[31380]Stopped Editing.
+D4_E=9
+D4_D=0
+D4_L4=[33102]Project Closed.
+D4_L5=[33802]Project Opened.
+D4_L6=[33810]Started Editing.
+D4_L7=[34114]Stopped Editing.
+D4_L8=[36022]Started Editing.
+D4_L9=[36352]Stopped Editing.
+D4_L10=[40730]Project Closed.
+
+[Opened Files]
+1=Potenciometro2Displays7.c
+t1=37
+2=..\..\..\..\..\..\AppData\Local\Temp\Rar$DIa3784.38928\Setseg2.c
+t2=41
+Count=1
+[Potenciometro2Displays7.c]
+Type=4
+
+[defines]
+buildcount=25
+[Units]
+Count=1
+1=Potenciometro2Displays7 (main)

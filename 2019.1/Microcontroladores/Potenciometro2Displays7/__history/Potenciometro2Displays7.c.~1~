@@ -1,0 +1,15 @@
+#include <Potenciometro2Displays7.h>
+
+void main()
+{
+	setup_adc_ports(AN0);
+	setup_adc(ADC_CLOCK_DIV_64);
+
+	while(TRUE)
+	{
+
+
+		//TODO: User Code
+	}
+
+}

@@ -1,0 +1,26 @@
+#include <16F877A.h>
+#device ADC=8
+#use delay(crystal=20000000)
+
+#define zero   0b00111111
+#define um     0b00000110
+#define dois   0b01011011
+#define tres   0b01001111
+#define quatro 0b01001111
+#define cinco  0b01100110
+#define seis   0b01101101
+#define sete   0b01111101
+#define oito   0b01111111
+#define nove   0b01100111
+
+void main()
+{
+   setup_adc_ports(AN0);
+   setup_adc(ADC_CLOCK_DIV_64);
+
+   while(TRUE)
+   {
+
+   }
+
+}
