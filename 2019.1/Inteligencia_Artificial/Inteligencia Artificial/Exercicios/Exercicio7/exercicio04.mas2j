@@ -1,0 +1,17 @@
+/* Jason Project */
+
+
+
+MAS exercicio04 {
+
+
+
+    infrastructure: Centralised
+
+
+
+    agents:
+
+        garrafa;
+
+}

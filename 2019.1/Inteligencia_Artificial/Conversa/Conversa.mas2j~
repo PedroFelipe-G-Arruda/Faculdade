@@ -1,0 +1,9 @@
+/* Jason Project */
+
+MAS conversa {
+
+    infrastructure: Centralised
+
+    agents:kate;bob;
+}
+

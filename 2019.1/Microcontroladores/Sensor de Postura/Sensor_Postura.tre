@@ -1,0 +1,15 @@
+읕2019
+   읕MAIN  0/309  Ram=2
+      쳐@cinit1  (Inline)  Ram=0
+      쳐@DIV1616  0/37  Ram=5
+      쳐@DIV1616  0/37  Ram=5
+      쳐@DIV1616  0/37  Ram=5
+      쳐@PSTRINGCN7_9600_62_63  0/89  Ram=5
+      쳐@PRINTF_LU_9600_62_63  0/89  Ram=9
+      쳐@PSTRINGCN7_9600_62_63  0/89  Ram=5
+      쳐@PRINTF_LU_9600_62_63  0/89  Ram=9
+      쳐@PSTRINGCN7_9600_62_63  0/89  Ram=5
+      쳐@PRINTF_LU_9600_62_63  0/89  Ram=9
+      쳐@PSTRINGCN7_9600_62_63  0/89  Ram=5
+      쳐@PRINTF_LU_9600_62_63  0/89  Ram=9
+      읕@delay_ms1  0/22  Ram=1

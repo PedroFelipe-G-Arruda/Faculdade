@@ -1,0 +1,111 @@
+[PROJECT]
+Target=Controle_Velocidade_Motor.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Controle_Velocidade_Motor.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Motor_Velocidade\Controle_Velocidade_Motor]
+Type=4
+[mru-list]
+1=Controle_Velocidade_Motor.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=4
+D1=15-03-2019
+D1_L=18
+D1_L1=[45082]Project Opened.
+D1_L2=[45104]Started Editing.
+D1_L3=[45419]Stopped Editing.
+D1_L4=[48069]Started Editing.
+D1_L5=[48369]Stopped Editing.
+D1_L6=[48715]Started Editing.
+D1_L7=[49059]Stopped Editing.
+D1_L8=[49164]Started Editing.
+D1_L9=[49921]Stopped Editing.
+TotalEdit=77
+TotalDebug=0
+D1_E=21
+D1_D=0
+D1_L10=[49979]Project Closed.
+D1_L11=[60635]Project Opened.
+D1_L12=[60898]Started Editing.
+D1_L13=[61473]Stopped Editing.
+D1_L14=[61562]Started Editing.
+D1_L15=[62259]Stopped Editing.
+D1_L16=[65461]Started Editing.
+D1_L17=[65489]Stopped Editing.
+D1_L18=[65489]Project Closed.
+D2=17-03-2019
+D2_L=16
+D2_L1=[49934]Project Opened.
+D2_L2=[49959]Started Editing.
+D2_L3=[50292]Stopped Editing.
+D2_L4=[51315]Started Editing.
+D2_L5=[51833]Stopped Editing.
+D2_E=18
+D2_D=0
+D2_L6=[51833]Project Closed.
+D2_L7=[54209]Project Opened.
+D2_L8=[54242]Started Editing.
+D2_L9=[54549]Stopped Editing.
+D2_L10=[55464]Started Editing.
+D2_L11=[55935]Stopped Editing.
+D2_L12=[57185]Project Closed.
+D2_L13=[79037]Project Opened.
+D2_L14=[79851]Started Editing.
+D2_L15=[80438]Stopped Editing.
+D2_L16=[81855]Project Closed.
+D3=18-03-2019
+D3_L=14
+D3_L1=[35261]Project Opened.
+D3_L2=[36005]Started Editing.
+D3_L3=[36749]Stopped Editing.
+D3_L4=[36991]Started Editing.
+D3_L5=[37539]Stopped Editing.
+D3_L6=[37600]Started Editing.
+D3_L7=[37901]Stopped Editing.
+D3_L8=[38923]Started Editing.
+D3_L9=[39282]Stopped Editing.
+D3_L10=[39386]Started Editing.
+D3_L11=[39955]Stopped Editing.
+D3_L12=[39967]Started Editing.
+D3_L13=[40287]Stopped Editing.
+D3_E=18
+D3_D=0
+D3_L14=[40544]Project Closed.
+D4=20-03-2019
+D4_L=10
+D4_L1=[37702]Project Opened.
+D4_L2=[37966]Started Editing.
+D4_L3=[38374]Stopped Editing.
+D4_E=20
+D4_D=0
+D4_L4=[38375]Project Closed.
+D4_L5=[39014]Project Opened.
+D4_L6=[39111]Started Editing.
+D4_L7=[39923]Stopped Editing.
+D4_L8=[40446]Started Editing.
+D4_L9=[40690]Stopped Editing.
+D4_L10=[40690]Project Closed.
+
+[Opened Files]
+1=..\Motor_velocidade2.0\Motor_Velocidade_Timer.c
+t1=1
+Count=1
+2=..\..\..\..\..\..\Downloads\motor_passo.c
+t2=1
+[Controle_Velocidade_Motor.c]
+Type=4
+
+[defines]
+buildcount=49
+[Units]
+Count=1
+1=Controle_Velocidade_Motor (main)

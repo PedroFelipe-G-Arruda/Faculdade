@@ -1,0 +1,30 @@
+//#include <Programa_Pic12f675.h>
+
+#include <12F675.h>
+#device ADC=10
+
+#FUSES NOMCLR                   //Master Clear pin used for I/O
+#FUSES NOBROWNOUT               //No brownout reset
+
+#use delay(internal=4MHz)
+#use rs232(baud=9600,parity=N,xmit=PIN_A1,rcv=PIN_A2,bits=8,stream=PORT1)
+
+void main()
+{
+   set_tris_a( 0b11100001 ); // set GP0 output, all other inputs 
+   setup_adc_ports(sAN0);
+   setup_adc(ADC_CLOCK_INTERNAL);
+
+   while(TRUE)
+   {
+
+      //Example blinking LED program
+      output_low(PIN_A3);
+      delay_ms(500);
+      output_high(LPIN_A3ED);
+      delay_ms(500);
+
+      //TODO: User Code
+   }
+
+}

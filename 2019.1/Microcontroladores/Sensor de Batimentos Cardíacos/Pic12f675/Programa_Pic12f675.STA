@@ -1,0 +1,47 @@
+
+ROM used:   233/1024 (23%)
+            233/1024 (23%) including unused fragments
+
+            0.4 Average locations per line
+            15.5 Average locations per statement
+
+RAM used:   6/64 (9%) at main() level
+            15/64 (23%) worst case
+
+Stack used: 1 worst case (1 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   39    15 100  Programa_Pic12f675.c
+  509     0   0  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\12F675.h
+----- -----
+  548    15 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     20   9    1             @delay_ms1
+0     34  15    1             @PUTCHAR_1_
+0     81  35    2    302  4.0  main
+0     88  38    8             @PRINTF_LU_542
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               1
+    Statements              15
+    Comments                101
+    Volume (V)              311
+    Difficulty (D)          3.5
+    Effort to implement (E) 1092
+    Time to implement (T)   1 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    104
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-003FF   229  791  
+
+
+

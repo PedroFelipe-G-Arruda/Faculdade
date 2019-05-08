@@ -1,0 +1,62 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+019.6   C1OUT
+020     @SCRATCH
+021     @SCRATCH
+021     _RETURN_
+022     @SCRATCH
+023     @SCRATCH
+025-026 main.pulse
+027-028 @PRINTF_LU_542.P1
+027     @delay_ms1.P2
+029     @PRINTF_LU_542.@SCRATCH1
+02A     @PRINTF_LU_542.@SCRATCH2
+02B     @PRINTF_LU_542.@SCRATCH3
+02C     @PRINTF_LU_542.@SCRATCH4
+02D     @PRINTF_LU_542.@SCRATCH5
+02E     @PRINTF_LU_542.@SCRATCH6
+02F     @PUTCHAR_1_.P1
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+00000A  @PUTCHAR_1_
+00002C  @PRINTF_LU_542
+000084  @delay_ms1
+000098  main
+000098  @cinit1
+0000A8  @cinit2
+
+Project Directory:
+    C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Sensor de Batimentos Cardíacos\Pic12f675\
+
+Project Files:
+    Programa_Pic12f675.c                                    [15-abr-19 13:25  CRC=801607E4]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\12F675.h [20-set-18 11:28  CRC=6EB468F5]
+
+Source signature=5D7ED9CE
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=A444
+
+Units:
+    Programa_Pic12f675 (main)
+
+Compiler Settings:
+    Processor:      PIC12F675
+    Pointer Size:   8
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Programa_Pic12f675.xsym
+    Errors:      Programa_Pic12f675.err
+    Ext Symbols: Programa_Pic12f675.esym
+    INHX8:       Programa_Pic12f675.hex
+    Symbols:     Programa_Pic12f675.sym
+    List:        Programa_Pic12f675.lst
+    Debug/COFF:  Programa_Pic12f675.cof
+    Project:     Programa_Pic12f675.ccspjt
+    Call Tree:   Programa_Pic12f675.tre
+    Statistics:  Programa_Pic12f675.STA

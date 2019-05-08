@@ -1,0 +1,18 @@
+!irParaPraia.
+
++!irParaPraia <- 
+	!falaPara;
+	!analise.
+	
++!falaPara: true <-
+	.print("Qual a previsão do tempo");
+	.send(bob, askAll, tempo(Nome)).
+	
++!analise: tempo(limpo) & tempo(ensolarado) <-
+	.print("Vou a praia").
+/*	
++!analise: tempo(limpo) & ~tempo(ensolarado) <-
+	.print("Vou a praia").
+	
++!analise: ~tempo(limpo) & ~tempo(ensolarado) <-
+	.print("Não vou a praia"). */

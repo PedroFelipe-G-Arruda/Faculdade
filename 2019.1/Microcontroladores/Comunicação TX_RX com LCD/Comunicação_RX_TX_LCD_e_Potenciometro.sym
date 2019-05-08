@@ -1,0 +1,193 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028     @INTERRUPT_AREA
+029     @INTERRUPT_AREA
+02A     @INTERRUPT_AREA
+02B     @INTERRUPT_AREA
+02C-02D potenciometro
+02E-02F n_valor
+030-031 verifica
+032-033 led
+034     t_valor1
+035     t_valor2
+036     r_valor1
+037     r_valor2
+038     lcd_init.i
+039-03C lcd_init.LCD_INIT_STRING
+03D     lcd_init.@SCRATCH1
+044     lcd_getc.x
+044     @PSTRINGCN7_662.P1
+044-045 @PRINTF_LU_662.P2
+045     lcd_getc.y
+045     @PSTRINGCN7_662.@SCRATCH1
+046     lcd_getc.value
+046     @PSTRINGCN7_662.@SCRATCH2
+046     @PRINTF_LU_662.@SCRATCH1
+047     lcd_getc.@SCRATCH1
+047     @PSTRINGCN7_662.@SCRATCH3
+047     @PRINTF_LU_662.@SCRATCH2
+048     @PSTRINGCN7_662.@SCRATCH4
+048     @PRINTF_LU_662.@SCRATCH3
+049     @PRINTF_LU_662.@SCRATCH4
+04A     @PRINTF_LU_662.@SCRATCH5
+04B     @PRINTF_LU_662.@SCRATCH6
+04C     @PRINTF_LU_662.@SCRATCH7
+04D     lcd_putc.c
+04E     @delay_ms1.P1
+04E     lcd_gotoxy.x
+04F     lcd_gotoxy.y
+050     lcd_gotoxy.address
+051     lcd_gotoxy.@SCRATCH1
+052     lcd_send_byte.address
+053     lcd_send_byte.n
+054     lcd_read_byte.low
+054     lcd_send_byte.@SCRATCH1
+055     lcd_read_byte.high
+055     lcd_send_nibble.n
+056     lcd_read_nibble.n
+056     lcd_read_byte.@SCRATCH1
+057     lcd_read_nibble.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0FF     @INTERRUPT_AREA
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+87F     @INTERRUPT_AREA
+8FF     @INTERRUPT_AREA
+97F     @INTERRUPT_AREA
+9FF     @INTERRUPT_AREA
+A7F     @INTERRUPT_AREA
+AFF     @INTERRUPT_AREA
+B7F     @INTERRUPT_AREA
+BFF     @INTERRUPT_AREA
+C7F     @INTERRUPT_AREA
+CFF     @INTERRUPT_AREA
+D7F     @INTERRUPT_AREA
+DFF     @INTERRUPT_AREA
+E7F     @INTERRUPT_AREA
+EFF     @INTERRUPT_AREA
+F7F     @INTERRUPT_AREA
+FFF     @INTERRUPT_AREA
+107F     @INTERRUPT_AREA
+10FF     @INTERRUPT_AREA
+117F     @INTERRUPT_AREA
+11FF     @INTERRUPT_AREA
+127F     @INTERRUPT_AREA
+12FF     @INTERRUPT_AREA
+137F     @INTERRUPT_AREA
+13FF     @INTERRUPT_AREA
+147F     @INTERRUPT_AREA
+14FF     @INTERRUPT_AREA
+157F     @INTERRUPT_AREA
+15FF     @INTERRUPT_AREA
+167F     @INTERRUPT_AREA
+16FF     @INTERRUPT_AREA
+177F     @INTERRUPT_AREA
+17FF     @INTERRUPT_AREA
+187F     @INTERRUPT_AREA
+18FF     @INTERRUPT_AREA
+197F     @INTERRUPT_AREA
+19FF     @INTERRUPT_AREA
+1A7F     @INTERRUPT_AREA
+1AFF     @INTERRUPT_AREA
+1B7F     @INTERRUPT_AREA
+1BFF     @INTERRUPT_AREA
+1C7F     @INTERRUPT_AREA
+1CFF     @INTERRUPT_AREA
+1D7F     @INTERRUPT_AREA
+1DFF     @INTERRUPT_AREA
+1E7F     @INTERRUPT_AREA
+1EFF     @INTERRUPT_AREA
+1F7F     @INTERRUPT_AREA
+1FFF     @INTERRUPT_AREA
+
+ROM Allocation:
+000058  @delay_ms1
+00006C  EXT_isr
+00007F  lcd_read_byte
+0000CC  lcd_read_nibble
+00010F  lcd_send_nibble
+00013D  lcd_send_byte
+00016B  lcd_gotoxy
+00017D  lcd_putc
+0001A9  RDA_isr
+0001C7  lcd_getc
+0001E7  @PSTRINGCN7_662
+000243  @PRINTF_LU_662
+0002A9  @const684.call
+0002B2  lcd_init
+00031C  MAIN
+00031C  @cinit1
+000334  @cinit2
+
+Project Directory:
+    C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Comunicação TX_RX com LCD\
+
+Project Files:
+    Comunicação_RX_TX_LCD_e_Potenciometro.c                 [27-mar-19 10:49  CRC=DC2C1FEA]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [20-set-18 11:29  CRC=A7449A17]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c [22-fev-16 09:05  CRC=D1A6378A]
+
+Source signature=26BD2915
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=4B8F
+
+Units:
+    Comunicação_RX_TX_LCD_e_Potenciometro (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Comunicação_RX_TX_LCD_e_Potenciometro.xsym
+    Errors:      Comunicação_RX_TX_LCD_e_Potenciometro.err
+    Ext Symbols: Comunicação_RX_TX_LCD_e_Potenciometro.esym
+    INHX8:       Comunicação_RX_TX_LCD_e_Potenciometro.hex
+    Symbols:     Comunicação_RX_TX_LCD_e_Potenciometro.sym
+    List:        Comunicação_RX_TX_LCD_e_Potenciometro.lst
+    Debug/COFF:  Comunicação_RX_TX_LCD_e_Potenciometro.cof
+    Project:     Comunicação_RX_TX_LCD_e_Potenciometro.ccspjt
+    Call Tree:   Comunicação_RX_TX_LCD_e_Potenciometro.tre
+    Statistics:  Comunicação_RX_TX_LCD_e_Potenciometro.STA

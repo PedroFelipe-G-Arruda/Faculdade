@@ -1,0 +1,86 @@
+1. Suponha que um agente tenha a seguinte biblioteca de planos (plan library):
+
+
+@p1 +g (X , Y) : t r u e < . . . .
+@p2 +g (X , Y) : a (Y) & n o t b (X) < . . . .
+@p3 +g (X , ) : a (Y) & Y > X < . . . .
+@p4 +g (X , Y ) [ s o u r c e ( s e l f ) ] : t r u e < . . . .
+@p5 +g (X , Y ) [ s o u r c e ( s e l f ) , s o u r c e ( ag1 ) ] : t r u e < . . . .
+@p6 [ a l l u n i f s ] +g ( 1 0 , Y) : a (Y) < . . . .
+
+e as seguintes crenças (beliefs):
+a ( 1 0 ) .
+a( 5 ) .
+b ( 2 0 ) .
+
+Se o evento “+g(10, 5)[source(ag1)]” é selecionado, quais planos são relevantes e quais são aplicáveis?
+
+R:Os que são relevantes é @p1, @p2, @p3, @p5, @p6. E os aplicaveis @p1, @p2, @p5 e o @p6.
+
+
+
+2-Considerando que o estado da pilha de intencões de um agente e como mostrado abaixo:
+R:
++!g2 : true <- a3; a4.
+
++!g1 : true <- !g2.
+
++b : true <- !g1; a1.
+
+
+(a) Qual será o estado da intenção depois que a ação a3 for executada? E depois da a4?
+
+(b) (b) Se a biblioteca de planos do agente incluir o seguinte plano:
+
+!g1 : t r u e < a5 .
+
+A- R: Depois do a3 executada.
+
+       +b : true <− !g1; a1.
+
+      +!g1 : true <− !g2.
+
+      +!g2 : true <− a4.
+
+     
+
+       Depois do a4 executada.
+
+      +b : true <− a1.   
+
+      +!g1 : true <− !g2. 
+
+ 
+
+B- R:     +b : true <− !g1; a1.
+
+          -!g1 : true <− a5 
+
+
+
+
+
+(a) Em agentes, proatividade significa ser sensível as mudanças no ambiente.
+Escolha uma opção:R:FALSO
+(b) Em Jason, ações pré-definidas iniciam com '.', como :send().
+Escolha uma opção:R:VERDADEIRO
+(c)No modelo BDI, as crenças (Beliefs) escrevem os estados em que os agentes acreditam ser possíveis de alcançar.
+Escolha uma opção:R:FALSO
+(d)Em um sistema de raciocínio procedural (Procedural Reasoning System), um plano possui três componentes, um objetivo, um contexto e um corpo.
+Escolha uma opção:R:VERDADEIRO
+
+3-O robô usado no exemplo abaixo tem planos (identificados por h1-h3) ativados quando o agente tem um objetivo que unifica has(owner; beer) independente do source do objetivo (i.e. pessoal ou delegado). Modifique estes planos para serem ativados apenas se a fonte do objetivo seja o agente dono.
+R:Só modificar as linhas +! has (owner, beer) para +!has(owner, beer)[source(owner)]
+
+
+4-No código do robô (1) temos dois planos para o objetivo !at. O que aconteceria se mudássemos a ordem deles (m2 antes de m1)? O que aconteceria se o segundo plano não tivesse um contexto, como no código abaixo?
+
+R:@m1 +!at(robot,P): at (robot,P) <- true.
+@m2 +!at(robot,P): true
+<- move_towards(P);
+!at(robot,P).
+
+O comportamento do robô seria o mesmo ao do código original? Neste caso, o que aconteceria se trocássemos a ordem dos planos?
+R:
+Ao mudar a ordem m1 só não sera executado se a condição do m2 for aplicável. Caso ao contrario, será executado m2 depois m1. E com a alteração dos planos e do codigo, m1 nunca seria testado, por que m2 sempre vai ser aplicavel. 
+

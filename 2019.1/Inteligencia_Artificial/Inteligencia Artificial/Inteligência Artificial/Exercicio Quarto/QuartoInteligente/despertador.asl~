@@ -1,0 +1,25 @@
+despertar_bob(18).
+depertar_kate(12).
+hora(10).
+
+
+!incrementarHora.
+!despertar_kate.
+
++!incrementarHora : hora(H) & H<24 <-
+	.print("Hora > ",H);
+	-+hora(H + 1);
+	wait(500);
+	!incrementarHora.
++!incrementarHora : hora(H) & H >= 24 <-
+	-+hora(0);
+	wait(500);
+	!incrementarHora.
+	
++!despertar_kate : despertar_kate(F) & hora(H) & H == F <-
+	//.send(kate,askOne,acordada(Z));
+	.print("Hora > ",H," Hora de Despertar KATE.");
+	.print("RING RING RING");
+	
+	
+	

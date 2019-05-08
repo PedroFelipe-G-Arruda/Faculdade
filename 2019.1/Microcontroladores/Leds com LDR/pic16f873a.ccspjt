@@ -1,0 +1,53 @@
+[PROJECT]
+Target=pic16f873a.hex
+Processor_Text=PIC16F873A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=pic16f873a.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Leds com LDR\pic16f873a]
+Type=4
+[mru-list]
+1=pic16f873a.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=2
+D1=22-03-2019
+D1_L=4
+D1_L1=[65489]Project Opened.
+D1_L2=[65498]Started Editing.
+D1_L3=[65711]Stopped Editing.
+TotalEdit=9
+TotalDebug=0
+D1_E=4
+D1_D=0
+D1_L4=[65711]Project Closed.
+D2=25-03-2019
+D2_L=4
+D2_L1=[37868]Project Opened.
+D2_L2=[38069]Started Editing.
+D2_L3=[38365]Stopped Editing.
+D2_E=5
+D2_D=0
+D2_L4=[38365]Project Closed.
+
+[Opened Files]
+1=..\Comunicação TX_RX com LCD\Comunicação_RX_TX_LCD_e_Potenciometro.c
+t1=21
+2=..\Comunicação TX_RX com LCD\Comunicação_RX_TX_LCD_e_Potenciometro.c
+t2=1
+Count=1
+[pic16f873a.c]
+Type=4
+
+[defines]
+buildcount=4
+[Units]
+Count=1
+1=pic16f873a (main)

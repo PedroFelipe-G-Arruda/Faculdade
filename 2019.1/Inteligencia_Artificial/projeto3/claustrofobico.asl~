@@ -1,0 +1,14 @@
+// Agent claustrofobico in project projeto3.mas2j
+
+/* Initial beliefs and rules */
+
+/* Initial goals */
+
+fechada(porta).
+
+/* Plans */
+
++fechada(porta):true <- .print("Porta Fechada. Vou abrir!!");
+-fechada(porta);
++aberta(porta);
+.print("Porta Aberta").

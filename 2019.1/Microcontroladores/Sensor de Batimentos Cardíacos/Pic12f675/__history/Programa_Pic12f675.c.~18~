@@ -1,0 +1,35 @@
+//#include <Programa_Pic12f675.h>
+
+#include <12F675.h>
+#device ADC=10
+
+#FUSES NOMCLR                   //Master Clear pin used for I/O
+#FUSES NOBROWNOUT               //No brownout reset
+
+#use delay(crystal=4MHz)
+//#use rs232(baud=9600,parity=N,xmit=PIN_A1,rcv=PIN_A2,bits=8,stream=PORT1)
+
+void main()
+{
+   //setup_adc_ports(sAN0);
+   //setup_adc(ADC_CLOCK_INTERNAL);
+
+int16 pulse;
+
+   
+   while(TRUE)
+   {
+   //pulse = read_adc();
+   //printf("%lu\n\r",pulse);
+   //delay_ms(20);
+   output_HIGH(PIN_A1);
+   output_HIGH(PIN_A2);
+   output_HIGH(PIN_A3);
+   output_HIGH(PIN_A4);
+   output_HIGH(PIN_A5);
+   delay_ms(10);
+
+      //TODO: User Code
+   }
+
+}

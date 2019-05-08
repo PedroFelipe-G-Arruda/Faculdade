@@ -1,0 +1,63 @@
+
+ROM used:   892/8192 (11%)
+            892/8192 (11%) including unused fragments
+
+            0.7 Average locations per line
+            6.7 Average locations per statement
+
+RAM used:   29/368 (8%) at main() level
+            61/368 (17%) worst case
+
+Stack used: 7 worst case (2 in main + 5 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   77    33  25  Comunicação_RX_TX_LCD_e_Potenciometro.c
+  685     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
+  456   100  75  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c
+----- -----
+ 1218   133 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     20   2    1             @delay_ms1
+0    144  16    3    760  4.5  lcd_read_byte
+ Inline         2    262  3.7  lcd_read_nibble
+0     46   5    1    399  2.4  lcd_send_nibble
+0     46   5    3    415  3.7  lcd_send_byte
+0    106  12    6    852  6.2  lcd_init
+0     18   2    4    208  6.3  lcd_gotoxy
+0     44   5    1    354  4.7  lcd_putc
+ Inline         4    236  3.5  lcd_getc
+0     19   2    0    138  2.2  EXT_isr
+0    256  29    0    233  3.5  RDA_isr
+0      9   1    0             @const684
+ Inline         5             @PSTRINGCN7_662
+ Inline         9             @PRINTF_LU_662
+0     96  11    0    442  3.8  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               11
+    Statements              133
+    Comments                227
+    Volume (V)              6897
+    Difficulty (D)          43.6
+    Effort to implement (E) 300474
+    Time to implement (T)   4 hours, 38 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   10
+    Maintainability (MI)    131
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00057    84  0  
+00058-007FF   804  1156  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

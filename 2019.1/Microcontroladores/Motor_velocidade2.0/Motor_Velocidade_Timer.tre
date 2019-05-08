@@ -1,0 +1,9 @@
+ÀÄ2019
+   ÃÄMAIN  0/52  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÀÄ@delay_ms1  0/22  Ram=1
+   ÃÄRTCC_isr  0/49  Ram=1
+   ÀÄTIMER1_isr  0/167  Ram=2
+      ÀÄmap  (Inline)  Ram=14
+         ÃÄ@MUL1616  (Inline)  Ram=5
+         ÀÄ@DIV1616  (Inline)  Ram=5

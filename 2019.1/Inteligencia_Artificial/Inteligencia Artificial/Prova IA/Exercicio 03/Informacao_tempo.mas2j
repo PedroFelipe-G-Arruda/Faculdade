@@ -1,0 +1,13 @@
+/* Jason Project */
+
+MAS informacao_tempo {
+
+    infrastructure: Centralised
+
+    agents:
+        maju;
+
+        pessoas;
+
+}
+

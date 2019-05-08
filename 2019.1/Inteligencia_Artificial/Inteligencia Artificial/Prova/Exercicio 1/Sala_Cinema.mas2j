@@ -1,0 +1,13 @@
+/* Jason Project */
+
+MAS sala_Cinema {
+
+    infrastructure: Centralised
+
+    agents:
+        poltronas;
+
+        cliente;
+
+}
+

@@ -1,0 +1,17 @@
+/* Jason Project */
+
+MAS geladeira_inteligente {
+
+    infrastructure: Centralised
+
+    agents:
+        geladeira;
+
+        agenteCompra;
+
+        kate;
+
+        john;
+
+}
+

@@ -1,0 +1,48 @@
+[PROJECT]
+Target=Motor_de_passo.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.081
+Compiler=PCM
+[Target Data]
+FileList=Motor_de_passo.c
+[Motor_de_passo.c]
+Type=4
+[mru-list]
+1=Motor_de_passo.c
+
+[defines]
+buildcount=2
+
+[ProjectLog]
+Days=1
+D1=17-03-2019
+D1_L=14
+D1_L1=[36892]Stopped Editing.
+TotalEdit=2
+TotalDebug=0
+D1_E=2
+D1_D=0
+D1_L2=[49876]Project Closed.
+D1_L3=[49876]Project Opened.
+D1_L4=[49917]Project Closed.
+D1_L5=[51892]Project Opened.
+D1_L6=[51895]Started Editing.
+D1_L7=[51907]Stopped Editing.
+D1_L8=[51907]Project Closed.
+D1_L9=[52176]Project Opened.
+D1_L10=[54179]Project Closed.
+D1_L11=[54179]Project Opened.
+D1_L12=[54185]Project Closed.
+D1_L13=[54197]Project Opened.
+D1_L14=[54200]Project Closed.
+
+[Opened Files]
+1=Motor_de_passo.c
+t1=1
+Count=1
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=Motor_de_passo (main)

@@ -1,0 +1,63 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+021-024 main.tempo
+025     main.@SCRATCH1
+026     @delay_ms1.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @delay_ms1
+000018  @cinit1
+000018  main
+000022  @cinit2
+
+Project Directory:
+    C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Motor de Passo\
+
+Project Files:
+    Motor_de_passo.c                                        [17-mar-19 14:25  CRC=FA318701]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [20-set-18 11:29  CRC=A7449A17]
+
+Source signature=48BABB2F
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=B98A
+
+Units:
+    Motor_de_passo (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Motor_de_passo.xsym
+    Errors:      Motor_de_passo.err
+    Ext Symbols: Motor_de_passo.esym
+    INHX8:       Motor_de_passo.hex
+    Symbols:     Motor_de_passo.sym
+    List:        Motor_de_passo.lst
+    Debug/COFF:  Motor_de_passo.cof
+    Project:     Motor_de_passo.ccspjt
+    Call Tree:   Motor_de_passo.tre
+    Statistics:  Motor_de_passo.STA

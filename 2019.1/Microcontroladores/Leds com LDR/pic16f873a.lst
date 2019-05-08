@@ -1,0 +1,81 @@
+CCS PCM C Compiler, Version 5.081, 13314               25-mar-19 10:39
+
+               Filename:   C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Leds com LDR\pic16f873a.lst
+
+               ROM used:   28 words (1%)
+                           Largest free fragment is 2048
+               RAM used:   5 (3%) at main() level
+                           5 (3%) worst case
+               Stack used: 0 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   004
+0003:  NOP
+.................... #include <pic16f873a.h> 
+.................... #include <16F873A.h> 
+.................... //////////// Standard Header file for the PIC16F873A device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F873A 
+....................  
+.................... #list 
+....................  
+.................... #device ADC=10 
+....................  
+.................... #FUSES NOBROWNOUT            	//No brownout reset 
+.................... #FUSES NOLVP                 	//No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O 
+....................  
+.................... #use delay(crystal=20000000) 
+....................  
+....................  
+....................  
+.................... void main() 
+0004:  MOVF   03,W
+0005:  ANDLW  1F
+0006:  MOVWF  03
+0007:  BSF    03.5
+0008:  BSF    1F.0
+0009:  BSF    1F.1
+000A:  BSF    1F.2
+000B:  BCF    1F.3
+000C:  MOVLW  07
+000D:  MOVWF  1C
+.................... { 
+.................... 	setup_adc_ports(AN0); 
+000E:  BCF    1F.0
+000F:  BSF    1F.1
+0010:  BSF    1F.2
+0011:  BSF    1F.3
+.................... 	setup_adc(ADC_CLOCK_DIV_16); 
+0012:  BSF    1F.6
+0013:  BCF    03.5
+0014:  BSF    1F.6
+0015:  BCF    1F.7
+0016:  BSF    03.5
+0017:  BSF    1F.7
+0018:  BCF    03.5
+0019:  BSF    1F.0
+....................  
+.................... 	while(TRUE) 
+.................... 	{ 
+001A:  GOTO   01A
+....................  
+....................  
+.................... 		//TODO: User Code 
+.................... 	} 
+....................  
+.................... } 
+001B:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F32   HS NOWDT PUT NOBROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

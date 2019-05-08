@@ -1,0 +1,99 @@
+[PROJECT]
+Target=Programa_Pic12f675.hex
+Processor_Text=PIC12F675
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Programa_Pic12f675.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Sensor de Batimentos Cardíacos\Programa_Pic12f675]
+Type=4
+[mru-list]
+1=Programa_Pic12f675.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=6
+D1=13-04-2019
+D1_L=22
+D1_L1=[47261]Project Opened.
+D1_L2=[47297]Project Closed.
+D1_L3=[50269]Project Opened.
+D1_L4=[50492]Started Editing.
+D1_L5=[50905]Stopped Editing.
+TotalEdit=67
+TotalDebug=0
+D1_E=64
+D1_D=0
+D1_L6=[50911]Project Closed.
+D1_L7=[50911]Project Opened.
+D1_L8=[50919]Started Editing.
+D1_L9=[51226]Stopped Editing.
+D1_L10=[53047]Started Editing.
+D1_L11=[54289]Stopped Editing.
+D1_L12=[54295]Project Closed.
+D1_L13=[54295]Project Opened.
+D1_L14=[54305]Started Editing.
+D1_L15=[54821]Stopped Editing.
+D1_L16=[54821]Project Closed.
+D1_L17=[54821]Project Opened.
+D1_L18=[54944]Started Editing.
+D1_L19=[56833]Stopped Editing.
+D1_L20=[57393]Started Editing.
+D1_L21=[57693]Stopped Editing.
+D1_L22=[59728]Project Closed.
+D2=15-04-2019
+D2_L=6
+D2_L1=[46710]Project Opened.
+D2_L2=[46777]Started Editing.
+D2_L3=[47166]Stopped Editing.
+D2_L4=[48317]Started Editing.
+D2_L5=[48642]Stopped Editing.
+D2_E=2
+D2_D=0
+D2_L6=[49187]Project Closed.
+D3=16-04-2019
+D3_L=6
+D3_L1=[62510]Project Opened.
+D3_L2=[62975]Project Closed.
+D3_L3=[63129]Project Opened.
+D3_L4=[63227]Project Closed.
+D3_L5=[63364]Project Opened.
+D3_L6=[77082]Project Closed.
+D4=17-04-2019
+D4_L=2
+D4_L1=[48385]Project Opened.
+D4_L2=[52065]Project Closed.
+D5=24-04-2019
+D5_L=6
+D5_L1=[42888]Project Opened.
+D5_L2=[42912]Started Editing.
+D5_L3=[43228]Stopped Editing.
+D5_L4=[44387]Started Editing.
+D5_L5=[44697]Stopped Editing.
+D5_E=1
+D5_D=0
+D5_L6=[45338]Project Closed.
+D6=06-05-2019
+D6_L=2
+D6_L1=[33804]Project Opened.
+D6_L2=[33851]Project Closed.
+
+[Opened Files]
+1=Programa_Pic12f675.c
+t1=1
+Count=1
+[Programa_Pic12f675.c]
+Type=4
+
+[defines]
+buildcount=46
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Sensor de Batimentos Cardíacos\Pic12f675\Programa_Pic12f675]
+Type=4
+[Units]
+Count=1
+1=Programa_Pic12f675 (main)

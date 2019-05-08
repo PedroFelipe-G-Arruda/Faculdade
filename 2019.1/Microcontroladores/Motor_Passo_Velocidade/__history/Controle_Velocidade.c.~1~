@@ -1,0 +1,34 @@
+#include <Controle_Velocidade.h>
+
+#INT_RTCC
+void  RTCC_isr(void) 
+{
+
+}
+
+#INT_TIMER1
+void  TIMER1_isr(void) 
+{
+
+}
+
+void main()
+{
+	setup_adc_ports(AN0);
+	setup_adc(ADC_CLOCK_INTERNAL);
+	setup_timer_0(RTCC_INTERNAL|RTCC_DIV_32|RTCC_8_BIT);		//1,6 ms overflow
+	setup_timer_1(T1_INTERNAL|T1_DIV_BY_8);		//104 ms overflow
+
+
+	enable_interrupts(INT_RTCC);
+	enable_interrupts(INT_TIMER1);
+	enable_interrupts(GLOBAL);
+
+	while(TRUE)
+	{
+
+
+		//TODO: User Code
+	}
+
+}

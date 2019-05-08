@@ -1,0 +1,25 @@
+// Agent bob in project AgentBigBrother.mas2j
+
+
+
+/* Initial beliefs and rules */
+
+
+
+/* Initial goals */
+
+
+
+
+/* Plans */
+
++!luz(ligada) <-
+	.print("Luz desligada!");
+	.send(kate, tell, ~luz(ligada)).
+
+
+/*
++kate(linda)<-
++~kate(linda);
+	.print("Não, você não é!");
+	.send(kate, tell, ~kate(linda)).*/

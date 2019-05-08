@@ -1,0 +1,33 @@
+// Agent kate in project AgentBigBrother.mas2j
+
+/* Initial beliefs and rules */
+
+/* Initial goals */
+
+!falapara.
+
+/* Plans */
+
++!falapara: true <-
+	.print("Por favor, ligue a luz!");
+	.send(bob, achieve, luz(ligada)).
+	
++luz(ligada) <-
+	.print("Obrigada!").
+	
++~luz(ligada) <-
+	.print("ligue a luz");
+	!falapara.
+	
+
+/*
++!falapara: true <-
+	.print("Olá Bob, eu sou linda!!!");
+	.send(bob, tell, kate(linda)).
++~kate(linda) [source(bob)] <- 
+.print("Desculpe...");
+.send(bob, untell, kate(linda)).
+*/
+
+
+

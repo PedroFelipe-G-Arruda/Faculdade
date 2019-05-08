@@ -1,0 +1,6 @@
+!falarpara.
+
++!falarpara : true <-.print("Por favor, ligue a luz!!!");
+.send(bob, achieve, luz(ligada)).
+
+

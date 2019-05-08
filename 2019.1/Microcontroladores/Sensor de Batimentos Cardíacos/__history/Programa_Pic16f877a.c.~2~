@@ -1,0 +1,18 @@
+#include <Programa_Pic16f877a.h>
+
+void main()
+{
+   setup_adc_ports(AN0);
+   setup_adc(ADC_CLOCK_DIV_2);
+
+   float pulse = 0;
+   while(TRUE)
+   {
+   pulse = read_adc();
+   printf("%Lu\n\r",pulse);
+   delay_ms(10);
+
+      //TODO: User Code
+   }
+
+}

@@ -1,5 +1,4 @@
 begin
-
 	int i;
 	output("Ola Mundo");
 	output("Digite um numero de 0 a 10:");
@@ -9,5 +8,5 @@ begin
 	    x <- x + 1;
 	lend;
 	output(x);
-
+	output("Mariana eu te amo);	
 end

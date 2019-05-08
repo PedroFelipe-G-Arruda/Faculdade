@@ -1,0 +1,15 @@
+/* Jason Project */
+
+MAS exercicio03 {
+
+    infrastructure: Centralised
+
+    agents:
+        pessoa1;
+
+        pessoa2;
+
+        pessoa3;
+
+}
+

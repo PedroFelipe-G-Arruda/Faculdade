@@ -1,0 +1,23 @@
+/* Jason Project */
+
+
+
+MAS exercicio1 {
+
+
+
+    infrastructure: Centralised
+
+
+
+    agents:
+
+        agente;
+
+        kate;
+
+        bob;
+
+}
+
+

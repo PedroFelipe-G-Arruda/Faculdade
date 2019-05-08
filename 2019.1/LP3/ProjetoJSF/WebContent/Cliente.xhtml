@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+<h:form id="frmCliente">
+	<h:message for="frmCliente"/><br />
+	<h:outputLabel value="Nome:" />
+	<h:inputText value="#{clienteMB.cliente.nome}" id="txtNome" >
+		<f:validateLength minimum="5" />
+		<f:ajax event="keyup" render="msgNome" />
+	</h:inputText>
+	<h:message id="msgNome" for="txtNome"/><br />
+	
+	<h:outputLabel value="Data Nascimento:" />
+	<h:inputText value="#{clienteMB.cliente.dataNascimento}" id="txtData" >
+		<f:convertDateTime pattern="dd/MM/yyyy" />
+	</h:inputText>
+	<h:message id="msgData" for="txtData"/><br />
+	
+	<h:outputLabel value="Salario:" />
+	<h:inputText value="#{clienteMB.cliente.salario}" id="txtSalario" >
+		<f:convertNumber type="currency" currencySymbol="R$" />
+	</h:inputText>
+	<h:message id="msgSalario" for="txtSalario"/><br />
+	
+	<h:outputLabel value="Pontos Fidelidade:" />
+	<h:inputText value="#{clienteMB.cliente.pontosFidelidade}" id="txtPontosFidelidade" >
+		<f:convertNumber integerOnly="true"/>
+	</h:inputText>
+	<h:message id="msgPontosFidelidade" for="txtNome"/><br />
+	
+	<h:outputText value="#{clienteMB.mensagem}" /><br />
+	<h:commandButton action="#{clienteMB.validar()}" value="Validar" />
+</h:form>
+</body> 
+</html>

@@ -1,0 +1,20 @@
+#include <Programa_Pic12f675.h>
+
+void main()
+{
+	setup_adc_ports(sAN0);
+	setup_adc(ADC_CLOCK_INTERNAL);
+
+	while(TRUE)
+	{
+
+		//Example blinking LED program
+		output_low(LED);
+		delay_ms(DELAY);
+		output_high(LED);
+		delay_ms(DELAY);
+
+		//TODO: User Code
+	}
+
+}

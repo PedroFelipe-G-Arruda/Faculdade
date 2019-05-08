@@ -1,0 +1,9 @@
+/* Jason Project */
+
+MAS projeto3 {
+
+    infrastructure: Centralised
+
+    agents:	claustrofobico;	paranoico;
+}
+

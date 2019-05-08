@@ -1,0 +1,10 @@
+ÀÄ2019
+   ÀÄmain  0/81  Ram=2
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@PRINTF_LU_542  0/88  Ram=8
+      ³  ÀÄ@PUTCHAR_1_  0/34  Ram=1
+      ÃÄ@PUTCHAR_1_  0/34  Ram=1
+      ÃÄ@PUTCHAR_1_  0/34  Ram=1
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÀÄ@delay_ms1  0/20  Ram=1

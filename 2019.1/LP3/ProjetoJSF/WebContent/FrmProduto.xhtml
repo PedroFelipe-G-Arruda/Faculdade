@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Gerenciador de Produtos</title>
+	<style type="text/css">
+		p, h1, h2, tr, td, label, button, div{font-family: serif; font-size: 12px}
+	</style>
+</h:head> 
+<h:body> 
+	<p:layout fullPage="true">
+		<p:layoutUnit position="west" width="200" header="Atividades" resizable="true" closable="''true" collapsible="true">
+			<h:from id = "frmMenu">
+				<p:commandLink value="Novo Produto" actionLister="#{produtoController.preparerAdicionarProduto}"
+				update=":frmEdicaoProduto:infosProduto"
+				oncomplete="PF('diaLogGerProduto').show();"/>
+			</h:from>
+		</p:layoutUnit>
+		
+		<p:layoutUnit position="north" width="600" header="Filtro" resizable="true" closable="true" collapsible="true">
+			<h:form id="frmFiltro" style="text-align: center;">
+				<h:outputLabel value="Nome: ">
+				<p:inputText value=""></p:inputText>
+				</h:outputLabel>
+			</h:form>
+		</p:layoutUnit>
+		
+		<p:layoutUnit position="center">
+			<h1>Gerenciador de Produtos</h1>
+			<br/>
+			<h:message for="frmTabelaProduto" style="color:red;"/>
+			<h:form id="frmTabelaProduto">
+				<p:dataTable id="tabela" var="p" value="#{produtoController.produtos}"></p:dataTable>
+			</h:form>
+		</p:layoutUnit>
+	</p:layout>
+</h:body> 
+</html>

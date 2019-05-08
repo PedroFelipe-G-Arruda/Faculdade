@@ -1,0 +1,17 @@
+#include <Programa_Pic12f675.h>
+
+void main()
+{
+   setup_adc_ports(sAN0);
+   setup_adc(ADC_CLOCK_DIV_2);
+
+   while(TRUE)
+   {
+   
+   output_toggle(PIN_A4);
+   delay_ms(50);
+
+      //TODO: User Code
+   }
+
+}

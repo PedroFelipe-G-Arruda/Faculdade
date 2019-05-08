@@ -1,0 +1,47 @@
+[PROJECT]
+Target=Blink.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Blink.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Testes\Blink]
+Type=4
+[mru-list]
+1=Blink.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=15-03-2019
+D1_L=8
+D1_L1=[37590]Project Opened.
+D1_L2=[37684]Started Editing.
+D1_L3=[38140]Stopped Editing.
+D1_L4=[38599]Started Editing.
+D1_L5=[39016]Stopped Editing.
+D1_L6=[39216]Started Editing.
+D1_L7=[39839]Stopped Editing.
+TotalEdit=10
+TotalDebug=0
+D1_E=10
+D1_D=0
+D1_L8=[45082]Project Closed.
+
+[Opened Files]
+1=Blink.c
+t1=1
+Count=1
+[Blink.c]
+Type=4
+
+[defines]
+buildcount=5
+[Units]
+Count=1
+1=Blink (main)

@@ -1,0 +1,77 @@
+[PROJECT]
+Target=Motor_Velocidade_Timer.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Motor_Velocidade_Timer.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Motor_velocidade2.0\Motor_Velocidade_Timer]
+Type=4
+[mru-list]
+1=Motor_Velocidade_Timer.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=3
+D1=18-03-2019
+D1_L=6
+D1_L1=[42487]Project Opened.
+D1_L2=[42551]Project Closed.
+D1_L3=[42551]Project Opened.
+D1_L4=[42557]Started Editing.
+D1_L5=[43486]Stopped Editing.
+TotalEdit=65
+TotalDebug=0
+D1_E=11
+D1_D=0
+D1_L6=[43737]Project Closed.
+D2=19-03-2019
+D2_L=6
+D2_L1=[64715]Project Opened.
+D2_L2=[64919]Started Editing.
+D2_L3=[65327]Stopped Editing.
+D2_L4=[65335]Started Editing.
+D2_L5=[66028]Stopped Editing.
+D2_E=14
+D2_D=0
+D2_L6=[66028]Project Closed.
+D3=20-03-2019
+D3_L=18
+D3_L1=[33861]Project Opened.
+D3_L2=[33921]Started Editing.
+D3_L3=[34370]Stopped Editing.
+D3_L4=[34641]Started Editing.
+D3_L5=[35041]Stopped Editing.
+D3_L6=[36940]Started Editing.
+D3_L7=[37702]Stopped Editing.
+D3_E=40
+D3_D=0
+D3_L8=[37702]Project Closed.
+D3_L9=[38375]Project Opened.
+D3_L10=[38383]Started Editing.
+D3_L11=[38780]Stopped Editing.
+D3_L12=[38955]Started Editing.
+D3_L13=[39014]Stopped Editing.
+D3_L14=[39014]Project Closed.
+D3_L15=[40690]Project Opened.
+D3_L16=[40728]Started Editing.
+D3_L17=[41870]Stopped Editing.
+D3_L18=[41871]Project Closed.
+
+[Opened Files]
+1=Motor_Velocidade_Timer.c
+t1=26
+Count=1
+[Motor_Velocidade_Timer.c]
+Type=4
+
+[defines]
+buildcount=38
+[Units]
+Count=1
+1=Motor_Velocidade_Timer (main)

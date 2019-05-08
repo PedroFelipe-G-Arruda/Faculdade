@@ -1,0 +1,73 @@
+//#include <Controle_Velocidade_Motor.h>
+
+#include <16F877A.h>
+#device ADC=10
+
+#FUSES NOWDT                    //No Watch Dog Timer
+#FUSES HS                       //High speed Osc (> 4mhz for PCM/PCH) (>10mhz for PCD)
+#FUSES NOPUT                    //No Power Up Timer
+#FUSES NOBROWNOUT               //No brownout reset
+#FUSES NOLVP                    //No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O
+#FUSES NOCPD                    //No EE protection
+#FUSES NOWRT                    //Program memory not write protected
+#FUSES NODEBUG                  //No Debug mode for ICD
+#FUSES NOPROTECT                //Code not protected from reading
+
+#use delay(crystal=20000000)
+
+long map(long var, long in_min, long in_max, long out_min, long out_max){
+   return((var - in_min) * (out_max - out_min) / (in_max - in_min) + out_min);
+}
+
+void main()
+{
+   setup_adc_ports(AN0);
+   setup_adc(ADC_CLOCK_DIV_16);
+   int16 tempo;
+
+   while(TRUE)
+   {
+   
+   tempo = read_adc();
+   tempo = map(tempo,0,1023,10,100);
+/*
+   output_D(0b00000001);
+   delay_ms(tempo);
+   output_D(0b00000100);
+   delay_ms(tempo);
+   output_D(0b00000010);
+   delay_ms(tempo);
+   output_D(0b00001000);
+   delay_ms(tempo);
+   
+   output_D(0b00000101);
+   delay_ms(tempo);
+   output_D(0b00000110);
+   delay_ms(tempo);
+   output_D(0b00001010);
+   delay_ms(tempo);
+   output_D(0b00001001);
+   delay_ms(tempo);
+  */
+   output_D(0b00000001);
+   delay_ms(tempo);
+   output_D(0b00000101);
+   delay_ms(tempo);
+   output_D(0b00000100);
+   delay_ms(tempo);
+   output_D(0b00000110);
+   delay_ms(tempo);
+   output_D(0b00000010);
+   delay_ms(tempo);
+   output_D(0b00001010);
+   delay_ms(tempo);
+   output_D(0b00001000);
+   delay_ms(tempo);
+   output_D(0b00001001);
+   delay_ms(tempo);
+ 
+   }
+
+}
+
+

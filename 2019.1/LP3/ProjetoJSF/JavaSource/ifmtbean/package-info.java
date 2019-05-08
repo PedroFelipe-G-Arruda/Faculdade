@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+/**
+ * @author magikarp
+ *
+ */
+package ifmtbean;

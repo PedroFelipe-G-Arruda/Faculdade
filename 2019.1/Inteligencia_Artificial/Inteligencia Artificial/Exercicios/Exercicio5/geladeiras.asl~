@@ -1,0 +1,55 @@
+// Agent geladeiras in project Exercicio3.mas2j
+
+/* Initial beliefs and rules */
+
+acabou.
+
+agua(0).
+suco(0).
+refri(0).
+cerveja(0).
+
+/* Initial goals */
+
+
+/* Plans */
+
++!pediragua: agua(A) & A<=5 <-
+	.print("Colocar agua !!!");
+	.send(compras, achieve, agua(cheia));
+	-+agua(10);
+	.print(agua(A)).
+	
++!pediragua: agua(A) & A > 5  <-
+	.print("Entrou ");
+	-+agua(A-1);
+	.print(A);
+	.wait(500);
+	!pediragua.
+
++!pedirsuco: suco(S) & S<=5 <-
+	.print("Colocar suco !!!");
+	.send(compras, achieve, suco(cheia));
+	-+suco(10);
+	.print(suco(S)).
+	
++!pedirsuco: suco(S) & S > 5  <-
+	.print("Entrou ");
+	-+suco(S-1);
+	.print(S);
+	.wait(500);
+	!pedirsuco.
+
++!pedirrefri: refri(R) & R<5 <-
+	.print("Colocar Refrigerante !!!");
+	.send(compras, achieve, refri(cheia));
+	-+refri(10).
+	
+	
++!pedirrefri: refri(R) & R > 5  <-
+	.print("Entrou ");
+	-+refri(R-1);
+	.print(R);
+	.wait(500);
+	!pedirrefri.
+

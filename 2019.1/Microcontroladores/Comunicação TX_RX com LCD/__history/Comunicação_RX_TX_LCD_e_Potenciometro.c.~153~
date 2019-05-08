@@ -1,0 +1,31 @@
+#include <Comunicação_RX_TX_LCD_e_Potenciometro.h>
+
+#INT_EXT
+void  EXT_isr(void) 
+{
+
+}
+
+#INT_RDA
+void  RDA_isr(void) 
+{
+
+}
+
+void main()
+{
+	setup_adc_ports(AN0);
+	setup_adc(ADC_CLOCK_INTERNAL);
+
+	enable_interrupts(INT_EXT);
+	enable_interrupts(INT_RDA);
+	enable_interrupts(GLOBAL);
+
+	while(TRUE)
+	{
+
+
+		//TODO: User Code
+	}
+
+}

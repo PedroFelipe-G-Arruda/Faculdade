@@ -1,0 +1,35 @@
+//#include <Controle_Velocidade_Motor.h>
+
+#include <16F877A.h>
+#device ADC=10
+#use delay(crystal=20000000)
+
+long map(long var, long in_min, long in_max, long out_min, long out_max){
+   return((var - in_min) * (out_max - out_min) / (in_max - in_min) + out_min);
+}
+
+void main()
+{
+   setup_adc_ports(AN0);
+   setup_adc(ADC_CLOCK_DIV_16);
+   int tempo;
+
+   while(TRUE)
+   {
+   
+   tempo = read_adc();
+   tempo = map(tempo,0,1023,5,100);
+   output_D(0b00000001);
+   delay_ms(tempo);
+   output_D(0b00000010);
+   delay_ms(tempo);
+   output_D(0b00000100);
+   delay_ms(tempo);
+   output_D(0b00001000);
+   delay_ms(tempo);
+   
+   }
+
+}
+
+

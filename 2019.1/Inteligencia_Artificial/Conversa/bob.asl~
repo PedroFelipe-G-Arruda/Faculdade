@@ -1,0 +1,2 @@
++!luz(ligada) <- .print("Luz ligada!!");
+.send(kate, tell, kate(luz_ligada)).

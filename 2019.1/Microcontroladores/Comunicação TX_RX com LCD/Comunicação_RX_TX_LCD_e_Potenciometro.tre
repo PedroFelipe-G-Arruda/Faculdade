@@ -1,0 +1,45 @@
+ÀÄ2019
+   ÃÄMAIN  0/96  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄlcd_init  0/106  Ram=6
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄlcd_send_nibble  0/46  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄlcd_send_nibble  0/46  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÀÄlcd_send_byte  0/46  Ram=3
+   ³  ³     ÃÄlcd_read_byte  0/144  Ram=3
+   ³  ³     ³  ÃÄlcd_read_nibble  (Inline)  Ram=2
+   ³  ³     ³  ÀÄlcd_read_nibble  (Inline)  Ram=2
+   ³  ³     ÃÄlcd_send_nibble  0/46  Ram=1
+   ³  ³     ÀÄlcd_send_nibble  0/46  Ram=1
+   ³  ÀÄ@delay_ms1  0/20  Ram=1
+   ÃÄEXT_isr  0/19  Ram=0
+   ³  ÀÄ@delay_ms1  0/20  Ram=1
+   ÀÄRDA_isr  0/256  Ram=0
+      ÃÄlcd_getc  (Inline)  Ram=4
+      ³  ÃÄlcd_gotoxy  0/18  Ram=4
+      ³  ³  ÀÄlcd_send_byte  0/46  Ram=3
+      ³  ³     ÀÄ*
+      ³  ÃÄlcd_read_byte  0/144  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÀÄlcd_read_byte  0/144  Ram=3
+      ³     ÀÄ*
+      ÃÄ@PSTRINGCN7_662  (Inline)  Ram=5
+      ³  ÃÄlcd_putc  0/44  Ram=1
+      ³  ³  ÃÄlcd_gotoxy  0/18  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄlcd_send_byte  0/46  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ³  ÃÄlcd_gotoxy  0/18  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄlcd_send_byte  0/46  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄlcd_send_byte  0/46  Ram=3
+      ³  ³     ÀÄ*
+      ³  ÀÄlcd_putc  0/44  Ram=1
+      ³     ÀÄ*
+      ÀÄ@PRINTF_LU_662  (Inline)  Ram=9
+         ÀÄlcd_putc  0/44  Ram=1
+            ÀÄ*

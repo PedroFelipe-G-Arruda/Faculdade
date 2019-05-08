@@ -1,0 +1,17 @@
+/* Jason Project */
+
+MAS quartoInteligente {
+
+    infrastructure: Centralised
+
+    agents:
+        quarto;
+
+        bob;
+
+        kate;
+
+        despertador;
+
+}
+

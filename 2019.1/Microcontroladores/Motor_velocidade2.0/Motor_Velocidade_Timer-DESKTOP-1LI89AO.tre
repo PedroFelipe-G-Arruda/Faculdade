@@ -1,0 +1,9 @@
+ÀÄ2019
+   ÃÄMAIN  0/68  Ram=1
+   ³  ÀÄ@cinit1  (Inline)  Ram=0
+   ÃÄRTCC_isr  0/4  Ram=0
+   ÀÄTIMER1_isr  0/562  Ram=4
+      ÃÄ@ITOF  (Inline)  Ram=2
+      ÃÄ@MULFF  (Inline)  Ram=13
+      ÃÄ@ADDFF  (Inline)  Ram=16
+      ÀÄ@SFTOI  (Inline)  Ram=4

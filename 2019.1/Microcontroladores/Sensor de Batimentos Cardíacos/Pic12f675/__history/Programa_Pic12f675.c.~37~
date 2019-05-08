@@ -1,0 +1,42 @@
+//#include <Programa_Pic12f675.h>
+
+#include <12F675.h>
+#device ADC=10
+
+#FUSES NOMCLR                   //Master Clear pin used for I/O
+#FUSES NOBROWNOUT               //No brownout reset
+
+#fuses INTRC_IO,NOWDT,NOPUT,NOPROTECT,NOCPD
+
+#use delay(internal=4MHz)
+#use rs232(baud=9600,parity=N,xmit=PIN_A1,rcv=PIN_A2,bits=8,stream=PORT1)
+
+#define GP0 PIN_A0 
+#define GP1 PIN_A1 
+#define GP2 PIN_A2 
+#define GP3 PIN_A3 
+#define GP4 PIN_A4 
+#define GP5 PIN_A5 
+
+
+
+void main()
+{
+   set_tris_a( 0b11101000 ); // set GP0 output, all other inputs 
+   setup_adc_ports(sAN0);
+   setup_adc(ADC_CLOCK_INTERNAL);
+   
+   set_tris_a( 0b11110111 ); // set GP1 output, all other inputs 
+   setup_comparator( NC_NC_NC_NC ); // disable comparators 
+   //setup_adc_ports( NO_ANALOGS ); // disable analog inputs 
+   //setup_adc( ADC_OFF ); // disable A2D 
+
+
+while ( TRUE ) // blink LED 
+{ 
+output_high( GP3 ); // turn LED on 
+delay_ms( 250 ); // wait 250ms 
+output_low( GP3 ); // turn LED off 
+delay_ms( 250 ); // wait 250ms 
+} 
+} 

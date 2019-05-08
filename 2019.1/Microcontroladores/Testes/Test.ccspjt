@@ -1,0 +1,133 @@
+[PROJECT]
+Target=Test.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Test.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Testes\Test]
+Type=4
+[mru-list]
+1=Test.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=9
+D1=24-03-2019
+D1_L=10
+D1_L1=[42938]Project Opened.
+D1_L2=[42974]Started Editing.
+D1_L3=[43054]Stopped Editing.
+TotalEdit=88
+TotalDebug=0
+D1_E=3
+D1_D=0
+D1_L4=[43058]Project Closed.
+D1_L5=[43058]Project Opened.
+D1_L6=[43066]Started Editing.
+D1_L7=[43375]Stopped Editing.
+D1_L8=[43708]Started Editing.
+D1_L9=[44041]Stopped Editing.
+D1_L10=[44459]Project Closed.
+D2=25-03-2019
+D2_L=8
+D2_L1=[40097]Project Opened.
+D2_L2=[40106]Started Editing.
+D2_L3=[40399]Stopped Editing.
+D2_E=5
+D2_D=0
+D2_L4=[40399]Project Closed.
+D2_L5=[40423]Project Opened.
+D2_L6=[40443]Project Closed.
+D2_L7=[49174]Project Opened.
+D2_L8=[49229]Project Closed.
+D3=27-03-2019
+D3_L=2
+D3_L1=[36143]Project Opened.
+D3_L2=[36168]Project Closed.
+D4=28-03-2019
+D4_L=8
+D4_L1=[54203]Project Opened.
+D4_L2=[54210]Started Editing.
+D4_L3=[54558]Stopped Editing.
+D4_L4=[54796]Started Editing.
+D4_L5=[56527]Stopped Editing.
+D4_L6=[56906]Started Editing.
+D4_L7=[57274]Stopped Editing.
+D4_E=31
+D4_D=0
+D4_L8=[57274]Project Closed.
+D5=29-03-2019
+D5_L=23
+D5_L1=[66548]Project Opened.
+D5_L2=[66806]Started Editing.
+D5_L3=[67135]Stopped Editing.
+D5_L4=[67196]Started Editing.
+D5_L5=[67373]Stopped Editing.
+D5_E=47
+D5_D=0
+D5_L6=[67373]Project Closed.
+D5_L7=[67385]Project Opened.
+D5_L8=[67499]Started Editing.
+D5_L9=[68562]Stopped Editing.
+D5_L10=[68682]Started Editing.
+D5_L11=[69168]Stopped Editing.
+D5_L12=[69349]Started Editing.
+D5_L13=[69982]Stopped Editing.
+D5_L14=[69993]Started Editing.
+D5_L15=[71371]Stopped Editing.
+D5_L16=[71467]Started Editing.
+D5_L17=[71971]Stopped Editing.
+D5_L18=[73533]Project Closed.
+D5_L19=[79178]Project Opened.
+D5_L20=[79191]Started Editing.
+D5_L21=[79511]Stopped Editing.
+D5_L22=[79906]Started Editing.
+D5_L23=[80217]Stopped Editing.
+D6=30-03-2019
+D6_E=1
+D6_D=0
+D6_L=1
+D6_L1=[29471]Project Closed.
+D7=31-03-2019
+D7_L=8
+D7_L1=[25685]Project Opened.
+D7_L2=[25721]Started Editing.
+D7_L3=[26057]Stopped Editing.
+D7_L4=[28522]Started Editing.
+D7_L5=[28823]Stopped Editing.
+D7_L6=[28896]Started Editing.
+D7_L7=[29204]Stopped Editing.
+D7_E=1
+D7_D=0
+D7_L8=[32444]Project Closed.
+D8=01-04-2019
+D8_L=4
+D8_L1=[38795]Project Opened.
+D8_L2=[42214]Project Closed.
+D8_L3=[62924]Project Opened.
+D8_L4=[64328]Project Closed.
+D9=07-04-2019
+D9_L=2
+D9_L1=[56344]Project Opened.
+D9_L2=[56632]Project Closed.
+
+[Opened Files]
+1=Test.c
+t1=1
+Count=1
+2=..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+t2=16
+[Test.c]
+Type=4
+
+[defines]
+buildcount=39
+[Units]
+Count=1
+1=Test (main)

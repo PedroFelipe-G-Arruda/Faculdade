@@ -1,0 +1,80 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-027 pot
+028     @delay_ms1.P1
+028-029 @PRINTF_LU_9600_62_63.P2
+02A     @PRINTF_LU_9600_62_63.@SCRATCH1
+02B     @PRINTF_LU_9600_62_63.@SCRATCH2
+02C     @PRINTF_LU_9600_62_63.@SCRATCH3
+02D     @PRINTF_LU_9600_62_63.@SCRATCH4
+02E     @PRINTF_LU_9600_62_63.@SCRATCH5
+02F     @PRINTF_LU_9600_62_63.@SCRATCH6
+030     @PRINTF_LU_9600_62_63.@SCRATCH7
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @PRINTF_LU_9600_62_63
+00005F  @delay_ms1
+000075  @cinit1
+000075  MAIN
+000087  @cinit2
+000105  div
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Testes\
+
+Project Files:
+    Test.c                                                  [07-abr-19 15:39  CRC=28D5A625]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [20-set-18 11:29  CRC=A7449A17]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [29-jun-16 09:34  CRC=7E9CC16B]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [05-set-14 11:47  CRC=897CEC6C]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [26-mar-15 12:34  CRC=C4814297]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-jan-08 14:55  CRC=2D1F019F]
+
+Source signature=F6F333E8
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=44A8
+
+Units:
+    Test (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Test.xsym
+    Errors:      Test.err
+    Ext Symbols: Test.esym
+    INHX8:       Test.hex
+    Symbols:     Test.sym
+    List:        Test.lst
+    Debug/COFF:  Test.cof
+    Project:     Test.ccspjt
+    Call Tree:   Test.tre
+    Statistics:  Test.STA

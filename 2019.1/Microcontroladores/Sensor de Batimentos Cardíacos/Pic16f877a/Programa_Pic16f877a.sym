@@ -1,0 +1,71 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-021 pulse
+022     @delay_ms1.P1
+022-023 @PRINTF_LU_115200_62_63.P2
+024     @PRINTF_LU_115200_62_63.@SCRATCH1
+025     @PRINTF_LU_115200_62_63.@SCRATCH2
+026     @PRINTF_LU_115200_62_63.@SCRATCH3
+027     @PRINTF_LU_115200_62_63.@SCRATCH4
+028     @PRINTF_LU_115200_62_63.@SCRATCH5
+029     @PRINTF_LU_115200_62_63.@SCRATCH6
+02A     @PRINTF_LU_115200_62_63.@SCRATCH7
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @PRINTF_LU_115200_62_63
+00005F  @delay_ms1
+000075  main
+000075  @cinit1
+000087  @cinit2
+
+Project Directory:
+    C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Sensor de Batimentos Cardíacos\
+
+Project Files:
+    Programa_Pic16f877a.c                                   [07-abr-19 19:28  CRC=7FC7757D]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [20-set-18 11:29  CRC=A7449A17]
+
+Source signature=CE50A9AB
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=4E26
+
+Units:
+    Programa_Pic16f877a (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Programa_Pic16f877a.xsym
+    Errors:      Programa_Pic16f877a.err
+    Ext Symbols: Programa_Pic16f877a.esym
+    INHX8:       Programa_Pic16f877a.hex
+    Symbols:     Programa_Pic16f877a.sym
+    List:        Programa_Pic16f877a.lst
+    Debug/COFF:  Programa_Pic16f877a.cof
+    Project:     Programa_Pic16f877a.ccspjt
+    Call Tree:   Programa_Pic16f877a.tre
+    Statistics:  Programa_Pic16f877a.STA

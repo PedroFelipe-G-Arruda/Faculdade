@@ -1,0 +1,24 @@
+#include <Test.h>
+int16 pot = 0;
+
+
+void main()
+{
+   setup_adc_ports(AN0);
+   setup_adc(ADC_CLOCK_INTERNAL);
+   
+   while(TRUE)
+   {
+      //pot = read_adc();   
+      //printf("%lu\n\r",pot);
+      //delay_ms(400);
+      
+      if(kbhit()){
+      putc(getc());
+      }
+      
+      delay_ms(100);
+      //TODO: User Code
+   }
+
+}

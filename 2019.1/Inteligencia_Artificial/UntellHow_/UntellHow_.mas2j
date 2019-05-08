@@ -1,0 +1,11 @@
+/* Jason Project */
+
+MAS untellHow_ {
+
+    infrastructure: Centralised
+
+    agents:
+	kate;
+	bob;
+}
+

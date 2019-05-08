@@ -1,0 +1,17 @@
+#include <Sensor_Postura.h>
+
+#include <math.h>
+
+void main()
+{
+	setup_adc_ports(AN0_AN1_AN3);
+	setup_adc(ADC_CLOCK_DIV_8);
+
+	while(TRUE)
+	{
+
+
+		//TODO: User Code
+	}
+
+}

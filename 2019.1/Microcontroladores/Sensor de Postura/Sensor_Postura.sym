@@ -1,0 +1,107 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     amostra
+021-022 xMinVal
+023-024 yMinVal
+025-026 zMinVal
+027-028 xMaxVal
+029-02A yMaxVal
+02B-02C zMaxVal
+02D-02E ref
+02F-030 xRead
+031-032 yRead
+033-034 zRead
+035-036 xAng
+037-038 yAng
+039-03A zAng
+03B-03C x
+03D-03E y
+03F-040 z
+041-042 val
+043-046 atan2.y
+043     MAIN.i
+044-045 @PRINTF_LU_9600_62_63.P1
+044-045 @DIV1616.P2
+044     @PSTRINGCN7_9600_62_63.P3
+044     MAIN.@SCRATCH1
+045     @delay_ms1.P1
+045     @PSTRINGCN7_9600_62_63.@SCRATCH1
+046-047 @DIV1616.P1
+046     @PSTRINGCN7_9600_62_63.@SCRATCH2
+046     @PRINTF_LU_9600_62_63.@SCRATCH1
+047-04A atan2.x
+047     @PSTRINGCN7_9600_62_63.@SCRATCH3
+047     @PRINTF_LU_9600_62_63.@SCRATCH2
+048     @DIV1616.@SCRATCH1
+048     @PSTRINGCN7_9600_62_63.@SCRATCH4
+048     @PRINTF_LU_9600_62_63.@SCRATCH3
+049     @PRINTF_LU_9600_62_63.@SCRATCH4
+04A     @PRINTF_LU_9600_62_63.@SCRATCH5
+04B-04E atan2.z
+04B     @PRINTF_LU_9600_62_63.@SCRATCH6
+04C     @PRINTF_LU_9600_62_63.@SCRATCH7
+04F.0   atan2.sign
+050     atan2.quad
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const805.call
+00001B  @DIV1616
+000040  @PSTRINGCN7_9600_62_63
+000099  @PRINTF_LU_9600_62_63
+0000F2  @delay_ms1
+000108  @cinit1
+000108  MAIN
+00014D  @cinit2
+
+Project Directory:
+    C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Sensor de Postura\
+
+Project Files:
+    Sensor_Postura.c                                        [06-mai-19 11:21  CRC=19091C4D]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [20-set-18 11:29  CRC=A7449A17]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\math.h [22-set-16 08:36  CRC=9CF8C837]
+
+Source signature=FA3F46D2
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=6D42
+
+Units:
+    Sensor_Postura (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Sensor_Postura.xsym
+    Errors:      Sensor_Postura.err
+    Ext Symbols: Sensor_Postura.esym
+    INHX8:       Sensor_Postura.hex
+    Symbols:     Sensor_Postura.sym
+    List:        Sensor_Postura.lst
+    Debug/COFF:  Sensor_Postura.cof
+    Project:     Sensor_Postura.ccspjt
+    Call Tree:   Sensor_Postura.tre
+    Statistics:  Sensor_Postura.STA

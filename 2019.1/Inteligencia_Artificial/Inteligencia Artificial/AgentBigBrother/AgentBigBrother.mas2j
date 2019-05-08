@@ -1,0 +1,47 @@
+/* Jason Project */
+
+
+
+MAS agentBigBrother {
+
+
+
+    infrastructure: Centralised
+
+
+
+    agents:
+
+		pensando;
+		
+		multi;
+		
+		parimpar;
+		
+		fatorial;
+		
+		tabuada;
+		
+	    fibonacci;
+		
+	    bigbrother;
+
+		fome;
+		
+		bob;
+		
+		kate;
+		
+		kate1;
+		
+		bob1;
+		
+		conversa1;
+		
+		conversa2;
+		
+		
+		
+		}
+
+

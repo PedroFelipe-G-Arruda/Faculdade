@@ -1,0 +1,19 @@
+/* Jason Project */
+
+MAS exercicio02 {
+
+    infrastructure: Centralised
+
+    agents:
+        geladeira;
+
+        pessoa1;
+
+        pessoa2;
+
+        pessoa3;
+
+        agentecompras;
+
+}
+

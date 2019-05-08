@@ -1,0 +1,11 @@
+/* Jason Project */
+
+MAS garrafa_inteligente {
+
+    infrastructure: Centralised
+
+    agents:
+        liquido;
+
+}
+

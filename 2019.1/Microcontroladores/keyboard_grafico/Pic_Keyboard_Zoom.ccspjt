@@ -1,0 +1,47 @@
+[PROJECT]
+Target=C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\keyboard_grafico\Pic_Keyboard_Zoom.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+[Target Data]
+FileList=Pic_Keyboard_Zoom.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\keyboard_grafico\Pic_Keyboard_Zoom]
+Type=4
+[mru-list]
+1=Pic_Keyboard_Zoom.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=4
+D1=01-04-2019
+D1_L=3
+D1_L1=[64328]Project Opened.
+D1_L2=[77563]Project Opened.
+D1_L3=[80760]Project Closed.
+TotalEdit=1
+TotalDebug=0
+D2=02-04-2019
+D2_E=1
+D2_D=0
+D2_L=1
+D2_L1=[36980]Project Closed.
+D3=07-04-2019
+D3_L=2
+D3_L1=[52138]Project Opened.
+D3_L2=[53432]Project Closed.
+D4=11-04-2019
+D4_L=2
+D4_L1=[48240]Project Opened.
+D4_L2=[48635]Project Closed.
+[Units]
+Count=1
+1=Pic_Keyboard_Zoom (main)
+
+[Opened Files]
+1=Pic_Keyboard_Zoom.c
+t1=1
+Count=1

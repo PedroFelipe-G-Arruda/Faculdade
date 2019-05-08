@@ -1,0 +1,75 @@
+[PROJECT]
+Target=Programa_Pic16f877a.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Programa_Pic16f877a.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Sensor de Batimentos Cardíacos\Programa_Pic16f877a]
+Type=4
+[mru-list]
+1=Programa_Pic16f877a.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=4
+D1=07-04-2019
+D1_L=24
+D1_L1=[53432]Project Opened.
+D1_L2=[53440]Started Editing.
+D1_L3=[53825]Stopped Editing.
+D1_L4=[55004]Started Editing.
+D1_L5=[55468]Stopped Editing.
+D1_L6=[55486]Started Editing.
+D1_L7=[55845]Stopped Editing.
+D1_L8=[56181]Started Editing.
+D1_L9=[56341]Stopped Editing.
+TotalEdit=35
+TotalDebug=0
+D1_E=35
+D1_D=0
+D1_L10=[56344]Project Closed.
+D1_L11=[56632]Project Opened.
+D1_L12=[56637]Started Editing.
+D1_L13=[58092]Stopped Editing.
+D1_L14=[58351]Started Editing.
+D1_L15=[58653]Stopped Editing.
+D1_L16=[58685]Project Closed.
+D1_L17=[68449]Project Opened.
+D1_L18=[68471]Started Editing.
+D1_L19=[68792]Stopped Editing.
+D1_L20=[69399]Started Editing.
+D1_L21=[69771]Stopped Editing.
+D1_L22=[69799]Started Editing.
+D1_L23=[70407]Stopped Editing.
+D1_L24=[72425]Project Closed.
+D2=11-04-2019
+D2_L=3
+D2_L1=[48635]Project Opened.
+D2_L2=[81561]Project Opened.
+D2_L3=[83861]Project Closed.
+D3=12-04-2019
+D3_L=1
+D3_L1=[50049]Project Closed.
+D4=13-04-2019
+D4_L=2
+D4_L1=[46829]Project Opened.
+D4_L2=[47261]Project Closed.
+
+[Opened Files]
+1=Programa_Pic16f877a.c
+t1=1
+Count=1
+[Programa_Pic16f877a.c]
+Type=4
+
+[defines]
+buildcount=15
+[Units]
+Count=1
+1=Programa_Pic16f877a (main)

@@ -1,0 +1,91 @@
+[PROJECT]
+Target=Sensor_Postura.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Sensor_Postura.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Sensor de Postura\Sensor_Postura]
+Type=4
+[mru-list]
+1=Sensor_Postura.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=2
+D1=05-05-2019
+D1_L=32
+D1_L1=[40233]Project Opened.
+D1_L2=[40255]Started Editing.
+D1_L3=[40555]Stopped Editing.
+TotalEdit=115
+TotalDebug=0
+D1_E=93
+D1_D=0
+D1_L4=[40845]Project Closed.
+D1_L5=[40845]Project Opened.
+D1_L6=[40857]Project Closed.
+D1_L7=[40929]Project Opened.
+D1_L8=[40960]Started Editing.
+D1_L9=[41354]Stopped Editing.
+D1_L10=[41925]Started Editing.
+D1_L11=[43433]Stopped Editing.
+D1_L12=[43774]Started Editing.
+D1_L13=[44371]Stopped Editing.
+D1_L14=[45148]Started Editing.
+D1_L15=[45579]Stopped Editing.
+D1_L16=[45695]Started Editing.
+D1_L17=[47409]Stopped Editing.
+D1_L18=[47750]Started Editing.
+D1_L19=[49188]Stopped Editing.
+D1_L20=[49641]Started Editing.
+D1_L21=[50229]Stopped Editing.
+D1_L22=[51136]Project Closed.
+D1_L23=[78196]Project Opened.
+D1_L24=[82271]Started Editing.
+D1_L25=[82571]Stopped Editing.
+D1_L26=[82698]Started Editing.
+D1_L27=[83029]Stopped Editing.
+D1_L28=[83063]Started Editing.
+D1_L29=[83543]Stopped Editing.
+D1_L30=[83656]Started Editing.
+D1_L31=[84589]Stopped Editing.
+D1_L32=[84771]Project Closed.
+D2=06-05-2019
+D2_L=16
+D2_L1=[33852]Project Opened.
+D2_L2=[34588]Project Closed.
+D2_L3=[34625]Project Opened.
+D2_L4=[34871]Started Editing.
+D2_L5=[35173]Stopped Editing.
+D2_L6=[35454]Started Editing.
+D2_L7=[35950]Stopped Editing.
+D2_L8=[36384]Started Editing.
+D2_L9=[37030]Stopped Editing.
+D2_L10=[38349]Started Editing.
+D2_L11=[39215]Stopped Editing.
+D2_L12=[39440]Started Editing.
+D2_L13=[39777]Stopped Editing.
+D2_L14=[40763]Started Editing.
+D2_L15=[41205]Stopped Editing.
+D2_E=22
+D2_D=0
+D2_L16=[64951]Project Closed.
+
+[Opened Files]
+1=Sensor_Postura.c
+t1=69
+Count=1
+[Sensor_Postura.c]
+Type=4
+
+[defines]
+buildcount=36
+[Units]
+Count=1
+1=Sensor_Postura (main)

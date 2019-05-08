@@ -1,0 +1,61 @@
+//#include <Comunicação_RX_TX_LCD_e_Potenciometro.h>
+
+#include <16F877A.h>
+#device ADC=10
+
+#FUSES NOBROWNOUT               //No brownout reset
+#FUSES NOLVP                    //No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O
+
+#use delay(crystal=20000000)
+#use rs232(baud=9600,parity=N,xmit=PIN_C6,rcv=PIN_C7,bits=8,stream=PORT1)
+
+
+#define LCD_RS_PIN         pin_d0
+#define LCD_RW_PIN         pin_d1
+#define LCD_ENABLE_PIN     pin_d2
+#define LCD_DATA4          pin_d3
+#define LCD_DATA5          pin_d4
+#define LCD_DATA6          pin_d5
+#define LCD_DATA7          pin_d6
+
+#include <lcd.c>
+int16 potenciometro,valor, valor1;
+char test[10]= "Ola Mundo!", numero[4];
+
+void main()
+{
+   setup_adc_ports(AN0);
+   setup_adc(ADC_CLOCK_DIV_2);
+   
+   lcd_init();
+
+   while(TRUE)
+   {
+      
+      
+      potenciometro = read_adc();
+      delay_us(10);
+      printf("%lu",potenciometro);
+      //fprintf(PORT1,"Ola Mundo!");
+      //fputs("Ola Mundo!",PORT1);
+      
+      
+      delay_ms(100);
+      
+                
+      if(kbhit()){
+        valor = getc();
+        //printf("ok");
+             
+      }
+      delay_ms(200);
+      
+     // valor = atol(test);
+     valor1 = valor % 10000;
+      printf(lcd_putc,"\fValor: %lu",valor1);
+      //printf (lcd_putc,"\f%lu\n",valor);
+   
+      //TODO: User Code
+   }
+
+}

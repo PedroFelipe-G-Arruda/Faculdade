@@ -1,0 +1,10 @@
+// Agent pessoa2 in project exercicio03.mas2j
+
+/* Initial beliefs and rules */
+
+/* Initial goals */
+
++!agua(ok) <-
+.print("Não posso pegar a agua agora ");
+.print("Pessoa 03 pegue a agua para a Pessoa 01, por gentileza ?"); 
+.send(pessoa3, achieve, agua1(ok)).

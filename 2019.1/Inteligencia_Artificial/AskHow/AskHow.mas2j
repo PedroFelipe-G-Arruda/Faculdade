@@ -1,0 +1,11 @@
+/* Jason Project */
+
+MAS askHow {
+
+    infrastructure: Centralised
+
+    agents: 
+	kate;
+	bob;
+}
+

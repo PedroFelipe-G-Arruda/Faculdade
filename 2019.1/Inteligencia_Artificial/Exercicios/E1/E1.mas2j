@@ -1,0 +1,11 @@
+/* Jason Project */
+
+MAS e1 {
+
+    infrastructure: Centralised
+
+    agents:
+	dados;
+	despertador;
+}
+

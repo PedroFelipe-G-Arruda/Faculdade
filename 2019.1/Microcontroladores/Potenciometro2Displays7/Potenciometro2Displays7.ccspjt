@@ -17,7 +17,7 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=4
+Days=7
 D1=21-02-2019
 D1_L=8
 D1_L1=[79823]Project Opened.
@@ -71,10 +71,26 @@ D4_L7=[34114]Stopped Editing.
 D4_L8=[36022]Started Editing.
 D4_L9=[36352]Stopped Editing.
 D4_L10=[40730]Project Closed.
+D5=09-03-2019
+D5_L=2
+D5_L1=[53414]Project Opened.
+D5_L2=[60808]Project Closed.
+D6=10-03-2019
+D6_L=4
+D6_L1=[38264]Project Opened.
+D6_L2=[43445]Project Closed.
+D6_L3=[46595]Project Opened.
+D6_L4=[46824]Project Closed.
+D7=12-03-2019
+D7_L=4
+D7_L1=[67045]Project Opened.
+D7_L2=[67079]Project Closed.
+D7_L3=[72463]Project Opened.
+D7_L4=[72599]Project Closed.
 
 [Opened Files]
 1=Potenciometro2Displays7.c
-t1=37
+t1=21
 2=..\..\..\..\..\..\AppData\Local\Temp\Rar$DIa3784.38928\Setseg2.c
 t2=41
 Count=1

@@ -1,0 +1,49 @@
+[PROJECT]
+Target=Controle_Velocidade.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Controle_Velocidade.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Motor_Passo_Velocidade\Controle_Velocidade]
+Type=4
+[mru-list]
+1=Controle_Velocidade.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=20-03-2019
+D1_L=10
+D1_L1=[41871]Project Opened.
+D1_L2=[41916]Started Editing.
+D1_L3=[42565]Stopped Editing.
+D1_L4=[42671]Started Editing.
+D1_L5=[43142]Stopped Editing.
+TotalEdit=10
+TotalDebug=0
+D1_E=10
+D1_D=0
+D1_L6=[43280]Project Closed.
+D1_L7=[47828]Project Opened.
+D1_L8=[48034]Started Editing.
+D1_L9=[48353]Stopped Editing.
+D1_L10=[58139]Project Closed.
+
+[Opened Files]
+1=Controle_Velocidade.c
+t1=21
+Count=1
+[Controle_Velocidade.c]
+Type=4
+
+[defines]
+buildcount=6
+[Units]
+Count=1
+1=Controle_Velocidade (main)

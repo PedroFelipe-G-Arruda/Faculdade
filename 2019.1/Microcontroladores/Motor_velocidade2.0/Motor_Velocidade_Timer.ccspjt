@@ -1,0 +1,59 @@
+[PROJECT]
+Target=Motor_Velocidade_Timer.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Motor_Velocidade_Timer.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Motor_velocidade2.0\Motor_Velocidade_Timer]
+Type=4
+[mru-list]
+1=Motor_Velocidade_Timer.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=2
+D1=18-03-2019
+D1_L=6
+D1_L1=[42487]Project Opened.
+D1_L2=[42551]Project Closed.
+D1_L3=[42551]Project Opened.
+D1_L4=[42557]Started Editing.
+D1_L5=[43486]Stopped Editing.
+TotalEdit=32
+TotalDebug=0
+D1_E=11
+D1_D=0
+D1_L6=[43737]Project Closed.
+D2=19-03-2019
+D2_L=10
+D2_L1=[64715]Project Opened.
+D2_L2=[64919]Started Editing.
+D2_L3=[65327]Stopped Editing.
+D2_L4=[65335]Started Editing.
+D2_L5=[66028]Stopped Editing.
+D2_E=21
+D2_D=0
+D2_L6=[66028]Project Closed.
+D2_L7=[82012]Project Opened.
+D2_L8=[82124]Started Editing.
+D2_L9=[82816]Stopped Editing.
+D2_L10=[82865]Project Closed.
+
+[Opened Files]
+1=Motor_Velocidade_Timer.c
+t1=17
+Count=1
+[Motor_Velocidade_Timer.c]
+Type=4
+
+[defines]
+buildcount=22
+[Units]
+Count=1
+1=Motor_Velocidade_Timer (main)

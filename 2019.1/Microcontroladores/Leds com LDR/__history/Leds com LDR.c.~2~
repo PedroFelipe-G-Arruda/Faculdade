@@ -1,0 +1,19 @@
+#include <16F877A.h>
+#device ADC=10
+#use delay(crystal=20000000)
+
+
+
+void main()
+{
+   setup_adc_ports(AN0);
+   setup_adc(ADC_CLOCK_DIV_16);
+
+   while(TRUE)
+   {
+   
+
+   
+   }
+
+}

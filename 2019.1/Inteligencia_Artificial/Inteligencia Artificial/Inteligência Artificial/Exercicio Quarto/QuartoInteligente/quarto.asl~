@@ -1,0 +1,14 @@
+tempo(dia).
+luz(apagada).
+pessoas(P).
+pessoas(1).
+temperatura(T).
+temperatura(20).
+hora(10).
+
+!start.
+
++!start <-
+	.print("H = ",H).
+
+

@@ -1,0 +1,54 @@
+[PROJECT]
+Target=Controle_Motor_PWM.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Controle_Motor_PWM.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Motor_PWM\Controle_Motor_PWM]
+Type=4
+[mru-list]
+1=Controle_Motor_PWM.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=2
+D1=20-03-2019
+D1_L=7
+D1_L1=[58140]Project Opened.
+D1_L2=[58159]Project Closed.
+D1_L3=[58181]Project Opened.
+D1_L4=[58337]Project Closed.
+D1_L5=[58337]Project Opened.
+D1_L6=[58367]Started Editing.
+D1_L7=[58795]Stopped Editing.
+D2=21-03-2019
+D2_L=6
+D2_L1=[39595]Project Opened.
+D2_L2=[39598]Started Editing.
+D2_L3=[39620]Stopped Editing.
+TotalEdit=1
+TotalDebug=0
+D2_E=1
+D2_D=0
+D2_L4=[39620]Project Closed.
+D2_L5=[50151]Project Opened.
+D2_L6=[56470]Project Closed.
+
+[Opened Files]
+1=Controle_Motor_PWM.c
+t1=1
+Count=1
+[Controle_Motor_PWM.c]
+Type=4
+
+[defines]
+buildcount=5
+[Units]
+Count=1
+1=Controle_Motor_PWM (main)

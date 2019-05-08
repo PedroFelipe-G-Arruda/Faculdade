@@ -1,0 +1,13 @@
+/* Jason Project */
+
+MAS exercicio3 {
+
+    infrastructure: Centralised
+
+    agents:
+	
+	cliente;
+	
+	vendedor;
+}
+

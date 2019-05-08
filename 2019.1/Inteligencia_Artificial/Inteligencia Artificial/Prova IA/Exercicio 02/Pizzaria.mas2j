@@ -1,0 +1,15 @@
+/* Jason Project */
+
+MAS pizzaria {
+
+    infrastructure: Centralised
+
+    agents:
+        entregador;
+
+        pizzaiolo;
+
+        cliente;
+
+}
+

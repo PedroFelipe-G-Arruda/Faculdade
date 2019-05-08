@@ -1,0 +1,9 @@
+/* Jason Project */
+
+MAS cachorro {
+
+    infrastructure: Centralised
+
+    agents: comer;
+}
+

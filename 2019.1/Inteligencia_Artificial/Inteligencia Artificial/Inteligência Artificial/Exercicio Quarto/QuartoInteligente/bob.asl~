@@ -1,0 +1,4 @@
+acordado(sim).
+
+.send(quarto,tell,bob_quarto(nao)).
+

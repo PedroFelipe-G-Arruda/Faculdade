@@ -1,0 +1,3 @@
+tempo(limpo).
+tempo(ensolarado).
+

@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e598666a-ce8e-4630-9b2e-4302c7eacade" name="Default Changelist" comment="Add files via upload">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Faculdade.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Faculdade.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador.rar" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador.rar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/fib.asm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/fib.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/fib.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/fib.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/test2.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Microprocessador/projeto/Esp8266_IR/Esp8266_IR.ino" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Microprocessador/projeto/Esp8266_IR/Esp8266_IR.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/build/classes/tab_form/Tab_Form$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/build/classes/tab_form/Tab_Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/build/classes/tab_form/Tab_Form.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/dist/Tab_Form.html" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/dist/Tab_Form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/dist/Tab_Form.jar" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/dist/Tab_Form.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/dist/Tab_Form.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/dist/Tab_Form.jnlp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/src/tab_form/Tab_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/src/tab_form/Tab_Form.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+            <state relative-caret-position="34">
+              <caret line="2" column="25" selection-start-line="1" selection-start-column="15" selection-end-line="2" selection-end-column="25" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -55,19 +60,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1904">
-              <caret line="112" column="38" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
+            <state relative-caret-position="289">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/geradorCode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1615">
+            <state relative-caret-position="221">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -137,12 +142,12 @@
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/trasf.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/logic.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/geradorCode.py" />
-        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/fib.m" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" />
         <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/sintatico.py" />
+        <option value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py" />
       </list>
     </option>
   </component>
@@ -157,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,24 +196,15 @@
               <item name="Compilador" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Faculdade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Faculdade" type="462c0819:PsiDirectoryNode" />
-              <item name="2015_6" type="462c0819:PsiDirectoryNode" />
-              <item name="Compiladores" type="462c0819:PsiDirectoryNode" />
-              <item name="Compilador" type="462c0819:PsiDirectoryNode" />
-              <item name="tabelas" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -472,7 +469,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1264489" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12539515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -539,13 +536,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/argparse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27897">
-          <caret line="1645" column="46" selection-start-line="1645" selection-start-column="46" selection-end-line="1645" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/argparse.py" />
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Lexico/test.m">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -566,13 +557,7 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa10700.1638/semantico.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="324" selection-start-line="324" selection-end-line="324" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py" />
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/tabelas/tabelaTokens.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -668,13 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="112" column="38" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -682,23 +660,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/geradorCode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="1" selection-start-column="15" selection-end-line="2" selection-end-column="25" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/geradorCode.py">
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1615">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>

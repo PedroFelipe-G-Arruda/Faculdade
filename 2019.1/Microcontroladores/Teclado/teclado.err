@@ -1,0 +1,11 @@
+Compiling C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Teclado\teclado on 08-mai-19 at 09:48
+*** Error 18 "teclado.c" Line 1(9,20): File can not be opened
+    Not in "C:\Program Files (x86)\PICC\Devices\teclado.h"
+    Not in "C:\Program Files (x86)\PICC\Drivers\teclado.h"
+    Not in source "teclado.h"
+    Not in local "teclado.h"
+    Not in project "C:\Users\pedro\Downloads\Marques-PIC\teclado.h"
+    Not in default "C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Teclado\teclado.h"
+*** Error 128 "C:\Program Files (x86)\PICC\Drivers\KBD.C" Line 32(5,9): A #DEVICE required before this line
+*** Error 28 "C:\Program Files (x86)\PICC\Drivers\KBD.C" Line 32(34,35): Expecting an identifier  Bad SFR name
+*** Error 12 "C:\Program Files (x86)\PICC\Drivers\KBD.C" Line 67(9,15): Undefined identifier

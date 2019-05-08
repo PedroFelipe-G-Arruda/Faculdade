@@ -1,0 +1,98 @@
+[PROJECT]
+Target=LEDs_LDR.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=LEDs_LDR.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Leds com LDR\LEDs_LDR]
+Type=4
+[mru-list]
+1=LEDs_LDR.c
+
+[ProjectLog]
+Days=6
+D1=12-03-2019
+D1_L=21
+D1_L1=[72831]Project Closed.
+D1_L2=[72831]Project Opened.
+D1_L3=[72845]Started Editing.
+D1_L4=[73493]Stopped Editing.
+D1_L5=[73516]Started Editing.
+D1_L6=[73895]Stopped Editing.
+D1_L7=[74412]Started Editing.
+D1_L8=[74769]Stopped Editing.
+D1_L9=[74913]Started Editing.
+D1_L10=[75214]Stopped Editing.
+D1_L11=[75221]Started Editing.
+D1_L12=[75982]Stopped Editing.
+D1_L13=[76164]Started Editing.
+D1_L14=[76503]Stopped Editing.
+D1_L15=[76688]Started Editing.
+D1_L16=[78030]Project Opened.
+D1_L17=[79261]Started Editing.
+D1_L18=[81097]Stopped Editing.
+D1_L19=[82359]Started Editing.
+D1_L20=[82861]Stopped Editing.
+TotalEdit=33
+TotalDebug=0
+D1_E=29
+D1_D=0
+D1_L21=[83105]Project Closed.
+D2=13-03-2019
+D2_L=8
+D2_L1=[27444]Project Opened.
+D2_L2=[27856]Project Closed.
+D2_L3=[34137]Project Opened.
+D2_L4=[34162]Started Editing.
+D2_L5=[34464]Stopped Editing.
+D2_E=1
+D2_D=0
+D2_L6=[35887]Project Closed.
+D2_L7=[37903]Project Opened.
+D2_L8=[39639]Project Closed.
+D3=15-03-2019
+D3_L=2
+D3_L1=[37253]Project Opened.
+D3_L2=[37399]Project Closed.
+D4=16-03-2019
+D4_L=2
+D4_L1=[79027]Project Opened.
+D4_L2=[82443]Project Closed.
+D5=17-03-2019
+D5_L=2
+D5_L1=[36505]Project Opened.
+D5_L2=[36591]Project Closed.
+D6=22-03-2019
+D6_L=6
+D6_L1=[63898]Project Opened.
+D6_L2=[63911]Started Editing.
+D6_L3=[64226]Stopped Editing.
+D6_L4=[65359]Started Editing.
+D6_L5=[65489]Stopped Editing.
+D6_E=3
+D6_D=0
+D6_L6=[65489]Project Closed.
+
+[fileformats]
+forcecoff=0
+
+[Opened Files]
+1=LEDs_LDR.c
+t1=1
+Count=1
+2=..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c
+t2=5
+3=..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\mod_lcd.c
+t3=109
+[LEDs_LDR.c]
+Type=4
+
+[defines]
+buildcount=38
+[Units]
+Count=1
+1=LEDs_LDR (main)
