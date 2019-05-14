@@ -1,8 +1,8 @@
 F N "MAIN" 0 32 ""
 D G "__PCM__" 0 91 ""5.081""
 D G "__DEVICE__" 0 91 "877"
-D G "__DATE__" 0 91 ""6-May-19""
-D G "__TIME__" 0 91 ""11:21:48""
+D G "__DATE__" 0 91 ""8-May-19""
+D G "__TIME__" 0 91 ""14:13:02""
 D G "_UNICODE" 0 91 ""?""
 D G "__EVAL" 0 91 ""?"" "#include <Sensor_Postura.h>"
 c L "set_tris_a" 1 1 6 "FUNCTION"
@@ -1287,7 +1287,7 @@ F N "MAIN" 0 32 ""
 F G "MAIN" 0 33 "void()" `798 
 C L "MAIN" 0 16 1 "FUNCTION"
 V L "i" 0 41 "int8" `801 
-C L "MAIN" 0 16 7 "FUNCTION"
+C L "MAIN" 0 16 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 0

@@ -55,7 +55,7 @@ void main()
       yRead = yRead / amostra;
       zRead = zRead / amostra;
       
-      /*
+     
       // conversao do angulo |max 90|min -90|
       
       xAng = (((180/(xMaxVal - xMinVal)) * (xRead - xMinVal)) -90);
@@ -65,14 +65,14 @@ void main()
       x = (atan2(-yAng, -zAng) + PI)*val;
       y = (atan2(-xAng, -zAng) + PI)*val;
       z = (atan2(-yAng, -xAng) + PI)*val;
-      */
+      
       
       fprintf(PORT1,"x = %lu, y = %lu, z = %lu, referencia= %lu\n\r",xRead,yRead,zRead,ref);
       
       if(input(BOTAO)){
          ref = x;
       }else{
-         if (x > ref + 20){
+         if (x > ref + 6){
             output_high(BUZZER);
          }else{
             output_low(BUZZER);

@@ -1,0 +1,365 @@
+///////////////////////////////////////////////////////////////////////////
+////                             KBD4.C                                ////
+////                  Generic keypad scan driver                       ////
+////                                                                   ////
+//// Unlike the older kbd.c driver, this driver:                       ////
+////     * KBD_USES_PULLUPS can be used to configure use with pullups  ////
+////       or no pullups.  If KBD_USES_PULLUPS is defined, than it     ////
+////       is assumed that the keypad rows have pullup resistors and   ////
+////       then this library will ground the column pins and scan      ////
+////       the row pins for any presses.  If KBD_USES_PULLUPS isnt     ////
+////       defined, then this library will put voltage signal on the   ////
+////       column pins and then row pins will be scanned for any       ////
+////       presses.                                                    ////
+////     * the KBD_COLx and KBD_ROWx pins can be individually          ////
+////       configured, the keypad doesn't have to be on one GPIO       ////
+////       port.                                                       ////
+////     * number of rows and columns can be adjusted.                 ////
+////     * debounce method based on a timer, instead of being based on ////
+////       how often kbd_getc() is called.                             ////
+////                                                                   ////
+//// Tick library must be included in your project, used by this       ////
+//// library for debounce timing.  To add the tick library in your     ////
+//// project, just #include <tick.c>                                   ////
+////                                                                   ////
+////  kbd_init()   Must be called before any other function.           ////
+////                                                                   ////
+////  kbd_kbhit()  Scans and debounces keypad for new keys.  Returns   ////
+////     true if there is char that can be read with kbd_getc().       ////
+////     This function should be called frequently so as not to miss   ////
+////     a keypress.  kbd_getc() also calls kbd_kbhit(), so if you     ////
+////     only call kbd_getc() in your function it will still scan      ////
+////     they keypad.                                                  ////
+////                                                                   ////
+////  c = kbd_getc()  Will return a key value if pressed or 0x00 if    ////
+////                   not.  Also calls kbd_kbhit() to scan for        ////
+////                   keypresses first, so look at the documentation  ////
+////                   for kbd_kbhit() above. Any key held down will   ////
+////                   be ignored until released and pressed again.    ////
+////                                                                   ////
+///////////////////////////////////////////////////////////////////////////
+////        (C) Copyright 1996,2003 Custom Computer Services           ////
+//// This source code may only be used by licensed users of the CCS C  ////
+//// compiler.  This source code may only be distributed to other      ////
+//// licensed users of the CCS C compiler.  No other use, reproduction ////
+//// or distribution is permitted without written permission.          ////
+//// Derivative programs created using this software in object code    ////
+//// form are not restricted in any way.                               ////
+///////////////////////////////////////////////////////////////////////////
+
+#ifndef __KBD4_C__
+#define __KBD4_C__
+
+#include <tick.c>
+
+#ifndef KBD_RISE_TIME
+#define KBD_RISE_TIME() delay_us(25)
+#endif
+
+#ifndef KBD_NUM_ROWS
+#define KBD_NUM_ROWS 4
+#endif
+
+#ifndef KBD_NUM_COLS
+#define KBD_NUM_COLS 4
+#endif
+
+#ifndef KBD_COL1
+#define KBD_COL1  PIN_D0
+#endif
+
+#if !defined(KBD_COL2) && (KBD_NUM_COLS>=2)
+#define KBD_COL2  PIN_D1
+#endif
+
+#if !defined(KBD_COL3) && (KBD_NUM_COLS>=3)
+#define KBD_COL3  PIN_D2
+#endif
+
+#if !defined(KBD_COL4) && (KBD_NUM_COLS>=4)
+#define KBD_COL4  PIN_D3
+#endif
+
+#ifndef KBD_ROW1
+#define KBD_ROW1  PIN_D4
+#endif
+
+#if !defined(KBD_ROW2) && (KBD_NUM_ROWS>=2)
+#define KBD_ROW2  PIN_D5
+#endif
+
+#if !defined(KBD_ROW3) && (KBD_NUM_ROWS>=3)
+#define KBD_ROW3  PIN_D6
+#endif
+
+#if !defined(KBD_ROW4) && (KBD_NUM_ROWS>=4)
+#define KBD_ROW4  PIN_D7
+#endif
+
+#if !defined(KBD_USE_EXTERNAL_KEYS)
+// Keypad layout:
+const char KEYS[KBD_NUM_ROWS][KBD_NUM_COLS] =
+  {{'1','2','3','A'},
+   {'4','5','6','B'},
+   {'7','8','9','C'},
+   {'*','0','#','D'}};
+#endif
+
+void kbd_init() 
+{
+#if !defined(KBD_USES_PULLUPS)
+   output_low(KBD_COL1);
+   #if defined(KBD_COL2)
+   output_low(KBD_COL2);
+   #endif
+   #if defined(KBD_COL3)
+   output_low(KBD_COL3);
+   #endif
+   #if defined(KBD_COL4)
+   output_low(KBD_COL4);
+   #endif
+
+   output_drive(KBD_COL1);
+   #if defined(KBD_COL2)
+   output_drive(KBD_COL2);
+   #endif
+   #if defined(KBD_COL3)
+   output_drive(KBD_COL3);
+   #endif
+   #if defined(KBD_COL4)
+   output_drive(KBD_COL4);
+   #endif
+   
+   output_float(KBD_ROW1);
+   #if defined(KBD_ROW2)
+   output_float(KBD_ROW2);
+   #endif
+   #if defined(KBD_ROW3)
+   output_float(KBD_ROW3);
+   #endif
+   #if defined(KBD_ROW4)
+   output_float(KBD_ROW4);
+   #endif
+#else
+   output_float(KBD_COL1);
+   #if defined(KBD_COL2)
+   output_float(KBD_COL2);
+   #endif
+   #if defined(KBD_COL3)
+   output_float(KBD_COL3);
+   #endif
+   #if defined(KBD_COL4)
+   output_float(KBD_COL4);
+   #endif
+   
+   output_float(KBD_ROW1);
+   #if defined(KBD_ROW2)
+   output_float(KBD_ROW2);
+   #endif
+   #if defined(KBD_ROW3)
+   output_float(KBD_ROW3);
+   #endif
+   #if defined(KBD_ROW4)
+   output_float(KBD_ROW4);
+   #endif
+#endif
+}
+
+#if !defined(KBD_USES_PULLUPS)
+static void _kbd_col(int i)
+{
+   output_low(KBD_COL1);
+   #if defined(KBD_COL2)
+   output_low(KBD_COL2);
+   #endif
+   #if defined(KBD_COL3)
+   output_low(KBD_COL3);
+   #endif
+   #if defined(KBD_COL4)
+   output_low(KBD_COL4);
+   #endif
+
+   switch(i)
+   {
+      case 0:  output_high(KBD_COL1);  break;
+      #if defined(KBD_COL2)
+      case 1:  output_high(KBD_COL2);  break;
+      #endif
+      #if defined(KBD_COL3)
+      case 2:  output_high(KBD_COL3);  break;
+      #endif
+      #if defined(KBD_COL4)
+      case 3:  output_high(KBD_COL4);  break;
+      #endif
+      default: break;
+   }
+}
+#else
+static void _kbd_col(int i)
+{
+   output_float(KBD_COL1);
+   #if defined(KBD_COL2)
+   output_float(KBD_COL2);
+   #endif
+   #if defined(KBD_COL3)
+   output_float(KBD_COL3);
+   #endif
+   #if defined(KBD_COL4)
+   output_float(KBD_COL4);
+   #endif
+
+   KBD_RISE_TIME();
+
+   switch(i)
+   {
+      case 0:  output_low(KBD_COL1);  output_drive(KBD_COL1);  break;
+      #if defined(KBD_COL2)
+      case 1:  output_low(KBD_COL2);  output_drive(KBD_COL2);  break;
+      #endif
+      #if defined(KBD_COL3)
+      case 2:  output_low(KBD_COL3);  output_drive(KBD_COL3);  break;
+      #endif
+      #if defined(KBD_COL4)
+      case 3:  output_low(KBD_COL4);  output_drive(KBD_COL4);  break;
+      #endif
+      default: break;
+   }
+}
+#endif
+
+#if !defined(KBD_USES_PULLUPS)
+static int1 _kbd_row(int i)
+{
+   switch(i)
+   {
+      case 0:  return(input(KBD_ROW1));
+      #if defined(KBD_ROW2)
+      case 1:  return(input(KBD_ROW2));
+      #endif
+      #if defined(KBD_ROW3)
+      case 2:  return(input(KBD_ROW3));
+      #endif
+      #if defined(KBD_ROW4)
+      case 3:  return(input(KBD_ROW4));
+      #endif
+   }
+   
+   return(FALSE);
+}
+#else
+static int1 _kbd_row(int i)
+{
+   switch(i)
+   {
+      case 0:  return(!input(KBD_ROW1));
+      #if defined(KBD_ROW2)
+      case 1:  return(!input(KBD_ROW2));
+      #endif
+      #if defined(KBD_ROW3)
+      case 2:  return(!input(KBD_ROW3));
+      #endif
+      #if defined(KBD_ROW4)
+      case 3:  return(!input(KBD_ROW4));
+      #endif
+   }
+   
+   return(FALSE);
+}
+#endif
+
+static char _kbd_scan(void)
+{
+   int i, j;
+   
+   for(i=0; i<KBD_NUM_COLS; i++)
+   {
+      _kbd_col(i);
+      
+      KBD_RISE_TIME();
+      
+      for(j=0; j<KBD_NUM_ROWS; j++)
+      {
+         if (_kbd_row(j))
+         {
+            _kbd_col(KBD_NUM_COLS);
+            return(KEYS[j][i]);
+         }
+      }
+   }
+   
+   _kbd_col(KBD_NUM_COLS);
+   return(0);
+}
+
+char _g_KbdGetc = 0;
+
+int1 kbd_kbhit(void)
+{
+   char c;
+   static char debounced;
+   static enum
+   {
+      _KBD_STATE_SCANNING = 0,
+      _KBD_STATE_DEBOUNCE = 1,
+      _KBD_STATE_WAIT = 2,
+      _KBD_STATE_RELEASED = 3
+   } state;
+   static TICK t;
+  
+   c = _kbd_scan();   
+   
+   if (debounced && (c != debounced))
+   {
+      debounced = 0;
+      t = TickGet();
+      state = _KBD_STATE_RELEASED;
+   }
+   
+   switch(state)
+   {
+      default:
+      case _KBD_STATE_SCANNING:
+         if (c)
+         {
+            t = TickGet();
+            debounced = c;
+            state = _KBD_STATE_DEBOUNCE;
+         }
+         break;
+
+      case _KBD_STATE_DEBOUNCE:
+         if (TickIsExpired(t, TICKS_PER_SECOND/13))   //76ms debounce
+         {
+            _g_KbdGetc = c;
+            state = _KBD_STATE_WAIT;
+         }
+         break;
+
+      case _KBD_STATE_WAIT:
+         if (!debounced)
+         {
+            state = _KBD_STATE_WAIT;
+         }
+         break;
+
+      case _KBD_STATE_RELEASED:
+         if (TickIsExpired(t, TICKS_PER_SECOND/13))   //76ms debounce
+         {
+            state = _KBD_STATE_SCANNING;
+         }
+         break;
+   }
+   
+   return(_g_KbdGetc != 0);
+}
+
+char kbd_getc(void)
+{
+   char ret;
+   kbd_kbhit();
+   ret = _g_KbdGetc;
+   _g_KbdGetc = 0;
+   return(ret);
+}
+
+#endif   //__KBD4_C__

@@ -1,0 +1,141 @@
+[PROJECT]
+Target=Teclado_Motores.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Teclado_Motores.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Teclado\Teclado_Motores]
+Type=4
+[mru-list]
+1=Teclado_Motores.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=5
+D1=09-05-2019
+D1_L=8
+D1_L1=[74800]Project Opened.
+D1_L2=[74809]Started Editing.
+D1_L3=[75513]Stopped Editing.
+D1_L4=[76126]Started Editing.
+D1_L5=[76502]Stopped Editing.
+D1_L6=[84174]Started Editing.
+D1_L7=[84788]Stopped Editing.
+TotalEdit=211
+TotalDebug=0
+D1_E=14
+D1_D=0
+D1_L8=[85865]Project Closed.
+D2=10-05-2019
+D2_L=10
+D2_L1=[27898]Project Opened.
+D2_L2=[27926]Started Editing.
+D2_L3=[28424]Stopped Editing.
+D2_E=5
+D2_D=0
+D2_L4=[28969]Project Closed.
+D2_L5=[30513]Project Opened.
+D2_L6=[30516]Started Editing.
+D2_L7=[30852]Stopped Editing.
+D2_L8=[31658]Project Opened.
+D2_L9=[32294]Project Closed.
+D2_L10=[33038]Project Closed.
+D3=11-05-2019
+D3_L=12
+D3_L1=[30222]Project Opened.
+D3_L2=[46462]Started Editing.
+D3_L3=[46773]Stopped Editing.
+D3_L4=[47559]Started Editing.
+D3_L5=[48127]Stopped Editing.
+D3_L6=[56786]Started Editing.
+D3_L7=[58188]Stopped Editing.
+D3_L8=[58189]Started Editing.
+D3_L9=[58514]Stopped Editing.
+D3_L10=[59450]Started Editing.
+D3_L11=[59451]Stopped Editing.
+D3_E=24
+D3_D=0
+D3_L12=[59451]Project Closed.
+D4=12-05-2019
+D4_L=44
+D4_L1=[2560]Project Opened.
+D4_L2=[3568]Started Editing.
+D4_L3=[3934]Stopped Editing.
+D4_E=74
+D4_D=0
+D4_L4=[3934]Project Closed.
+D4_L5=[30860]Project Opened.
+D4_L6=[30917]Started Editing.
+D4_L7=[31934]Stopped Editing.
+D4_L8=[33040]Started Editing.
+D4_L9=[33923]Stopped Editing.
+D4_L10=[33985]Started Editing.
+D4_L11=[34780]Stopped Editing.
+D4_L12=[34938]Started Editing.
+D4_L13=[34989]Project Opened.
+D4_L14=[35004]Project Closed.
+D4_L15=[35248]Stopped Editing.
+D4_L16=[35467]Started Editing.
+D4_L17=[37011]Stopped Editing.
+D4_L18=[37184]Started Editing.
+D4_L19=[37711]Stopped Editing.
+D4_L20=[38121]Started Editing.
+D4_L21=[38456]Stopped Editing.
+D4_L22=[38852]Project Closed.
+D4_L23=[78177]Project Opened.
+D4_L24=[78189]Started Editing.
+D4_L25=[78709]Stopped Editing.
+D4_L26=[78709]Project Closed.
+D4_L27=[78762]Project Opened.
+D4_L28=[78884]Started Editing.
+D4_L29=[78972]Stopped Editing.
+D4_L30=[78972]Project Closed.
+D4_L31=[78990]Project Opened.
+D4_L32=[79054]Started Editing.
+D4_L33=[79512]Stopped Editing.
+D4_L34=[79538]Started Editing.
+D4_L35=[80374]Stopped Editing.
+D4_L36=[80406]Started Editing.
+D4_L37=[81974]Stopped Editing.
+D4_L38=[82174]Started Editing.
+D4_L39=[82557]Stopped Editing.
+D4_L40=[83947]Started Editing.
+D4_L41=[84247]Stopped Editing.
+D4_L42=[84654]Started Editing.
+D4_L43=[85707]Stopped Editing.
+D4_L44=[85920]Started Editing.
+D5=13-05-2019
+D5_L=12
+D5_L1=[1736]Stopped Editing.
+D5_L2=[1762]Started Editing.
+D5_L3=[1765]Stopped Editing.
+D5_E=94
+D5_D=0
+D5_L4=[1765]Project Closed.
+D5_L5=[26237]Project Opened.
+D5_L6=[32765]Started Editing.
+D5_L7=[33664]Stopped Editing.
+D5_L8=[33842]Started Editing.
+D5_L9=[34201]Stopped Editing.
+D5_L10=[34724]Started Editing.
+D5_L11=[35238]Stopped Editing.
+D5_L12=[41465]Project Closed.
+
+[Opened Files]
+1=Teclado_Motores.c
+t1=21
+Count=1
+[Teclado_Motores.c]
+Type=4
+
+[defines]
+buildcount=78
+[Units]
+Count=1
+1=Teclado_Motores (main)

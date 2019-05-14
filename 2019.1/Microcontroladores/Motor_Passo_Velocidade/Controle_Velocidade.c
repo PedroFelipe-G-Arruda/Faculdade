@@ -30,7 +30,7 @@ void  TIMER1_isr(void)
 {
    
    tempo = read_adc();
-   tempo = (0.052734*tempo) + 4; // original soma 6
+   tempo = (0.052734*tempo) + 6; // original soma 6
    
 }
 

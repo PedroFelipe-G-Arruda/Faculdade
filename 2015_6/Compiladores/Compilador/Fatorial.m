@@ -1,4 +1,5 @@
 begin
+    egin;
     int fat <- 1;
     int n;
     output("Insira o numero para saber o seu fatorial:");

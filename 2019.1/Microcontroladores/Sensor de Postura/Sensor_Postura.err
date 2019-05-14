@@ -1,16 +1,4 @@
-Compiling C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Sensor de Postura\Sensor_Postura on 06-mai-19 at 11:21
->>> Warning 202 "Sensor_Postura.c" Line 20(7,14): Variable never used:   xMinVal
->>> Warning 202 "Sensor_Postura.c" Line 20(22,29): Variable never used:   yMinVal
->>> Warning 202 "Sensor_Postura.c" Line 20(37,44): Variable never used:   zMinVal
->>> Warning 202 "Sensor_Postura.c" Line 21(7,14): Variable never used:   xMaxVal
->>> Warning 202 "Sensor_Postura.c" Line 21(22,29): Variable never used:   yMaxVal
->>> Warning 202 "Sensor_Postura.c" Line 21(37,44): Variable never used:   zMaxVal
->>> Warning 202 "Sensor_Postura.c" Line 26(13,17): Variable never used:   xAng
->>> Warning 202 "Sensor_Postura.c" Line 26(23,27): Variable never used:   yAng
->>> Warning 202 "Sensor_Postura.c" Line 26(33,37): Variable never used:   zAng
->>> Warning 202 "Sensor_Postura.c" Line 27(14,15): Variable never used:   y
->>> Warning 202 "Sensor_Postura.c" Line 27(21,22): Variable never used:   z
->>> Warning 202 "Sensor_Postura.c" Line 30(6,9): Variable never used:   val
-      Memory usage:   ROM=7%      RAM=11% - 16%
-      0 Errors,  12 Warnings.
+Compiling C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Sensor de Postura\Sensor_Postura on 08-mai-19 at 14:13
+      Memory usage:   ROM=37%      RAM=13% - 27%
+      0 Errors,  0 Warnings.
 Build Successful.

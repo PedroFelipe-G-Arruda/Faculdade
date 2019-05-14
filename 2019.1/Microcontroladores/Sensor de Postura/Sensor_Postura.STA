@@ -1,51 +1,62 @@
 
-ROM used:   573/8192 (7%)
-            573/8192 (7%) including unused fragments
+ROM used:   3036/8192 (37%)
+            3044/8192 (37%) including unused fragments
 
-            0.2 Average locations per line
-            2.0 Average locations per statement
+            1.0 Average locations per line
+            10.4 Average locations per statement
 
-RAM used:   42/368 (11%) at main() level
-            60/368 (16%) worst case
+RAM used:   49/368 (13%) at main() level
+            100/368 (27%) worst case
 
 Stack used: 3 worst case (3 in main + 0 for interrupts)
 Stack size: 8
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   90    29  10  Sensor_Postura.c
+   90    35  12  Sensor_Postura.c
   685     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
- 2227   258  90  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\math.h
+ 2227   258  88  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\math.h
 ----- -----
- 3002   287 Total
+ 3002   293 Total
 
 Page ROM  %  RAM    Vol Diff  Functions:
 ---- --- --- ---    --- ----  ----------
-0     22   4    1             @delay_ms1
-0    309  54    2    831  7.1  MAIN
-0     37   6    5             @DIV1616
-0     23   4    0             @const805
-0     89  16    5             @PSTRINGCN7_9600_62_63
-0     89  16    9             @PRINTF_LU_9600_62_63
+0     22   1    1             @delay_ms1
+0     63   2   10             @FLT
+0     31   1    4             @SFTOI
+0     29   1    2             @ITOF
+0    134   4   17             @MULFF
+0    331  11   20             @ADDFF
+0    217   7   18             @DIVFF
+0     37   1    2             @SITOF
+0    613  20   21   1082  6.9  atan
+0    292  10   20   1100  9.0  atan2
+0      8   0    0             @goto15229
+1    996  33    9   1617  8.2  MAIN
+0     37   1    5             @DIV1616
+0     21   1    5             @MUL1616
+0     23   1    0             @const808
+0     89   3    5             @PSTRINGCN7_9600_62_63
+0     89   3    9             @PRINTF_LU_9600_62_63
  Inline         0             @cinit1
 
 Program metrics:
-    Functions               1
-    Statements              287
-    Comments                398
-    Volume (V)              846
-    Difficulty (D)          6.5
-    Effort to implement (E) 5490
-    Time to implement (T)   5 minutes
-    Est Delivered Bugs (B)  0
-    Cyclomatic Complexity   3
-    Maintainability (MI)    19
+    Functions               3
+    Statements              293
+    Comments                388
+    Volume (V)              4742
+    Difficulty (D)          22.6
+    Effort to implement (E) 107183
+    Time to implement (T)   1 hours, 39 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   16
+    Maintainability (MI)    10
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00003     4  0  
-00004-007FF   569  1475  
-00800-00FFF     0  2048  
+00004-007FF  2036  8  
+00800-00FFF   996  1052  
 01000-017FF     0  2048  
 01800-01FFF     0  2048  
 

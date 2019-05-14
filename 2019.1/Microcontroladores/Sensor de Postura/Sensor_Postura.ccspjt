@@ -17,13 +17,13 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=2
+Days=4
 D1=05-05-2019
 D1_L=32
 D1_L1=[40233]Project Opened.
 D1_L2=[40255]Started Editing.
 D1_L3=[40555]Stopped Editing.
-TotalEdit=115
+TotalEdit=117
 TotalDebug=0
 D1_E=93
 D1_D=0
@@ -76,16 +76,34 @@ D2_L15=[41205]Stopped Editing.
 D2_E=22
 D2_D=0
 D2_L16=[64951]Project Closed.
+D3=08-05-2019
+D3_L=10
+D3_L1=[44153]Project Opened.
+D3_L2=[44178]Started Editing.
+D3_L3=[44484]Stopped Editing.
+D3_L4=[50599]Started Editing.
+D3_L5=[50965]Stopped Editing.
+D3_L6=[51175]Started Editing.
+D3_L7=[51477]Stopped Editing.
+D3_E=2
+D3_D=0
+D3_L8=[63632]Project Closed.
+D3_L9=[80182]Project Opened.
+D3_L10=[83964]Project Closed.
+D4=10-05-2019
+D4_L=2
+D4_L1=[31507]Project Opened.
+D4_L2=[31658]Project Closed.
 
 [Opened Files]
 1=Sensor_Postura.c
-t1=69
+t1=1
 Count=1
 [Sensor_Postura.c]
 Type=4
 
 [defines]
-buildcount=36
+buildcount=39
 [Units]
 Count=1
 1=Sensor_Postura (main)

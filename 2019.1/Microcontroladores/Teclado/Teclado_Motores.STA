@@ -1,0 +1,81 @@
+
+ROM used:   1694/8192 (21%)
+            1694/8192 (21%) including unused fragments
+
+            0.8 Average locations per line
+            6.1 Average locations per statement
+
+RAM used:   45/368 (12%) at main() level
+            63/368 (17%) worst case
+
+Stack used: 6 worst case (5 in main + 1 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  133    90  32  Teclado_Motores.c
+  685     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
+  366    75  27  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\kbd4.C
+  159    14   5  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\tick.c
+  101     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\tick.h
+  180     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h
+  456   100  36  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c
+----- -----
+ 2080   279 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     20   1    1             @delay_ms1
+ Inline         1             @GET_TICKS_1
+0     45   3    0     27  1.5  TickGet
+0     20   1    0             @const685
+0     29   2    0    333  2.0  kbd_init
+0     50   3    1    383  4.4  _kbd_col
+0     43   3    1    245  3.2  _kbd_row
+0      8   0    0             @goto18551
+ Inline         3    364  5.1  _kbd_scan
+ Inline         5   1065  9.1  kbd_kbhit
+0    195  12    1     96  1.2  kbd_getc
+ Inline         3    760  4.5  lcd_read_byte
+0     49   3    2    262  3.7  lcd_read_nibble
+0     46   3    1    399  2.4  lcd_send_nibble
+0     94   6    3    415  3.7  lcd_send_byte
+0     70   4    6    852  6.2  lcd_init
+0     18   1    4    208  6.3  lcd_gotoxy
+0     44   3    1    354  4.7  lcd_putc
+0    112   7    1    671  6.6  RTCC_isr
+0    286  17    0   1825  8.3  MAIN
+0     31   2    2             @ITOF
+0    119   7   13             @MULFF
+0     33   2    4             @SFTOI
+0     10   1    0             @const770
+0     88   5    4             @PSTRINGC7_734
+0      8   0    0             @const775
+0     87   5    5             @PSTRINGCN7_734
+0     21   1    3             @DIV88
+0     89   5    6             @PRINTF_D_734
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               16
+    Statements              279
+    Comments                609
+    Volume (V)              13475
+    Difficulty (D)          71.4
+    Effort to implement (E) 962026
+    Time to implement (T)   14 hours, 51 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   50
+    Maintainability (MI)    82
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-0004E    75  0  
+0004F-007FF  1615  354  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

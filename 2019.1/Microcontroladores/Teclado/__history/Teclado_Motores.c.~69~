@@ -1,0 +1,121 @@
+//#include <Teclado_Motores.h>
+#include <16F877A.h>
+#device ADC=10
+
+#FUSES NOWDT                    //No Watch Dog Timer
+#FUSES NOBROWNOUT               //No brownout reset
+#FUSES NOLVP                    //No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O
+
+#use delay(crystal=20000000)
+
+#include <kbd4.C>
+
+#define LCD_RS_PIN         PIN_E2
+#define LCD_RW_PIN         PIN_E1
+#define LCD_ENABLE_PIN     PIN_E0
+#define LCD_DATA4          PIN_A5
+#define LCD_DATA5          PIN_A4
+#define LCD_DATA6          PIN_A3
+#define LCD_DATA7          PIN_A2
+
+#include <lcd.c>
+
+//Motor de passo - D0|D1|D2|D3
+//Motor DC - CCP1|CCP2
+
+//Motor de passo
+short sentPasso = 0; //sentido moto de passo
+int time, cont = 0, passo[4] = {0b00000001, 0b0000010, 0b0000100, 0b00001000}; // i = Bobina, passo = bobinas para dar passo 
+signed int i = 0;   // time = Contador de tempo para velocidade moto de passo , cont = contador para o controle de velocidade
+
+//Motor DC
+int16 speed_DC = 0, porc = 0; //velocidade motor DC
+
+char c = "0", var, newchar;
+int16 newint;
+
+#INT_RTCC
+void  RTCC_isr(void) 
+{
+   if(time > 0){
+      cont++;
+      if (sentPasso == 1){
+       if (i > 3) i = 0; 
+         if(cont >= time){
+            output_b(passo[i]);
+            i++;
+            cont = 0;
+         }
+      }else{
+         if (i < 0) i = 3;
+         if(cont >= time){
+            output_b(passo[i]);
+            i--;    
+            cont = 0;
+         }
+      }
+   }
+   if(input(pin_A1)){
+         set_pwm2_duty((int16)0);
+         delay_us(50);
+         set_pwm1_duty((int16)speed_DC);
+         
+      }else{
+         set_pwm1_duty((int16)0);
+         delay_us(50);
+         set_pwm2_duty((int16)speed_DC);
+      }
+}
+
+
+void main()
+{
+   setup_adc_ports(AN0);
+   setup_adc(ADC_CLOCK_INTERNAL);
+   setup_timer_0(RTCC_INTERNAL|RTCC_DIV_32|RTCC_8_BIT);      //1,6 ms overflow
+   setup_timer_2(T2_DIV_BY_16,255,1);      //819 us overflow, 819 us interrupt
+   
+   enable_interrupts(INT_RTCC);
+   enable_interrupts(GLOBAL);
+
+   setup_ccp1(CCP_PWM);
+   setup_ccp2(CCP_PWM);
+   set_pwm1_duty((int16)0);
+   set_pwm2_duty((int16)0);
+   
+   kbd_init();
+
+   lcd_init();
+   
+   char c;
+   
+   while(true)
+   {
+      speed_DC = read_adc();
+      delay_us(50);
+      porc = (int)(speed_DC*100)/1023;
+      c = kbd_getc();
+      delay_ms(1);
+      if(c!=0)
+      {  
+         switch(c){
+            case '1': time = 80; var = c; break;
+            case '2': time = 60; var = c; break;
+            case '3': time = 40; var = c; break;
+            case '4': time = 20; var = c; break;
+            case '5': time =  6; var = c; break;
+            case '0': time =  0; var = c; break;
+            case '*': sentPasso = 0; break;
+            case '#': sentPasso = 1; break;
+            default: break;
+         }
+      }
+      if(var != newchar || porc != newint)
+      {
+         newchar = var;
+         newint = porc;
+         printf(lcd_putc, "\fVelocidade Motor\n");
+         printf(lcd_putc, "Passo=%c DC=%lu",var,porc);   
+      }
+   }
+}

@@ -1,0 +1,245 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028     @INTERRUPT_AREA
+029     @INTERRUPT_AREA
+02A     @INTERRUPT_AREA
+02B-02E UPPER_TICKS_1
+02F     _g_KbdGetc
+030     kbd_kbhit.debounced
+031     kbd_kbhit.state
+032-035 kbd_kbhit.t
+036.0   sentPasso
+036.1   sent
+037     time
+038     cont
+039-03C passo
+03D     i
+03E-03F speed_DC
+040     porc
+041     c
+042     var
+043     newchar
+044     newint
+045     @TRIS_C
+046-047 @sprintf_string
+048-04B @MULFF.P1
+048     @PRINTF_D_734.P2
+048-049 @ITOF.P3
+048-04B @SFTOI.P4
+048     kbd_getc.ret
+048     lcd_init.i
+048     @PSTRINGCN7_734.P1
+048     @PSTRINGC7_734.@SCRATCH1
+049-04C lcd_init.LCD_INIT_STRING
+049     kbd_kbhit.c
+049     @PRINTF_D_734.P1
+049     @PSTRINGC7_734.@SCRATCH2
+049     @PSTRINGCN7_734.@SCRATCH1
+04A     _kbd_scan.i
+04A     @GET_TICKS_1.@SCRATCH1
+04A     kbd_kbhit.@SCRATCH1
+04A     @PSTRINGC7_734.@SCRATCH3
+04A     @PSTRINGCN7_734.@SCRATCH2
+04A     @PRINTF_D_734.@SCRATCH1
+04B     _kbd_scan.j
+04B     kbd_kbhit.@SCRATCH2
+04B     @PSTRINGC7_734.@SCRATCH4
+04B     @PSTRINGCN7_734.@SCRATCH3
+04B     @PRINTF_D_734.@SCRATCH2
+04C     _kbd_col.i
+04C-04F @MULFF.P1
+04C     _kbd_row.i
+04C     _kbd_scan.@SCRATCH1
+04C     kbd_kbhit.@SCRATCH3
+04C     @PSTRINGCN7_734.@SCRATCH4
+04C     @PRINTF_D_734.@SCRATCH3
+04D     kbd_kbhit.@SCRATCH4
+04D     lcd_init.@SCRATCH1
+04D     @PRINTF_D_734.@SCRATCH4
+04E     lcd_putc.c
+04E     @DIV88.P1
+04F     @DIV88.P1
+04F     lcd_gotoxy.x
+04F     @delay_ms1.P1
+050     lcd_gotoxy.y
+050     @MULFF.@SCRATCH1
+050     @DIV88.@SCRATCH1
+051     lcd_gotoxy.address
+051     @MULFF.@SCRATCH2
+052     lcd_gotoxy.@SCRATCH1
+052     @MULFF.@SCRATCH3
+053     lcd_send_byte.address
+053     @MULFF.@SCRATCH4
+054     lcd_send_byte.n
+054     @MULFF.@SCRATCH5
+055     lcd_read_byte.low
+055     lcd_send_byte.@SCRATCH1
+056     lcd_send_nibble.n
+056     lcd_read_byte.high
+057     lcd_read_nibble.n
+057     lcd_read_byte.@SCRATCH1
+058     lcd_read_nibble.@SCRATCH1
+059     RTCC_isr.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0FF     @INTERRUPT_AREA
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+87F     @INTERRUPT_AREA
+8FF     @INTERRUPT_AREA
+97F     @INTERRUPT_AREA
+9FF     @INTERRUPT_AREA
+A7F     @INTERRUPT_AREA
+AFF     @INTERRUPT_AREA
+B7F     @INTERRUPT_AREA
+BFF     @INTERRUPT_AREA
+C7F     @INTERRUPT_AREA
+CFF     @INTERRUPT_AREA
+D7F     @INTERRUPT_AREA
+DFF     @INTERRUPT_AREA
+E7F     @INTERRUPT_AREA
+EFF     @INTERRUPT_AREA
+F7F     @INTERRUPT_AREA
+FFF     @INTERRUPT_AREA
+107F     @INTERRUPT_AREA
+10FF     @INTERRUPT_AREA
+117F     @INTERRUPT_AREA
+11FF     @INTERRUPT_AREA
+127F     @INTERRUPT_AREA
+12FF     @INTERRUPT_AREA
+137F     @INTERRUPT_AREA
+13FF     @INTERRUPT_AREA
+147F     @INTERRUPT_AREA
+14FF     @INTERRUPT_AREA
+157F     @INTERRUPT_AREA
+15FF     @INTERRUPT_AREA
+167F     @INTERRUPT_AREA
+16FF     @INTERRUPT_AREA
+177F     @INTERRUPT_AREA
+17FF     @INTERRUPT_AREA
+187F     @INTERRUPT_AREA
+18FF     @INTERRUPT_AREA
+197F     @INTERRUPT_AREA
+19FF     @INTERRUPT_AREA
+1A7F     @INTERRUPT_AREA
+1AFF     @INTERRUPT_AREA
+1B7F     @INTERRUPT_AREA
+1BFF     @INTERRUPT_AREA
+1C7F     @INTERRUPT_AREA
+1CFF     @INTERRUPT_AREA
+1D7F     @INTERRUPT_AREA
+1DFF     @INTERRUPT_AREA
+1E7F     @INTERRUPT_AREA
+1EFF     @INTERRUPT_AREA
+1F7F     @INTERRUPT_AREA
+1FFF     @INTERRUPT_AREA
+
+ROM Allocation:
+00004F  KEYS.call
+000053  KEYS.data
+000063  RTCC_isr
+0000D3  @const770.call
+0000DD  @const775.call
+0000E5  kbd_init
+000102  @delay_ms1
+000116  lcd_send_nibble
+000144  lcd_read_nibble
+000175  lcd_send_byte
+00017D  lcd_read_byte
+0001D3  lcd_init
+000219  @ITOF
+000238  @MULFF
+0002AF  @SFTOI
+0002D0  _kbd_col
+000302  _kbd_row
+00032D  @goto18551
+000335  @GET_TICKS_1
+000335  TickGet
+000362  kbd_getc
+000362  kbd_kbhit
+000362  _kbd_scan
+000425  lcd_gotoxy
+000437  lcd_putc
+000463  @PSTRINGC7_734
+0004BB  @PSTRINGCN7_734
+000512  @DIV88
+000527  @PRINTF_D_734
+000580  MAIN
+000580  @cinit1
+0005A4  @cinit2
+
+Project Directory:
+    C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Teclado\
+
+Project Files:
+    Teclado_Motores.c                                       [13-mai-19 09:41  CRC=62134CED]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [20-set-18 11:29  CRC=A7449A17]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\kbd4.C [10-out-16 12:19  CRC=95401250]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\tick.c [11-out-17 10:32  CRC=3137979C]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\tick.h [11-out-17 10:35  CRC=52007341]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h [12-abr-18 08:50  CRC=F5866EA9]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c [22-fev-16 09:05  CRC=D1A6378A]
+
+Source signature=BAA2E1EE
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=8569
+
+Units:
+    Teclado_Motores (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   Teclado_Motores.xsym
+    Errors:      Teclado_Motores.err
+    Ext Symbols: Teclado_Motores.esym
+    INHX8:       Teclado_Motores.hex
+    Symbols:     Teclado_Motores.sym
+    List:        Teclado_Motores.lst
+    Debug/COFF:  Teclado_Motores.cof
+    Project:     Teclado_Motores.ccspjt
+    Call Tree:   Teclado_Motores.tre
+    Statistics:  Teclado_Motores.STA
