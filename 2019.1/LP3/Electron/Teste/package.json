@@ -6,6 +6,6 @@
   "scripts": {
     "start": "electron ."
   },
-  "author": "",
+  "author": "Pedro",
   "license": "ISC"
 }

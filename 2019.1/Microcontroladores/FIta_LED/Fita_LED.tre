@@ -1,0 +1,21 @@
+ÀÄ2019
+   ÃÄMAIN  0/41  Ram=0
+   ³  ÀÄ@cinit1  (Inline)  Ram=0
+   ÃÄRDA_isr  0/171  Ram=8
+   ³  ÃÄatoi  0/254  Ram=9
+   ³  ³  ÀÄ@MUL88  (Inline)  Ram=2
+   ³  ÃÄatoi  0/254  Ram=9
+   ³  ³  ÀÄ*
+   ³  ÃÄatoi  0/254  Ram=9
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PSTRINGCN7_9600_62_63  0/89  Ram=5
+   ³  ÃÄ@PSTRINGR_9600_62_63  (Inline)  Ram=2
+   ³  ÃÄ@PRINTF_D_9600_62_63  0/91  Ram=6
+   ³  ³  ÃÄ@DIV88  0/21  Ram=3
+   ³  ³  ÀÄ@DIV88  0/21  Ram=3
+   ³  ÃÄ@PSTRINGCN7_9600_62_63  0/89  Ram=5
+   ³  ÃÄ@PRINTF_D_9600_62_63  0/91  Ram=6
+   ³  ³  ÀÄ*
+   ³  ÀÄ@PRINTF_D_9600_62_63  0/91  Ram=6
+   ³     ÀÄ*
+   ÀÄTIMER2_isr  0/4  Ram=0

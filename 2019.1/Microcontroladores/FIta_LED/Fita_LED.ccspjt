@@ -1,0 +1,92 @@
+[PROJECT]
+Target=Fita_LED.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=Fita_LED.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\FIta_LED\Fita_LED]
+Type=4
+[mru-list]
+1=Fita_LED.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=3
+D1=23-05-2019
+D1_L=22
+D1_L1=[52280]Project Opened.
+D1_L2=[52598]Project Closed.
+D1_L3=[52598]Project Opened.
+D1_L4=[52638]Started Editing.
+D1_L5=[52942]Stopped Editing.
+TotalEdit=326
+TotalDebug=0
+D1_E=37
+D1_D=0
+D1_L6=[53009]Project Closed.
+D1_L7=[53010]Project Opened.
+D1_L8=[69639]Project Closed.
+D1_L9=[73045]Project Opened.
+D1_L10=[76172]Started Editing.
+D1_L11=[76773]Stopped Editing.
+D1_L12=[76787]Started Editing.
+D1_L13=[77147]Stopped Editing.
+D1_L14=[77430]Started Editing.
+D1_L15=[77730]Stopped Editing.
+D1_L16=[78046]Started Editing.
+D1_L17=[78525]Stopped Editing.
+D1_L18=[78607]Started Editing.
+D1_L19=[79131]Stopped Editing.
+D1_L20=[79524]Started Editing.
+D1_L21=[80870]Stopped Editing.
+D1_L22=[80870]Project Closed.
+D2=24-05-2019
+D2_L=18
+D2_L1=[27479]Project Opened.
+D2_L2=[28368]Started Editing.
+D2_L3=[29039]Stopped Editing.
+D2_E=289
+D2_D=0
+D2_L4=[29371]Project Closed.
+D2_L5=[59907]Project Opened.
+D2_L6=[59941]Started Editing.
+D2_L7=[60290]Stopped Editing.
+D2_L8=[60774]Started Editing.
+D2_L9=[61520]Stopped Editing.
+D2_L10=[61580]Started Editing.
+D2_L11=[77047]Stopped Editing.
+D2_L12=[77702]Project Closed.
+D2_L13=[79572]Project Opened.
+D2_L14=[80153]Started Editing.
+D2_L15=[80467]Stopped Editing.
+D2_L16=[81692]Started Editing.
+D2_L17=[82872]Stopped Editing.
+D2_L18=[82872]Project Closed.
+D3=25-05-2019
+D3_L=7
+D3_L1=[23640]Project Opened.
+D3_L2=[23732]Started Editing.
+D3_L3=[24727]Stopped Editing.
+D3_L4=[24886]Started Editing.
+D3_L5=[25304]Stopped Editing.
+D3_L6=[25630]Started Editing.
+D3_L7=[26034]Stopped Editing.
+
+[Opened Files]
+1=Fita_LED.c
+t1=8
+Count=1
+[Fita_LED.c]
+Type=4
+
+[defines]
+buildcount=67
+[Units]
+Count=1
+1=Fita_LED (main)

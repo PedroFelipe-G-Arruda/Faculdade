@@ -17,7 +17,7 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=5
+Days=7
 D1=09-05-2019
 D1_L=8
 D1_L1=[74800]Project Opened.
@@ -126,6 +126,18 @@ D5_L9=[34201]Stopped Editing.
 D5_L10=[34724]Started Editing.
 D5_L11=[35238]Stopped Editing.
 D5_L12=[41465]Project Closed.
+D6=14-05-2019
+D6_L=2
+D6_L1=[48787]Project Opened.
+D6_L2=[49275]Project Closed.
+D7=16-05-2019
+D7_L=6
+D7_L1=[77105]Project Opened.
+D7_L2=[78790]Project Closed.
+D7_L3=[79255]Project Opened.
+D7_L4=[79722]Project Closed.
+D7_L5=[79891]Project Opened.
+D7_L6=[80293]Project Closed.
 
 [Opened Files]
 1=Teclado_Motores.c

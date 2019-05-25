@@ -1,0 +1,14 @@
+{
+  "name": "teste2",
+  "version": "1.0.0",
+  "description": "So um teste",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Pedro",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.1"
+  }
+}
