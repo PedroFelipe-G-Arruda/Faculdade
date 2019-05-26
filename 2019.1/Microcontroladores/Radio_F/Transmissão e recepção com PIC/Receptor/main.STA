@@ -1,0 +1,64 @@
+
+ROM used:   698/8192 (9%)
+            698/8192 (9%) including unused fragments
+
+            0.2 Average locations per line
+            1.9 Average locations per statement
+
+RAM used:   48/368 (13%) at main() level
+            69/368 (19%) worst case
+
+Stack used: 1 worst case (0 in main + 1 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   62    15   4  main.c
+  685     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
+  180     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h
+  435     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   32     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+   28     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+   37     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h
+ 1352   359  96  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
+----- -----
+ 2811   374 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+ Inline         5    243  7.0  strcmp
+ Inline         9    305  6.5  strpbrk
+ Inline         9    365  8.1  strspn
+ Inline         5    140  5.0  strlen
+ Inline        10    516  8.6  strtok
+0    500  72    0    149  3.1  RDA_isr
+0      3   0    0    108  2.1  @const937
+ Inline         4    108  2.1  @PSTRINGC7_1
+ Inline         2    108  2.1  @PSTRINGR_1
+0     53   8    2    176  3.5  TIMER2_isr
+0     52   7    0    108  2.1  MAIN
+ Inline         4             @cinit1
+
+Program metrics:
+    Functions               11
+    Statements              374
+    Comments                688
+    Volume (V)              3903
+    Difficulty (D)          49.5
+    Effort to implement (E) 193038
+    Time to implement (T)   2 hours, 59 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   13
+    Maintainability (MI)    68
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00059    86  0  
+0005A-007FF   608  1350  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

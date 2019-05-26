@@ -1,0 +1,6 @@
+Compiling C:\Users\pedro\Downloads\Desktop\Transmissão e recepção com PIC\Receptor\main on 22-mai-19 at 08:39
+>>> Warning 230 "main.c" Line 22(1,1): String truncated
+>>> Warning 240 "main.c" Line 29(21,25): Pointer types do not match
+      Memory usage:   ROM=9%      RAM=13% - 19%
+      0 Errors,  2 Warnings.
+Build Successful.

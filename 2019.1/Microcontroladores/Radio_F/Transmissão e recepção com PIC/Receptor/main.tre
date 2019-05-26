@@ -1,0 +1,12 @@
+ÀÄmain
+   ÃÄMAIN  0/52  Ram=0
+   ³  ÀÄ@cinit1  (Inline)  Ram=4
+   ÃÄRDA_isr  0/500  Ram=0
+   ³  ÃÄstrtok  (Inline)  Ram=10
+   ³  ³  ÃÄstrspn  (Inline)  Ram=9
+   ³  ³  ÃÄstrpbrk  (Inline)  Ram=9
+   ³  ³  ÀÄstrlen  (Inline)  Ram=5
+   ³  ÃÄstrcmp  (Inline)  Ram=5
+   ³  ÃÄ@PSTRINGC7_1  (Inline)  Ram=4
+   ³  ÀÄ@PSTRINGR_1  (Inline)  Ram=2
+   ÀÄTIMER2_isr  0/53  Ram=2

@@ -1,59 +1,58 @@
 
-ROM used:   774/8192 (9%)
-            774/8192 (9%) including unused fragments
+ROM used:   764/8192 (9%)
+            764/8192 (9%) including unused fragments
 
             0.3 Average locations per line
-            2.0 Average locations per statement
+            1.9 Average locations per statement
 
-RAM used:   31/368 (8%) at main() level
-            42/368 (11%) worst case
+RAM used:   42/368 (11%) at main() level
+            61/368 (17%) worst case
 
 Stack used: 1 worst case (0 in main + 1 for interrupts)
 Stack size: 8
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   78    32   8  Fita_LED.c
+   76    35   9  Fita_LED.c
   685     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
- 1352   359  92  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
+  180     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h
+ 1352   359  91  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
    32     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
   435     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
    28     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
 ----- -----
- 2610   391 Total
+ 2788   394 Total
 
 Page ROM  %  RAM    Vol Diff  Functions:
 ---- --- --- ---    --- ----  ----------
+ Inline         9    305  6.5  strpbrk
+ Inline         9    365  8.1  strspn
+ Inline         5    140  5.0  strlen
+0    261  34   10    516  8.6  strtok
  Inline         2             @MUL88
 0    254  33    9   1815 10.5  atoi
-0    171  22    8    764  7.2  RDA_isr
-0      4   1    0             @const918
-0     89  11    5             @PSTRINGCN7_9600_62_63
- Inline         2    113  2.1  @PSTRINGR_9600_62_63
-0      9   1    0    113  2.1  @const925
-0     21   3    3      5  1.0  @DIV88
-0     91  12    6    113  2.1  @PRINTF_D_9600_62_63
-0      4   1    0      5  1.0  TIMER2_isr
-0     41   5    0    113  2.1  MAIN
- Inline         0             @cinit1
+0     25   3    2    142  3.9  RDA_isr
+0     44   6    2    141  3.0  TIMER2_isr
+0    122  16    0    708  4.8  MAIN
+ Inline         0    725  4.7  @cinit1
 
 Program metrics:
-    Functions               8
-    Statements              391
-    Comments                659
-    Volume (V)              4045
-    Difficulty (D)          28.1
-    Effort to implement (E) 113707
-    Time to implement (T)   1 hours, 45 minutes
-    Est Delivered Bugs (B)  1
-    Cyclomatic Complexity   15
-    Maintainability (MI)    125
+    Functions               9
+    Statements              394
+    Comments                685
+    Volume (V)              7146
+    Difficulty (D)          54.5
+    Effort to implement (E) 389612
+    Time to implement (T)   6 hours, 1 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   26
+    Maintainability (MI)    115
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00003     4  0  
-00004-00059    86  0  
-0005A-007FF   684  1274  
+00004-00039    54  0  
+0003A-007FF   706  1284  
 00800-00FFF     0  2048  
 01000-017FF     0  2048  
 01800-01FFF     0  2048  

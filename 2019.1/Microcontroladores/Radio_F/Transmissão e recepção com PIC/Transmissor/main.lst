@@ -1,0 +1,265 @@
+CCS PCM C Compiler, Version 5.008, 5967               16-mai-19 17:17
+
+               Filename:   C:\Users\Alexandre\Desktop\Transmissão e recepção com PIC\Transmissor\main.lst
+
+               ROM used:   215 words (3%)
+                           Largest free fragment is 2048
+               RAM used:   7 (2%) at main() level
+                           16 (4%) worst case
+               Stack used: 1 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   05D
+0003:  NOP
+.................... #include <16F877A.h> 
+.................... //////// Standard Header file for the PIC16F877A device //////////////// 
+.................... #device PIC16F877A 
+0004:  CLRF   2B
+0005:  MOVF   04,W
+0006:  MOVWF  2A
+0007:  BCF    2B.0
+0008:  BTFSC  03.7
+0009:  BSF    2B.0
+000A:  SWAPF  24,W
+000B:  IORLW  F0
+000C:  MOVWF  26
+000D:  ADDWF  26,F
+000E:  ADDLW  E2
+000F:  MOVWF  27
+0010:  ADDLW  32
+0011:  MOVWF  29
+0012:  MOVF   24,W
+0013:  ANDLW  0F
+0014:  ADDWF  27,F
+0015:  ADDWF  27,F
+0016:  ADDWF  29,F
+0017:  ADDLW  E9
+0018:  MOVWF  28
+0019:  ADDWF  28,F
+001A:  ADDWF  28,F
+001B:  SWAPF  23,W
+001C:  ANDLW  0F
+001D:  ADDWF  28,F
+001E:  ADDWF  29,F
+001F:  RLF    28,F
+0020:  RLF    29,F
+0021:  COMF   29,F
+0022:  RLF    29,F
+0023:  MOVF   23,W
+0024:  ANDLW  0F
+0025:  ADDWF  29,F
+0026:  RLF    26,F
+0027:  MOVLW  07
+0028:  MOVWF  25
+0029:  MOVLW  0A
+002A:  ADDWF  29,F
+002B:  DECF   28,F
+002C:  BTFSS  03.0
+002D:  GOTO   02A
+002E:  ADDWF  28,F
+002F:  DECF   27,F
+0030:  BTFSS  03.0
+0031:  GOTO   02E
+0032:  ADDWF  27,F
+0033:  DECF   26,F
+0034:  BTFSS  03.0
+0035:  GOTO   032
+0036:  ADDWF  26,F
+0037:  DECF   25,F
+0038:  BTFSS  03.0
+0039:  GOTO   036
+003A:  MOVLW  25
+003B:  MOVWF  04
+003C:  BCF    03.7
+003D:  MOVLW  07
+003E:  ANDWF  2A,W
+003F:  BCF    2A.6
+0040:  ADDWF  04,F
+0041:  MOVLW  29
+0042:  SUBWF  04,W
+0043:  BTFSC  03.2
+0044:  BSF    2A.6
+0045:  MOVF   00,W
+0046:  MOVWF  77
+0047:  BTFSS  03.2
+0048:  GOTO   051
+0049:  BTFSC  2A.6
+004A:  GOTO   051
+004B:  BTFSC  2A.4
+004C:  GOTO   059
+004D:  BTFSC  2A.3
+004E:  GOTO   051
+004F:  MOVLW  20
+0050:  GOTO   054
+0051:  BSF    2A.3
+0052:  BCF    2A.4
+0053:  MOVLW  30
+0054:  ADDWF  77,F
+0055:  MOVF   77,W
+0056:  BTFSS  0C.4
+0057:  GOTO   056
+0058:  MOVWF  19
+0059:  INCF   04,F
+005A:  BTFSS  2A.6
+005B:  GOTO   041
+005C:  RETURN
+....................  
+.................... #list 
+....................  
+.................... #device ADC=10 
+....................  
+.................... #FUSES NOWDT                    //No Watch Dog Timer 
+.................... #FUSES NOBROWNOUT               //No brownout reset 
+.................... #FUSES NOLVP                    //No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O 
+....................  
+.................... #use delay(crystal=20000000) 
+.................... #use rs232(baud=2400,parity=N,xmit=PIN_C6,rcv=PIN_C7,bits=8,stream=PORT1) 
+....................  
+....................  
+.................... void main() 
+005D:  MOVF   03,W
+005E:  ANDLW  1F
+005F:  MOVWF  03
+0060:  MOVLW  81
+0061:  BSF    03.5
+0062:  MOVWF  19
+0063:  MOVLW  A2
+0064:  MOVWF  18
+0065:  MOVLW  90
+0066:  BCF    03.5
+0067:  MOVWF  18
+0068:  BSF    03.5
+0069:  BSF    1F.0
+006A:  BSF    1F.1
+006B:  BSF    1F.2
+006C:  BCF    1F.3
+006D:  MOVLW  07
+006E:  MOVWF  1C
+006F:  BCF    03.7
+.................... { 
+....................    setup_adc_ports(AN0_AN1_AN3); 
+0070:  BCF    1F.0
+0071:  BCF    1F.1
+0072:  BSF    1F.2
+0073:  BCF    1F.3
+....................    setup_adc(ADC_CLOCK_INTERNAL); 
+0074:  BCF    1F.6
+0075:  BCF    03.5
+0076:  BSF    1F.6
+0077:  BSF    1F.7
+0078:  BSF    03.5
+0079:  BSF    1F.7
+007A:  BCF    03.5
+007B:  BSF    1F.0
+....................    set_tris_b(0b11111110); 
+007C:  MOVLW  FE
+007D:  BSF    03.5
+007E:  MOVWF  06
+....................    while(TRUE) 
+....................    { 
+....................       set_adc_channel(0); 
+007F:  MOVLW  00
+0080:  MOVWF  78
+0081:  BCF    03.5
+0082:  MOVF   1F,W
+0083:  ANDLW  C7
+0084:  IORWF  78,W
+0085:  MOVWF  1F
+....................       delay_us(100); 
+0086:  MOVLW  A6
+0087:  MOVWF  77
+0088:  DECFSZ 77,F
+0089:  GOTO   088
+008A:  NOP
+....................       printf("%lu ",read_adc()); 
+008B:  BSF    1F.2
+008C:  BTFSC  1F.2
+008D:  GOTO   08C
+008E:  MOVF   1E,W
+008F:  MOVWF  7A
+0090:  BSF    03.5
+0091:  MOVF   1E,W
+0092:  BCF    03.5
+0093:  MOVWF  21
+0094:  MOVF   1E,W
+0095:  MOVWF  22
+0096:  MOVLW  10
+0097:  MOVWF  04
+0098:  MOVF   1E,W
+0099:  MOVWF  24
+009A:  MOVF   21,W
+009B:  MOVWF  23
+009C:  CALL   004
+009D:  MOVLW  20
+009E:  BTFSS  0C.4
+009F:  GOTO   09E
+00A0:  MOVWF  19
+....................       set_adc_channel(1); 
+00A1:  MOVLW  08
+00A2:  MOVWF  78
+00A3:  MOVF   1F,W
+00A4:  ANDLW  C7
+00A5:  IORWF  78,W
+00A6:  MOVWF  1F
+....................       delay_us(100); 
+00A7:  MOVLW  A6
+00A8:  MOVWF  77
+00A9:  DECFSZ 77,F
+00AA:  GOTO   0A9
+00AB:  NOP
+....................       printf("%lu\n\r",read_adc()); 
+00AC:  BSF    1F.2
+00AD:  BTFSC  1F.2
+00AE:  GOTO   0AD
+00AF:  MOVF   1E,W
+00B0:  MOVWF  7A
+00B1:  BSF    03.5
+00B2:  MOVF   1E,W
+00B3:  BCF    03.5
+00B4:  MOVWF  21
+00B5:  MOVF   1E,W
+00B6:  MOVWF  22
+00B7:  MOVLW  10
+00B8:  MOVWF  04
+00B9:  MOVF   1E,W
+00BA:  MOVWF  24
+00BB:  MOVF   21,W
+00BC:  MOVWF  23
+00BD:  CALL   004
+00BE:  MOVLW  0A
+00BF:  BTFSS  0C.4
+00C0:  GOTO   0BF
+00C1:  MOVWF  19
+00C2:  MOVLW  0D
+00C3:  BTFSS  0C.4
+00C4:  GOTO   0C3
+00C5:  MOVWF  19
+....................       output_b(0b00100000); 
+00C6:  BSF    03.5
+00C7:  CLRF   06
+00C8:  MOVLW  20
+00C9:  BCF    03.5
+00CA:  MOVWF  06
+....................       delay_us(100); 
+00CB:  MOVLW  A6
+00CC:  MOVWF  77
+00CD:  DECFSZ 77,F
+00CE:  GOTO   0CD
+00CF:  NOP
+....................       output_b(0b00000000); 
+00D0:  BSF    03.5
+00D1:  CLRF   06
+00D2:  BCF    03.5
+00D3:  CLRF   06
+00D4:  BSF    03.5
+00D5:  GOTO   07F
+....................    } 
+....................  
+.................... } 
+00D6:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F32   HS NOWDT PUT NOBROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

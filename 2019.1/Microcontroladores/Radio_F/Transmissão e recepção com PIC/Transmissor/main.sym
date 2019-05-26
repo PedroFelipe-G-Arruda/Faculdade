@@ -1,0 +1,66 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+021     main.@SCRATCH1
+022     main.@SCRATCH2
+023-024 @PRINTF_LU_2400_62_63.P1
+025     @PRINTF_LU_2400_62_63.@SCRATCH1
+026     @PRINTF_LU_2400_62_63.@SCRATCH2
+027     @PRINTF_LU_2400_62_63.@SCRATCH3
+028     @PRINTF_LU_2400_62_63.@SCRATCH4
+029     @PRINTF_LU_2400_62_63.@SCRATCH5
+02A     @PRINTF_LU_2400_62_63.@SCRATCH6
+02B     @PRINTF_LU_2400_62_63.@SCRATCH7
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @PRINTF_LU_2400_62_63
+00005D  main
+00005D  @cinit1
+00006F  @cinit2
+
+Project Directory:
+    C:\Users\Alexandre\Desktop\Transmissão e recepção com PIC\Transmissor\
+
+Project Files:
+    main.c                                                  [16-mai-19 17:16  CRC=62D012C0]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [03-jul-13 13:28  CRC=4E65664C]
+
+Source signature=FF9ADF58
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

@@ -25,7 +25,7 @@ D1_L2=[52598]Project Closed.
 D1_L3=[52598]Project Opened.
 D1_L4=[52638]Started Editing.
 D1_L5=[52942]Stopped Editing.
-TotalEdit=326
+TotalEdit=434
 TotalDebug=0
 D1_E=37
 D1_D=0
@@ -69,7 +69,7 @@ D2_L16=[81692]Started Editing.
 D2_L17=[82872]Stopped Editing.
 D2_L18=[82872]Project Closed.
 D3=25-05-2019
-D3_L=7
+D3_L=20
 D3_L1=[23640]Project Opened.
 D3_L2=[23732]Started Editing.
 D3_L3=[24727]Stopped Editing.
@@ -77,16 +77,31 @@ D3_L4=[24886]Started Editing.
 D3_L5=[25304]Stopped Editing.
 D3_L6=[25630]Started Editing.
 D3_L7=[26034]Stopped Editing.
+D3_L8=[32266]Started Editing.
+D3_L9=[32691]Stopped Editing.
+D3_L10=[32759]Started Editing.
+D3_L11=[33449]Stopped Editing.
+D3_L12=[34194]Started Editing.
+D3_L13=[35470]Stopped Editing.
+D3_L14=[36980]Started Editing.
+D3_L15=[37793]Stopped Editing.
+D3_L16=[37915]Started Editing.
+D3_L17=[41750]Stopped Editing.
+D3_L18=[42004]Started Editing.
+D3_L19=[42306]Stopped Editing.
+D3_E=108
+D3_D=0
+D3_L20=[56420]Project Closed.
 
 [Opened Files]
 1=Fita_LED.c
-t1=8
+t1=17
 Count=1
 [Fita_LED.c]
 Type=4
 
 [defines]
-buildcount=67
+buildcount=113
 [Units]
 Count=1
 1=Fita_LED (main)

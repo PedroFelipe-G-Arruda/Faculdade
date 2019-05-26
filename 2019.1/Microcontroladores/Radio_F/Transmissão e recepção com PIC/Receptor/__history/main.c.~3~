@@ -1,0 +1,23 @@
+#include <main.h>
+
+#INT_RDA
+void  RDA_isr(void) 
+{
+   putc(getc());
+   output_b(0b00100000);
+   delay_us(1);
+   output_b(0b00100000);
+}
+
+void main()
+{
+
+   enable_interrupts(INT_RDA);
+   enable_interrupts(GLOBAL);
+
+   while(TRUE)
+   {
+      //TODO: User Code
+   }
+
+}

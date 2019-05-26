@@ -1,0 +1,56 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.008
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=main.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;C:\Users\mateu\Google Drive\Engenharia\Microcontroladores\Receptor\
+[C:\Users\mateu\Google Drive\Engenharia\Microcontroladores\Receptor\main]
+Type=4
+[mru-list]
+1=main.c
+[Opened Files]
+1=main.c
+2=
+3=
+t1=12
+Count=1
+[main.c]
+Type=4
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=2
+D1=21-05-2019
+D1_L=2
+D1_L1=[79741]Project Opened.
+D1_L2=[81059]Project Closed.
+D2=22-05-2019
+D2_L=12
+D2_L1=[24099]Project Opened.
+D2_L2=[26442]Started Editing.
+D2_L3=[26744]Stopped Editing.
+D2_L4=[27322]Started Editing.
+D2_L5=[27656]Stopped Editing.
+D2_L6=[27680]Started Editing.
+D2_L7=[28155]Stopped Editing.
+D2_L8=[28726]Started Editing.
+D2_L9=[29366]Stopped Editing.
+D2_L10=[30105]Started Editing.
+D2_L11=[31445]Stopped Editing.
+TotalEdit=32
+TotalDebug=0
+D2_E=32
+D2_D=0
+D2_L12=[31445]Project Closed.
+
+[defines]
+buildcount=10
+[Units]
+Count=1
+1=main (main)
