@@ -33,14 +33,13 @@ void  RDA_isr(void)
 #INT_TIMER2
 void  TIMER2_isr(void) 
 {
-
    output_d(0b00000000 | ((B>cont)<<2) | ((G>cont)<<1) | ((R>cont)));
    cont++;
 }
 
 void main()
 {
-   setup_timer_2(T2_DIV_BY_1,255,1);      //819 us overflow, 819 us interrupt
+   setup_timer_2(T2_DIV_BY_1,255,1);      //51.2 us overflow, 51.2 us interrupt
 
 
    enable_interrupts(INT_RDA);
@@ -50,12 +49,12 @@ void main()
    while(TRUE)
    {
       if(s != 0){
-         if(s == 3){
+         if(s == 3){ //ON - [O,N,)]
             R = 255;
             G = 255;
             B = 255;
          }else{
-            if(s == 4){
+            if(s == 4){  //OFF - [O,F,F,)]
                R = 0;
                G = 0;
                B = 0;

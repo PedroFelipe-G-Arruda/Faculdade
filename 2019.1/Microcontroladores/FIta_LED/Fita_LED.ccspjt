@@ -17,7 +17,7 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=3
+Days=5
 D1=23-05-2019
 D1_L=22
 D1_L1=[52280]Project Opened.
@@ -25,7 +25,7 @@ D1_L2=[52598]Project Closed.
 D1_L3=[52598]Project Opened.
 D1_L4=[52638]Started Editing.
 D1_L5=[52942]Stopped Editing.
-TotalEdit=434
+TotalEdit=444
 TotalDebug=0
 D1_E=37
 D1_D=0
@@ -92,6 +92,22 @@ D3_L19=[42306]Stopped Editing.
 D3_E=108
 D3_D=0
 D3_L20=[56420]Project Closed.
+D4=27-05-2019
+D4_L=8
+D4_L1=[30233]Project Opened.
+D4_L2=[34100]Started Editing.
+D4_L3=[34572]Stopped Editing.
+D4_L4=[35188]Started Editing.
+D4_L5=[35903]Stopped Editing.
+D4_E=10
+D4_D=0
+D4_L6=[37563]Project Closed.
+D4_L7=[46115]Project Opened.
+D4_L8=[74427]Project Closed.
+D5=01-06-2019
+D5_L=2
+D5_L1=[51987]Project Opened.
+D5_L2=[53409]Project Closed.
 
 [Opened Files]
 1=Fita_LED.c
