@@ -5,19 +5,332 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e598666a-ce8e-4630-9b2e-4302c7eacade" name="Default Changelist" comment="Add files via upload">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Faculdade.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Faculdade.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019.1/LP3/Angular/my-project-name/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m" beforeDir="false" afterPath="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Ola.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/build/built-jar.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/build/classes/tab_form/Tab_Form$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/build/classes/tab_form/Tab_Form.class" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/build/classes/tab_form/Tab_Form.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/dist/Tab_Form.html" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/dist/Tab_Form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/dist/Tab_Form.jar" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/dist/Tab_Form.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/dist/Tab_Form.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/dist/Tab_Form.jnlp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/src/tab_form/Tab_Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Tab_Form/src/tab_form/Tab_Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2015_6/Compiladores/Assembly/fib.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Electron/Teste/electron-quick-start/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Electron/Teste/electron-quick-start/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Electron/Teste2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/LP3/Electron/Teste2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/.metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/app/src/main/java/com/example/flutter_app1/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/app/src/profile/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/2000px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/alpine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/arch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/imagem9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/asset/pinguim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/ios/Runner/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/lib/main.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/pubspec.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/pubspec.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Flutter/flutter_app1/test/widget_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/.bowerrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/hooks/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/hooks/after_prepare/010_add_platform_class.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/ionic.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/icon/drawable-hdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/icon/drawable-ldpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/icon/drawable-mdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/icon/drawable-xhdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/icon/drawable-xxhdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/icon/drawable-xxxhdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/splash/drawable-land-hdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/splash/drawable-land-ldpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/splash/drawable-land-mdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/splash/drawable-land-xhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/splash/drawable-land-xxhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/splash/drawable-land-xxxhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/splash/drawable-port-hdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/splash/drawable-port-ldpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/splash/drawable-port-mdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/splash/drawable-port-xhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/splash/drawable-port-xxhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/android/splash/drawable-port-xxxhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-50@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-72@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-small@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon-small@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/icon/icon@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default-568h@2x~iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default-667h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default-736h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default-Landscape-736h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default-Landscape@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default-Landscape@~ipadpro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default-Landscape~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default-Portrait@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default-Portrait@~ipadpro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default-Portrait~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default@2x~iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default@2x~universal~anyany.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/ios/splash/Default~iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/resources/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/scss/ionic.app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/css/ionic.app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/css/ionic.app.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/img/ionic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/css/ionic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/css/ionic.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/fonts/ionicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/fonts/ionicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/fonts/ionicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/fonts/ionicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/js/ionic-angular.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/js/ionic-angular.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/js/ionic.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/js/ionic.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/js/ionic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/js/ionic.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_action-sheet.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_animations.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_backdrop.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_bar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_button-bar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_checkbox.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_items.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_loading.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_menu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_platform.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_popover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_popup.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_radio.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_range.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_refresher.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_scaffolding.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_select.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_slide-box.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_slides.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_spinner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_tabs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_toggle.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_transitions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_util.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/ionic.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/ionicons/_ionicons-font.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/ionicons/_ionicons-icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/ionicons/_ionicons-variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/ionicons/ionicons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/lib/ionic/scss/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Ionic/Iapp01/www/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/app.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-hdpi/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-hdpi/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-hdpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-ldpi/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-ldpi/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-ldpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-mdpi/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-mdpi/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-mdpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-nodpi/splash_screen.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-xhdpi/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-xhdpi/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-xhdpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-xxhdpi/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-xxhdpi/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-xxhdpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-xxxhdpi/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-xxxhdpi/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/drawable-xxxhdpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/values-v21/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/values-v21/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/Android/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-1125h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-667h@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-736h@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-Landscape-X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-Landscape-XR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-Landscape-XS-Max.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-Landscape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-Landscape@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-Landscape@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-Portrait-XR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-Portrait-XS-Max.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-Portrait.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-Portrait@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen.AspectFill@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen.Center@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/App_Resources/iOS/build.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/app-root.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/main-page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/main-page.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/main-view-model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/app/references.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/NaviteScript/MyApp/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Processing/Imagem/Imagem.pde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Processing/Imagem/data/Imagem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Processing/Imagem/data/Minecraft.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/LP3/Processing/Imagem/data/Sketch Gothic School.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019.1/Microcontroladores/FIta_LED/Fita_LED.ccspjt" beforeDir="false" afterPath="$PROJECT_DIR$/2019.1/Microcontroladores/FIta_LED/Fita_LED.ccspjt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +364,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="17">
               <caret line="2" column="25" selection-start-line="1" selection-start-column="15" selection-end-line="2" selection-end-column="25" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -63,8 +376,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="425">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -157,6 +470,7 @@
     <option name="width" value="1918" />
     <option name="height" value="1078" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -203,7 +517,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PegarDados" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -248,6 +564,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2015_6/Compiladores/Lexico/A_Lexico.py" />
       <option name="PARAMETERS" value="-lt test.m" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -269,6 +586,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="C:\Users\pedro\OneDrive\Faculdade\Faculdade\2015_6\Compiladores\Compilador\src\sintatico.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -290,6 +608,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2015_6/Compiladores/Sintático/A_Sintatico.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -311,6 +630,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py" />
       <option name="PARAMETERS" value="-tudo fib.m fib.asm" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -332,6 +652,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2015_6/Compiladores/Sintático/CriacaoTabela.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -353,6 +674,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/semantico.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -364,10 +686,10 @@
     </configuration>
     <list>
       <item itemvalue="Python.A_Lexico" />
-      <item itemvalue="Python.Compilador" />
-      <item itemvalue="Python.A_Sintatico" />
-      <item itemvalue="Python.CriacaoTabela" />
       <item itemvalue="Python.A_Sintatico (1)" />
+      <item itemvalue="Python.A_Sintatico" />
+      <item itemvalue="Python.Compilador" />
+      <item itemvalue="Python.CriacaoTabela" />
       <item itemvalue="Python.semantico" />
     </list>
     <recent_temporary>
@@ -390,6 +712,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534993252720</updated>
+      <workItem from="1560615456794" duration="76000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1534995147630</created>
@@ -457,6 +780,9 @@
     <option name="localTasksCounter" value="10" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="76000" />
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -469,9 +795,10 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12539515" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11353944" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49826086" weight="0.28037384" />
@@ -484,6 +811,8 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50173914" side_tool="true" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32952183" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32848233" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -660,6 +989,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" column="25" selection-start-line="1" selection-start-column="15" selection-end-line="2" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/geradorCode.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -670,20 +1009,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/Compilador.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="1" selection-start-column="15" selection-end-line="2" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2015_6/Compiladores/Compilador/src/lexico.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

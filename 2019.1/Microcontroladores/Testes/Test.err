@@ -1,4 +1,14 @@
-Compiling C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Testes\Test on 07-abr-19 at 15:39
-      Memory usage:   ROM=2%      RAM=4% - 6%
-      0 Errors,  0 Warnings.
+Compiling C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Testes\Test on 17-jun-19 at 06:33
+>>> Warning 202 "Test.c" Line 18(14,22): Variable never used:   raw_temp
+>>> Warning 202 "Test.c" Line 19(7,11): Variable never used:   temp
+>>> Warning 202 "Test.c" Line 52(14,22): Variable never used:   setpoint
+>>> Warning 202 "Test.c" Line 54(7,9): Variable never used:   Kp
+>>> Warning 202 "Test.c" Line 55(7,9): Variable never used:   Ti
+>>> Warning 202 "Test.c" Line 56(7,8): Variable never used:   t
+>>> Warning 202 "Test.c" Line 57(7,17): Variable never used:   last_error
+>>> Warning 202 "Test.c" Line 58(8,11): Variable never used:   PID
+>>> Warning 202 "Test.c" Line 59(7,20): Variable never used:   current_error
+>>> Warning 202 "Test.c" Line 60(7,19): Variable never used:   last_control
+      Memory usage:   ROM=4%      RAM=17% - 20%
+      0 Errors,  10 Warnings.
 Build Successful.

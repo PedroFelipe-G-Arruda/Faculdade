@@ -1,0 +1,57 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\PID\PID2\main]
+Type=4
+[mru-list]
+1=main.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=17-06-2019
+D1_L=18
+D1_L1=[36240]Project Opened.
+D1_L2=[36259]Started Editing.
+D1_L3=[37324]Stopped Editing.
+D1_L4=[37903]Started Editing.
+D1_L5=[38214]Stopped Editing.
+D1_L6=[40466]Started Editing.
+D1_L7=[40766]Stopped Editing.
+D1_L8=[40940]Started Editing.
+D1_L9=[42127]Stopped Editing.
+D1_L10=[42298]Started Editing.
+D1_L11=[42952]Stopped Editing.
+D1_L12=[43181]Started Editing.
+D1_L13=[43809]Stopped Editing.
+D1_L14=[44289]Started Editing.
+D1_L15=[44635]Stopped Editing.
+D1_L16=[44655]Started Editing.
+D1_L17=[44960]Stopped Editing.
+TotalEdit=40
+TotalDebug=0
+D1_E=40
+D1_D=0
+D1_L18=[51216]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=85
+Count=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=30
+[Units]
+Count=1
+1=main (main)

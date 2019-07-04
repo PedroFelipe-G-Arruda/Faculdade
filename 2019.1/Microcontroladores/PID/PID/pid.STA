@@ -1,0 +1,82 @@
+
+ROM used:   2103/8192 (26%)
+            2467/8192 (30%) including unused fragments
+
+            0.7 Average locations per line
+            4.8 Average locations per statement
+
+RAM used:   74/368 (20%) at main() level
+            92/368 (25%) worst case
+
+Stack used: 1 worst case (0 in main + 1 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  114    27   6  pid.c
+  685     0   0  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
+  180     0   0  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h
+  435     0   0  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   32     0   0  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+   28     0   0  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+ 1352   359  83  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
+  225    48  11  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ds18b20.c
+----- -----
+ 3051   434 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     22   1    1             @delay_ms1
+0     15   1    1             @delay_us1
+0     36   2    1             @PUTCHAR_1_
+0    117   6   13             @MULFF
+0     31   1    2             @ITOF
+0    321  15   16             @ADDFF
+0    202  10   14             @DIVFF
+0     36   2    2    207  3.2  ds18b20_start
+ Inline         1    132  1.8  ds18b20_write
+0     44   2    3    153  4.5  ds18b20_write_byte
+0     29   1    1    160  2.2  ds18b20_read_bit
+0     18   1    2    160  4.4  ds18b20_read_byte
+ Inline         0     96  2.4  ds18b20_start_conversion
+ Inline         6    351  5.0  ds18b20_get_conversion
+0     65   3    2    113  3.2  ds18b20_read
+0     22   1    0    123  3.4  int_isr
+1    419  20    8    668  6.1  MAIN
+0     39   2    2             @SITOF
+0      5   0    0             @const976
+0     87   4    5             @PSTRINGCN7_638
+ Inline         5             @FTOSD
+0     79   4   13             @DIV3232
+0    224  11   13             @PRINTF_L32D_638FPFPF
+0      5   0    0             @const987
+0     88   4    4             @PSTRINGC7_638
+0      5   0    0             @const992
+0      5   0    0             @const993
+0     21   1    3             @DIV88
+0     89   4    6             @PRINTF_D_638
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               10
+    Statements              434
+    Comments                828
+    Volume (V)              3555
+    Difficulty (D)          33.4
+    Effort to implement (E) 118707
+    Time to implement (T)   1 hours, 50 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   9
+    Maintainability (MI)    129
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-0004E    75  0  
+0004F-007FF  1605  364  
+00800-00FFF   419  1629  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

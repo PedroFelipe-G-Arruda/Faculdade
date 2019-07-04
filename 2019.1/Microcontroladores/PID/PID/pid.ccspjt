@@ -1,0 +1,69 @@
+[PROJECT]
+Target=pid.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=pid.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\PID\PID\pid]
+Type=4
+[mru-list]
+1=pid.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=17-06-2019
+D1_L=30
+D1_L1=[2376]Project Opened.
+D1_L2=[2400]Started Editing.
+D1_L3=[2732]Stopped Editing.
+D1_L4=[2800]Started Editing.
+D1_L5=[3246]Stopped Editing.
+D1_L6=[3290]Started Editing.
+D1_L7=[4168]Stopped Editing.
+TotalEdit=58
+TotalDebug=0
+D1_E=58
+D1_D=0
+D1_L8=[4168]Project Closed.
+D1_L9=[29092]Project Opened.
+D1_L10=[29132]Started Editing.
+D1_L11=[29434]Stopped Editing.
+D1_L12=[29692]Started Editing.
+D1_L13=[30054]Stopped Editing.
+D1_L14=[31692]Started Editing.
+D1_L15=[32113]Stopped Editing.
+D1_L16=[32139]Started Editing.
+D1_L17=[33116]Stopped Editing.
+D1_L18=[33479]Started Editing.
+D1_L19=[33779]Stopped Editing.
+D1_L20=[34307]Started Editing.
+D1_L21=[34681]Stopped Editing.
+D1_L22=[34681]Project Closed.
+D1_L23=[34821]Project Opened.
+D1_L24=[34865]Started Editing.
+D1_L25=[35097]Stopped Editing.
+D1_L26=[35097]Project Closed.
+D1_L27=[35110]Project Opened.
+D1_L28=[35355]Started Editing.
+D1_L29=[36240]Stopped Editing.
+D1_L30=[36240]Project Closed.
+
+[Opened Files]
+1=pid.c
+t1=79
+Count=1
+[pid.c]
+Type=4
+
+[defines]
+buildcount=22
+[Units]
+Count=1
+1=pid (main)

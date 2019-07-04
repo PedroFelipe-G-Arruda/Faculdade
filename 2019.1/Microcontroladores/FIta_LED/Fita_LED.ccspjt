@@ -17,7 +17,7 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=5
+Days=7
 D1=23-05-2019
 D1_L=22
 D1_L1=[52280]Project Opened.
@@ -108,10 +108,20 @@ D5=01-06-2019
 D5_L=2
 D5_L1=[51987]Project Opened.
 D5_L2=[53409]Project Closed.
+D6=08-06-2019
+D6_L=4
+D6_L1=[44744]Project Opened.
+D6_L2=[44762]Project Closed.
+D6_L3=[46021]Project Opened.
+D6_L4=[46483]Project Closed.
+D7=14-06-2019
+D7_L=2
+D7_L1=[78555]Project Opened.
+D7_L2=[78582]Project Closed.
 
 [Opened Files]
 1=Fita_LED.c
-t1=17
+t1=1
 Count=1
 [Fita_LED.c]
 Type=4

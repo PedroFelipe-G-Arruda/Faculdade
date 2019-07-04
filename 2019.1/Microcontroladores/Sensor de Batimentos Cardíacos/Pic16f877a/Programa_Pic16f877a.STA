@@ -14,7 +14,7 @@ Stack size: 8
 Lines Stmts  %   Files
 ----- ----- ---  -----
    31     7 100  Programa_Pic16f877a.c
-  685     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
+  685     0   0  ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
 ----- -----
   716     7 Total
 

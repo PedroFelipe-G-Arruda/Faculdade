@@ -17,13 +17,13 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=9
+Days=10
 D1=24-03-2019
 D1_L=10
 D1_L1=[42938]Project Opened.
 D1_L2=[42974]Started Editing.
 D1_L3=[43054]Stopped Editing.
-TotalEdit=88
+TotalEdit=96
 TotalDebug=0
 D1_E=3
 D1_D=0
@@ -116,10 +116,20 @@ D9=07-04-2019
 D9_L=2
 D9_L1=[56344]Project Opened.
 D9_L2=[56632]Project Closed.
+D10=17-06-2019
+D10_L=6
+D10_L1=[4186]Project Opened.
+D10_L2=[4209]Started Editing.
+D10_L3=[4732]Stopped Editing.
+D10_L4=[23386]Started Editing.
+D10_L5=[23892]Stopped Editing.
+D10_E=8
+D10_D=0
+D10_L6=[25903]Project Closed.
 
 [Opened Files]
 1=Test.c
-t1=1
+t1=28
 Count=1
 2=..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
 t2=16
@@ -127,7 +137,7 @@ t2=16
 Type=4
 
 [defines]
-buildcount=39
+buildcount=40
 [Units]
 Count=1
 1=Test (main)

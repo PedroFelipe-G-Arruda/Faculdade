@@ -1,0 +1,7 @@
+Compiling C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\PID\PID2\main on 17-jun-19 at 12:25
+>>> Warning 202 "main.c" Line 17(6,12): Variable never used:   buffer
+>>> Warning 202 "main.c" Line 18(5,6): Variable never used:   i
+>>> Warning 202 "main.c" Line 18(12,13): Variable never used:   s
+      Memory usage:   ROM=28%      RAM=18% - 23%
+      0 Errors,  3 Warnings.
+Build Successful.

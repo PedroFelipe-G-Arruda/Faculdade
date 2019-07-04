@@ -1,5 +1,9 @@
 ÀÄ2019
-   ÀÄMAIN  0/64  Ram=0
-      ÃÄ@cinit1  (Inline)  Ram=0
-      ÃÄ@PRINTF_LU_9600_62_63  0/91  Ram=9
-      ÀÄ@delay_ms1  0/22  Ram=1
+   ÃÄMAIN  0/83  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄ@PSTRINGR_638  0/24  Ram=2
+   ³  ³  ÀÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ÀÄ@PUTCHAR_1_  0/36  Ram=1
+   ÃÄint_isr  0/22  Ram=0
+   ÀÄRDA_isr  0/83  Ram=4
+      ÀÄ@GETCH_1_  (Inline)  Ram=1

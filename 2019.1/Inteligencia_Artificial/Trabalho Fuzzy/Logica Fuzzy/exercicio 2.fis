@@ -1,0 +1,41 @@
+[System]
+Name='exercicio 2'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=3
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Temperatura'
+Range=[15 35]
+NumMFs=3
+MF1='Fria':'trapmf',[15 15 17 20]
+MF2='Morna':'trapmf',[17 20 26 29]
+MF3='Quente':'trapmf',[26 29 35 35]
+
+[Input2]
+Name='LuzSolar'
+Range=[20 110]
+NumMFs=3
+MF1='Nublado':'trapmf',[20 20 30 50]
+MF2='ParcEnsolarado':'trapmf',[30 50 50 100]
+MF3='Ensolarado':'trapmf',[50 100 110 110]
+
+[Output1]
+Name='Turistas'
+Range=[0 100]
+NumMFs=3
+MF1='Baixo':'trimf',[0 0 50]
+MF2='Medio':'trimf',[0 50 100]
+MF3='Alta':'trimf',[50 100 100]
+
+[Rules]
+3 3, 3 (1) : 2
+2 3, 2 (1) : 1
+1 1, 1 (1) : 2

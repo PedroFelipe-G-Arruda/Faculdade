@@ -1,0 +1,66 @@
+ÀÄ2019
+   ÃÄMAIN  1/419  Ram=8
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄds18b20_read  0/65  Ram=2
+   ³  ³  ÃÄds18b20_start_conversion  (Inline)  Ram=0
+   ³  ³  ³  ÃÄds18b20_start  0/36  Ram=2
+   ³  ³  ³  ³  ÃÄ@delay_us1  0/15  Ram=1
+   ³  ³  ³  ³  ÀÄ@delay_us1  0/15  Ram=1
+   ³  ³  ³  ÃÄds18b20_write_byte  0/44  Ram=3
+   ³  ³  ³  ³  ÀÄds18b20_write  (Inline)  Ram=1
+   ³  ³  ³  ÀÄds18b20_write_byte  0/44  Ram=3
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄds18b20_read_bit  0/29  Ram=1
+   ³  ³  ÀÄds18b20_get_conversion  (Inline)  Ram=6
+   ³  ³     ÃÄds18b20_start  0/36  Ram=2
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄds18b20_write_byte  0/44  Ram=3
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄds18b20_write_byte  0/44  Ram=3
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄds18b20_read_byte  0/18  Ram=2
+   ³  ³     ³  ÀÄds18b20_read_bit  0/29  Ram=1
+   ³  ³     ÀÄds18b20_read_byte  0/18  Ram=2
+   ³  ³        ÀÄ*
+   ³  ÃÄ@SITOF  0/39  Ram=2
+   ³  ÃÄ@DIVFF  0/202  Ram=14
+   ³  ÃÄ@PSTRINGCN7_638  0/87  Ram=5
+   ³  ³  ÃÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ³  ÀÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ÃÄ@PRINTF_L32D_638FPFPF  0/224  Ram=13
+   ³  ³  ÃÄ@MULFF  0/117  Ram=13
+   ³  ³  ÃÄ@FTOSD  (Inline)  Ram=5
+   ³  ³  ÃÄ@DIV3232  0/79  Ram=13
+   ³  ³  ÃÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ³  ÃÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ³  ÃÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ³  ÃÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ³  ÀÄ@DIV3232  0/79  Ram=13
+   ³  ÃÄ@PSTRINGC7_638  0/88  Ram=4
+   ³  ³  ÃÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ³  ÀÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ÃÄ@ITOF  0/31  Ram=2
+   ³  ÃÄ@ADDFF  0/321  Ram=16
+   ³  ÃÄ@ADDFF  0/321  Ram=16
+   ³  ÃÄ@MULFF  0/117  Ram=13
+   ³  ÃÄ@DIVFF  0/202  Ram=14
+   ³  ÃÄ@ADDFF  0/321  Ram=16
+   ³  ÃÄ@MULFF  0/117  Ram=13
+   ³  ÃÄ@ADDFF  0/321  Ram=16
+   ³  ÃÄ@PSTRINGCN7_638  0/87  Ram=5
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PRINTF_L32D_638FPFPF  0/224  Ram=13
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ÃÄ@PSTRINGCN7_638  0/87  Ram=5
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PRINTF_D_638  0/89  Ram=6
+   ³  ³  ÃÄ@DIV88  0/21  Ram=3
+   ³  ³  ÃÄ@DIV88  0/21  Ram=3
+   ³  ³  ÃÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ³  ÃÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ³  ÃÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ³  ÀÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ÃÄ@PUTCHAR_1_  0/36  Ram=1
+   ³  ÀÄ@delay_ms1  0/22  Ram=1
+   ÀÄint_isr  0/22  Ram=0

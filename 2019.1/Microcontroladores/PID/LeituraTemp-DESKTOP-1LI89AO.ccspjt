@@ -1,0 +1,72 @@
+[PROJECT]
+Target=LeituraTemp.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.081
+Compiler=PCM
+CCSVersion=5.081
+[Target Data]
+FileList=LeituraTemp.c
+[Directories]
+Include=
+[C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\PID\LeituraTemp]
+Type=4
+[mru-list]
+1=LeituraTemp.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=2
+D1=08-06-2019
+D1_L=26
+D1_L1=[40845]Project Opened.
+D1_L2=[40851]Started Editing.
+D1_L3=[41152]Stopped Editing.
+TotalEdit=21
+TotalDebug=0
+D1_E=21
+D1_D=0
+D1_L4=[41907]Project Closed.
+D1_L5=[41976]Project Opened.
+D1_L6=[42565]Started Editing.
+D1_L7=[43364]Stopped Editing.
+D1_L8=[44128]Started Editing.
+D1_L9=[44607]Stopped Editing.
+D1_L10=[44688]Started Editing.
+D1_L11=[44988]Stopped Editing.
+D1_L12=[45011]Started Editing.
+D1_L13=[45107]Stopped Editing.
+D1_L14=[45107]Project Closed.
+D1_L15=[45258]Project Opened.
+D1_L16=[45270]Started Editing.
+D1_L17=[45682]Stopped Editing.
+D1_L18=[46332]Started Editing.
+D1_L19=[46636]Stopped Editing.
+D1_L20=[46971]Started Editing.
+D1_L21=[47059]Stopped Editing.
+D1_L22=[47059]Project Closed.
+D1_L23=[53616]Project Opened.
+D1_L24=[56965]Started Editing.
+D1_L25=[57397]Stopped Editing.
+D1_L26=[60474]Project Closed.
+D2=17-06-2019
+D2_L=5
+D2_L1=[28643]Project Opened.
+D2_L2=[28662]Project Closed.
+D2_L3=[28663]Project Opened.
+D2_L4=[28698]Project Closed.
+D2_L5=[28748]Project Opened.
+
+[Opened Files]
+1=LeituraTemp.c
+t1=1
+Count=1
+[LeituraTemp.c]
+Type=4
+
+[defines]
+buildcount=17
+[Units]
+Count=1
+1=LeituraTemp (main)

@@ -1,0 +1,7 @@
+Alunos:Pedro Felipe, Samuel Aminadabe, Matheus Marques e Luis Alexandre Ferreira
+
+Obs: No exercício, na questão 3 em viajar, a opção 'não' estava Não=[30/0, 5/0.5, 70/1] não teria como ser
+utilizada dessa forma, então mudamos o valor do '5/0.5' por '50/0.5'.
+
+A outra observação, é que ele pedia umidade alta, como não possuia essa informação, acabou sendo utilizado
+a umidade média.

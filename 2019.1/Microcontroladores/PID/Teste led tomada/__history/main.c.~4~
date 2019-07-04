@@ -1,0 +1,25 @@
+#include <main.h>
+
+int8 cont;
+
+#INT_EXT
+void  EXT_isr(void) 
+{
+   cont++;
+   if(cont == 10)
+      output_toggle(PIN_B1);
+      cont = 0;
+}
+
+void main()
+{
+
+   enable_interrupts(INT_EXT);
+   enable_interrupts(GLOBAL);
+
+   while(TRUE)
+   {
+      //TODO: User Code
+   }
+
+}

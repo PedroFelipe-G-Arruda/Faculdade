@@ -1,0 +1,52 @@
+[System]
+Name='exercicio 3'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=1
+NumRules=8
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Temp'
+Range=[0 50]
+NumMFs=3
+MF1='Baixa':'zmf',[15 25]
+MF2='Media':'pimf',[15 20 25 30]
+MF3='Alta':'smf',[15 25]
+
+[Input2]
+Name='PreChuva'
+Range=[0 100]
+NumMFs=3
+MF1='Baixo':'zmf',[15 35]
+MF2='Media':'pimf',[15 20 30 35]
+MF3='Alta':'smf',[25 50]
+
+[Input3]
+Name='Umidade'
+Range=[0 100]
+NumMFs=2
+MF1='Baixa':'zmf',[70 90]
+MF2='Media':'smf',[70 90]
+
+[Output1]
+Name='Viajar'
+Range=[0 100]
+NumMFs=2
+MF1='Sim':'zmf',[30 70]
+MF2='Nao':'smf',[30 70]
+
+[Rules]
+2 0 1, 1 (1) : 1
+3 0 1, 1 (1) : 1
+1 0 1, 2 (1) : 1
+0 1 2, 1 (1) : 1
+2 2 2, 1 (1) : 1
+2 3 2, 1 (1) : 1
+3 2 2, 2 (1) : 1
+3 3 2, 2 (1) : 1

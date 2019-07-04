@@ -35,11 +35,11 @@ ROM Allocation:
 000087  @cinit2
 
 Project Directory:
-    C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Sensor de Batimentos Cardíacos\
+    C:\Users\pedro\OneDrive\Faculdade\Faculdade\2019.1\Microcontroladores\Sensor de Batimentos Cardíacos\Pic16f877a\
 
 Project Files:
     Programa_Pic16f877a.c                                   [07-abr-19 19:28  CRC=7FC7757D]
-    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [20-set-18 11:29  CRC=A7449A17]
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [20-set-18 11:29  CRC=A7449A17]
 
 Source signature=CE50A9AB
 Program memory checksum=0000

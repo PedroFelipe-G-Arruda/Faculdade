@@ -17,7 +17,7 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=4
+Days=6
 D1=07-04-2019
 D1_L=24
 D1_L1=[53432]Project Opened.
@@ -60,6 +60,12 @@ D4=13-04-2019
 D4_L=2
 D4_L1=[46829]Project Opened.
 D4_L2=[47261]Project Closed.
+D5=19-06-2019
+D5_L=1
+D5_L1=[53286]Project Opened.
+D6=21-06-2019
+D6_L=1
+D6_L1=[39414]Project Closed.
 
 [Opened Files]
 1=Programa_Pic16f877a.c
@@ -69,7 +75,7 @@ Count=1
 Type=4
 
 [defines]
-buildcount=15
+buildcount=16
 [Units]
 Count=1
 1=Programa_Pic16f877a (main)

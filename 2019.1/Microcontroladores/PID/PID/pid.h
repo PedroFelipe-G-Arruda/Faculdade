@@ -1,0 +1,5 @@
+#include <16F877A.h>
+#device ADC=10
+#use delay(crystal=20000000)
+#use rs232(baud=9600,parity=N,xmit=PIN_C6,rcv=PIN_D0,bits=8,stream=PORT1)
+
